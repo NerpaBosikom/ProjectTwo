@@ -1,1 +1,48 @@
-/*# sourceMappingURL=style.css.map */
+.footer {
+  padding: 20px 50px;
+  background-color: #65767e;
+  color: white;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.footer__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+.footer__list-item {
+  margin: 0;
+}
+.footer__social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  background-color: transparent;
+}
+.footer__social-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer__social-link--telegram, .footer__social-link--whatsapp, .footer__social-link--vk {
+  color: white;
+}
+.footer__social-link--telegram .footer__social-icon, .footer__social-link--whatsapp .footer__social-icon, .footer__social-link--vk .footer__social-icon {
+  font-size: 30px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
