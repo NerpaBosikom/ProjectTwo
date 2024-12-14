@@ -1,1 +1,70 @@
 /*# sourceMappingURL=style.css.map */
+
+/* Еще будет контейнер у Светы */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.book-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.book-container {
+  display: flex;
+  max-width: 900px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.book-image img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  display: block;
+}
+
+.book-description {
+  padding: 20px;
+  flex: 1;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #777;
+  margin: 0 0 10px;
+}
+
+.book-title {
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+.book-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 30px;
+}
+
+.buy-button {
+  background-color: #00313a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #005965;
+}
