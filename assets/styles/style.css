@@ -40,3 +40,37 @@ a {
 .header__link {
   color: #ededed;
 }
+@font-face {
+  font-family: "Viaoda Libre";
+  src: url(../fonts/viaoda_libre-regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat-regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat-medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #231f20;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}/*# sourceMappingURL=style.css.map */
