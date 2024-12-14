@@ -1,29 +1,54 @@
 /*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Viaoda Libre";
+  src: url(../fonts/viaoda_libre-regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat-regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat-medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
-section3{
+.about{
   display: flex;
   margin: 5%;
   align-items: center;
   justify-content: space-around;
 }
 
-.section3_wrapper{
+.about_wrapper{
   display: flex;
   flex-direction: column;
   width: 30%;
 }
 
-.section3_wrapper_h2{
+.about_wrapper_h2{
+  font-family: "Viaoda Libre";
+  font-size: 64px;
   display: flex;
   justify-content: flex-end;
 }
 
-.section3_wrapper-text{
-width: 600px;
-height: 270px;
+.about_wrapper-text{
+  font-family: "Montserrat";
+  font-size: 22px;
+  width: 600px;
+  height: 270px;
 }
 
-.section3_img-portret{
+.about_img-portret{
   width: 600px;
   height: 400;
 }
