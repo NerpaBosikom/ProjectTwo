@@ -12,17 +12,20 @@
     <header class="header"></header>
     <main>
       <section class="hero"></section>
-      <section class="book">
-        <div class="book-container">
-          <!-- Обложка книги -->
-          <div class="book-image">
-            <img src="book-cover.jpg" alt="Обложка книги Время придет" />
+      <section class="book container">
+        <div class="book__section">
+          <div class="book__image-wrapper">
+            <img
+              src="./assets/images/book.png"
+              alt="Обложка книги Время придет"
+              class="book__image"
+            />
           </div>
-          <!-- Описание книги -->
-          <div class="book-description">
-            <h4 class="book-author">Анна Вирсен</h4>
-            <h1 class="book-title">Время придет</h1>
-            <p class="book-text">
+          <div class="book__content">
+            <h4 class="book__author">Анна Вирсен</h4>
+            <h1 class="book__title">Время придет</h1>
+            <div class="book__underline"></div>
+            <p class="book__description">
               Смешная и при этом трогающая до глубины души история о маме
               погодок, которая пытается одновременно быть достаточно хорошей
               мамой, женой, хозяйкой, профессионалом, все успеть и при этом не
@@ -32,7 +35,7 @@
               любовь, а происходящее вокруг начинает напоминать сценарий
               турецкого сериала.
             </p>
-            <button class="buy-button">Купить</button>
+            <button class="book__button">Купить</button>
           </div>
         </div>
       </section>
