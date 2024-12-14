@@ -1,1 +1,29 @@
 /*# sourceMappingURL=style.css.map */
+
+section3{
+  display: flex;
+  margin: 5%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section3_wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.section3_wrapper_h2{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section3_wrapper-text{
+width: 600px;
+height: 270px;
+}
+
+.section3_img-portret{
+  width: 600px;
+  height: 400;
+}
