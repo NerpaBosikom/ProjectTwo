@@ -23,7 +23,7 @@
 
 .about{
   display: flex;
-  margin: 5%;
+  margin: 3%;
   align-items: center;
   justify-content: space-around;
 }
