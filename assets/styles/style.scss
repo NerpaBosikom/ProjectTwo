@@ -45,6 +45,50 @@ body {
 }
 
 // Света 
+
+.container-wrapper {
+  max-width: calc(1480px + 15px * 2);
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+.header {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: $primary-color;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);;
+}
+
+.header__wrapper {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.header__item {
+  font-size: 18px;
+}
+
+.header__link:hover {
+  color: $accent-color;
+  transition: 0.2s;
+}
+
+.header__link {
+  color: $secondary-color;
+}
 // Ира Н.
 // Аня
 // 
