@@ -32,3 +32,41 @@ body {
   margin: 0 auto;
   padding-inline: 15px;
 }/*# sourceMappingURL=style.css.map */
+
+/* Екатерина */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #424530;
+  width: 100%;
+}
+.services__title {
+  padding: 20px 0 20px 0;
+  color: #ede1d2;
+}
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(2, 400px);
+  gap: 50px 35px;
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 400px;
+  height: 400px; */
+  background-color: #ede1d2;;
+}
+.services__item-title {
+  color: #412f26;
+  padding: 20px;
+}
+.services__item-description {
+  text-align: center;
+  color: #806044;
+  padding: 20px;
+}
