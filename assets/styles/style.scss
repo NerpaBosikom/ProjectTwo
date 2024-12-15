@@ -95,11 +95,7 @@ a {
 }
 
 /* SCSS variables goes here */
-$white: rgba(74, 95, 104, 0.85);
-$background: #183644;
 $menu-drawer-width: 400px;
-$menu-drawer-font-color: #ededed;
-$menu-drawer-font-hover: #183644;
 $breakpoint: 768px;
 
 /****************************/
@@ -114,7 +110,7 @@ $breakpoint: 768px;
   
   input { display: none; cursor: pointer; }
   input:checked ~ span {
-    background: $background;
+    background: $accent-color;
   }
   
   span {
@@ -150,9 +146,9 @@ $breakpoint: 768px;
   padding: 6rem 4rem;
   font-size: 1.5rem;
   z-index: 1;
-  background: $white;
-  color: $menu-drawer-font-color;
-  will-change: transform opacity;
+  background: $primary-color;
+  color: $secondary-color;
+  will-change: transform, opacity;
   transition: all 500ms cubic-bezier(.14,.65,.15,1);
   
   &[opened='false'] { transform: translateY(-100%); opacity: 0; }
@@ -163,7 +159,7 @@ $breakpoint: 768px;
       margin: 2rem 0;
       cursor: pointer;
     }
-    li:hover { color: $menu-drawer-font-hover; }
+    li:hover { color: $accent-color; }
   }
   @media (min-width: $breakpoint + 1) {
     display: none; 
