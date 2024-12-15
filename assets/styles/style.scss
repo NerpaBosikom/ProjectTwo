@@ -60,6 +60,7 @@ a {
 // Света 
 
 .header {
+  position: relative;
   max-width: 1600px;
   margin: 0 auto;
   background-color: $primary-color;
@@ -93,19 +94,16 @@ a {
       }   
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 /* SCSS variables goes here */
 $white: rgba(74, 95, 104, 0.85);
 $background: #183644;
 $menu-drawer-width: 400px;
 $menu-drawer-font-color: #ededed;
 $menu-drawer-font-hover: #183644;
+$breakpoint: 768px;
+
 /****************************/
 
-.header {
-  position: relative;
-}
 .menu-container {
   position: absolute;
   top: 1.5rem;
@@ -122,12 +120,17 @@ $menu-drawer-font-hover: #183644;
   span {
     display: block;
     width: 100%;
-    height: 0.5rem;
+    height: 0.4rem;
     margin: 0.5rem 0;
     background: #fff;
     border-radius: 0.25rem;
     transition: all 300ms ease;
   }
+
+  @media (min-width: $breakpoint + 1) {
+    display: none; 
+  }
+
 }
 
 .menu-container:hover {
@@ -142,7 +145,7 @@ $menu-drawer-font-hover: #183644;
   top: 0;
   right: 0;
   left: auto;
-  height: max-content;
+  height: 100vh;
   width: $menu-drawer-width;
   padding: 6rem 4rem;
   font-size: 1.5rem;
@@ -152,7 +155,7 @@ $menu-drawer-font-hover: #183644;
   will-change: transform opacity;
   transition: all 500ms cubic-bezier(.14,.65,.15,1);
   
-  &[opened='false'] { transform: translateX(100%); opacity: 0; }
+  &[opened='false'] { transform: translateY(-100%); opacity: 0; }
   &[opened='true'] { transform: none; opacity: 1; }
   
   ul {
@@ -162,7 +165,17 @@ $menu-drawer-font-hover: #183644;
     }
     li:hover { color: $menu-drawer-font-hover; }
   }
+  @media (min-width: $breakpoint + 1) {
+    display: none; 
+  }
 }
+
+.header__menu {
+  @media (max-width: $breakpoint) {
+    display: none;
+  }
+}
+
 
 // Ира Н.
 // Аня
