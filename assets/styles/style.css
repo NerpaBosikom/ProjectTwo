@@ -50,30 +50,25 @@ a {
   background-color: rgba(74, 95, 104, 0.85);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
 .header__wrapper {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .header__list {
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
-
 .header__item {
   font-size: 18px;
 }
-
+.header__link {
+  color: #ededed;
+}
 .header__link:hover {
   color: #183644;
   transition: 0.2s;
-}
-
-.header__link {
-  color: #ededed;
 }/*# sourceMappingURL=style.css.map */

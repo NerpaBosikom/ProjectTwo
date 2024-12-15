@@ -64,33 +64,35 @@ a {
   margin: 0 auto;
   background-color: $primary-color;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    &__wrapper {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 40px;
+    }
+
+      &__item {
+        font-size: 18px;
+      }
+
+        &__link {
+          color: $secondary-color;
+
+          &:hover {
+          color: $accent-color;
+          transition: 0.2s;
+        }
+
+      }   
 }
 
-.header__wrapper {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__list {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 40px;
-}
-
-.header__item {
-  font-size: 18px;
-}
-
-.header__link:hover {
-  color: $accent-color;
-  transition: 0.2s;
-}
-
-.header__link {
-  color: $secondary-color;
-}
 // Ира Н.
 // Аня
 // 
