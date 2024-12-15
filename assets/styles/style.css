@@ -38,13 +38,15 @@ body {
 .services {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: #424530;
-  width: 100%;
+  align-items: center;
+  width: auto;
 }
 .services__title {
+  display: flex;
+  justify-content: flex-start;
+  width: 86%;
   padding: 20px 0 20px 0;
-  color: #ede1d2;
+  color: #231F20;
 }
 .services__list {
   display: grid;
@@ -57,16 +59,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 400px;
-  height: 400px; */
-  background-color: #ede1d2;;
+  border: 1px solid rgba(35, 31, 32, 0.85);
 }
 .services__item-title {
-  color: #412f26;
+  color: #231F20;
   padding: 20px;
 }
 .services__item-description {
   text-align: center;
-  color: #806044;
+  color: #231F20;
   padding: 20px;
 }
