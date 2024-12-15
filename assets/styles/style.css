@@ -1,6 +1,6 @@
 /*# sourceMappingURL=style.css.map */
 
-.story-card-container {
+.book__section {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -10,11 +10,11 @@
   padding-bottom: 61px;
   border-bottom: 1px solid rgba(165, 142, 116, 0.4);
 }
-.divider-line {
+.book__divider-line {
   flex: 0 0 auto;
   border-top: 1px solid rgba(165, 142, 116, 0.4);
 }
-.story-card-container1 {
+.book__story-box {
   box-sizing: border-box;
   display: flex;
   flex: 0 0 auto;
@@ -27,14 +27,14 @@
   margin-top: 60px;
   margin-left: -122px;
 }
-.flex-container-row-start {
+.book__image-wrapper {
   display: flex;
   flex: 0 0 auto;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.image-container-styles {
+.book__image {
   position: relative;
   box-sizing: border-box;
   display: block;
@@ -44,28 +44,28 @@
   border: none;
   object-fit: cover;
 }
-.vertical-spacer {
+.book__vertical-spacer {
   flex: 0 0 auto;
   padding-top: 25px;
   margin-left: -375px;
 }
-.golden-frame {
+.book__frame {
   box-sizing: border-box;
   width: 400px;
   height: 600px;
   border: 1px solid rgba(165, 142, 116, 0.4);
 }
-.story-card {
+.book__content {
   box-sizing: border-box;
   flex: 0 0 auto;
   max-width: 664px;
   padding-top: 103px;
 }
-.story-container {
+.book__content-box {
   box-sizing: border-box;
   width: 100%;
 }
-.author-quote-text-style {
+.book__author {
   padding: 0;
   padding-right: 5px;
   padding-left: 5px;
@@ -73,7 +73,7 @@
   font: 400 20px Montserrat, sans-serif;
   color: #231f20;
 }
-.time-arrival-container {
+.book__time-box {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -81,19 +81,19 @@
   justify-content: flex-end;
   width: 100%;
 }
-.majestic-heading {
+.book__title {
   flex: 0 0 auto;
   padding: 0;
   margin: 0;
   font: 400 64px Viaoda Libre;
   color: #231f20;
 }
-.time-divider {
+.book__underline {
   flex: 0 0 auto;
   margin-top: -1.5px;
   border-top: 1px solid rgba(165, 142, 116, 0.4);
 }
-.soulful-narrative-style {
+.book__description {
   box-sizing: border-box;
   width: 100%;
   padding: 0;
@@ -102,6 +102,26 @@
   font: 400 22px Montserrat, sans-serif;
   color: #231f20;
   text-align: left;
+}
+.book__button {
+  display: block;
+  margin-top: 33px;
+  width: 250px;
+  height: 60px;
+  background: #183644;
+  color: #ededed;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 60px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s;
+}
+.book__button:hover {
+  background: #0f2530;
 }
 
 .container {
