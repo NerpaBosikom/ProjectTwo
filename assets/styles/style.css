@@ -4,126 +4,98 @@
   padding-inline: 15px;
 }
 
-.book__section {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  min-width: 1600px;
-  padding-bottom: 61px;
-  border-bottom: 1px solid rgba(165, 142, 116, 0.4);
-}
-.book__divider-line {
-  flex: 0 0 auto;
-  border-top: 1px solid rgba(165, 142, 116, 0.4);
-}
-.book__story-box {
-  box-sizing: border-box;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: row;
-  gap: 8px;
-  align-items: flex-start;
-  align-self: center;
-  justify-content: space-between;
-  min-width: 1198px;
-  margin-top: 60px;
-  margin-left: -122px;
-}
-.book__image-wrapper {
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.book__image {
+.book {
   position: relative;
-  box-sizing: border-box;
-  display: block;
-  width: 400px;
-  max-width: initial;
+  padding: 60px 0;
+}
+
+/* Линии подчеркивания сверху и снизу */
+.book__divider-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(165, 142, 116, 0.4);
+  margin: 20px 0; /* Отступы от контента */
+}
+
+/* Основная структура */
+.book__story-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  gap: 50px; /* Пространство между картинкой и текстом */
+}
+
+/* Обложка с рамкой */
+.book__image-wrapper {
+  position: relative;
+  flex: 0 0 400px; /* фиксированная ширина */
   height: 600px;
-  border: none;
+}
+
+.book__image {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-.book__vertical-spacer {
-  flex: 0 0 auto;
-  padding-top: 25px;
-  margin-left: -375px;
-}
+
 .book__frame {
-  box-sizing: border-box;
+  position: absolute;
+  bottom: -25px; /* Смещение вниз */
+  right: -25px; /* Смещение вправо */
   width: 400px;
   height: 600px;
   border: 1px solid rgba(165, 142, 116, 0.4);
+  z-index: -1;
 }
+
+/* Содержимое */
 .book__content {
-  box-sizing: border-box;
-  flex: 0 0 auto;
   max-width: 664px;
-  padding-top: 103px;
 }
-.book__content-box {
-  box-sizing: border-box;
-  width: 100%;
-}
+
 .book__author {
-  padding: 0;
-  padding-right: 5px;
-  padding-left: 5px;
-  margin: 0;
-  font: 400 20px Montserrat, sans-serif;
-  color: #231f20;
+  margin: 0 0 10px;
+  font-size: 20px;
 }
-.book__time-box {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-end;
-  width: 100%;
-}
+
 .book__title {
-  flex: 0 0 auto;
-  padding: 0;
   margin: 0;
-  font: 400 64px Viaoda Libre;
-  color: #231f20;
+  font-size: 64px;
+  font-family: "Viaoda Libre", serif;
 }
+
 .book__underline {
-  flex: 0 0 auto;
-  margin-top: -1.5px;
-  border-top: 1px solid rgba(165, 142, 116, 0.4);
-}
-.book__description {
-  box-sizing: border-box;
   width: 100%;
-  padding: 0;
-  margin: 0;
-  margin-top: 17.5px;
-  font: 400 22px Montserrat, sans-serif;
-  color: #231f20;
-  text-align: left;
+  height: 1px;
+  background: rgba(165, 142, 116, 0.4);
+  margin-top: 10px;
 }
+
+.book__description {
+  margin-top: 20px;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
 .book__button {
-  display: block;
-  margin-top: 33px;
+  margin-top: 30px;
   width: 250px;
   height: 60px;
   background: #183644;
-  color: #ededed;
+  color: #fff;
   font-size: 24px;
   font-weight: 500;
   text-align: center;
-  line-height: 60px;
   border: none;
   border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   transition: background 0.3s;
 }
+
 .book__button:hover {
   background: #0f2530;
-} /*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
