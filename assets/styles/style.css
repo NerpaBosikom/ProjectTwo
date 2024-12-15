@@ -1,4 +1,8 @@
-/*# sourceMappingURL=style.css.map */
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
 
 .book__section {
   box-sizing: border-box;
@@ -122,10 +126,4 @@
 }
 .book__button:hover {
   background: #0f2530;
-}
-
-.container {
-  max-width: 1350px;
-  margin: 0 auto;
-  padding-inline: 15px;
 } /*# sourceMappingURL=style.css.map */
