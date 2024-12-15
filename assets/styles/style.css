@@ -33,17 +33,6 @@ body {
   padding-inline: 15px;
 }
 
-.container-wrapper {
-  max-width: 1510px;
-  margin: 0 auto;
-  padding-inline: 15px;
-}
-
-a {
-  text-decoration: none;
-  color: #ededed;
-}
-
 .header {
   max-width: 1600px;
   margin: 0 auto;
@@ -62,7 +51,7 @@ a {
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 40px;
-      column-gap: 40px;
+       column-gap: 40px;
 }
 
 .header__item {

@@ -46,22 +46,11 @@ body {
 
 // Света 
 
-.container-wrapper {
-  max-width: calc(1480px + 15px * 2);
-  margin: 0 auto;
-  padding-inline: 15px;
-}
-
-a {
-  text-decoration: none;
-  color: $secondary-color;
-}
-
 .header {
   max-width: 1600px;
   margin: 0 auto;
   background-color: $primary-color;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .header__wrapper {
