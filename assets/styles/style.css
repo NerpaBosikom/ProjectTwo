@@ -27,8 +27,19 @@ body {
   background-color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+  color: #ededed;
+}
+
 .container {
   max-width: 1350px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+.container-wrapper {
+  max-width: 1510px;
   margin: 0 auto;
   padding-inline: 15px;
 }/*# sourceMappingURL=style.css.map */

@@ -38,11 +38,24 @@ body {
   background-color: $background-color;
 }
 
+a {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
 .container {
   max-width: calc(1320px + 15px * 2);
   margin: 0 auto;
   padding-inline: 15px;
 }
+
+.container-wrapper {
+  max-width: calc(1480px + 15px * 2);
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+
 
 // Света 
 // Ира Н.
