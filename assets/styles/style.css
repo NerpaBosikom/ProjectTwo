@@ -42,9 +42,6 @@ body {
   width: auto;
 }
 .services__title {
-  display: flex;
-  justify-content: flex-start;
-  width: 86%;
   padding: 20px 0 20px 0;
   color: #231F20;
 }
@@ -53,6 +50,7 @@ body {
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: repeat(2, 400px);
   gap: 50px 35px;
+  padding-bottom: 50px;
 }
 .services__item {
   display: flex;
@@ -60,7 +58,13 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(35, 31, 32, 0.85);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+.services__item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 .services__item-title {
   color: #231F20;
   padding: 20px;
