@@ -1,1 +1,120 @@
 /*# sourceMappingURL=style.css.map */
+
+.story-card-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-width: 1600px;
+  padding-bottom: 61px;
+  border-bottom: 1px solid rgba(165, 142, 116, 0.4);
+}
+.divider-line {
+  flex: 0 0 auto;
+  border-top: 1px solid rgba(165, 142, 116, 0.4);
+}
+.story-card-container1 {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  align-self: center;
+  justify-content: space-between;
+  min-width: 1198px;
+  margin-top: 60px;
+  margin-left: -122px;
+}
+.flex-container-row-start {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.image-container-styles {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 400px;
+  max-width: initial;
+  height: 600px;
+  border: none;
+  object-fit: cover;
+}
+.vertical-spacer {
+  flex: 0 0 auto;
+  padding-top: 25px;
+  margin-left: -375px;
+}
+.golden-frame {
+  box-sizing: border-box;
+  width: 400px;
+  height: 600px;
+  border: 1px solid rgba(165, 142, 116, 0.4);
+}
+.story-card {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  max-width: 664px;
+  padding-top: 103px;
+}
+.story-container {
+  box-sizing: border-box;
+  width: 100%;
+}
+.author-quote-text-style {
+  padding: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 0;
+  font: 400 20px Montserrat, sans-serif;
+  color: #231f20;
+}
+.time-arrival-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  width: 100%;
+}
+.majestic-heading {
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
+  font: 400 64px Viaoda Libre;
+  color: #231f20;
+}
+.time-divider {
+  flex: 0 0 auto;
+  margin-top: -1.5px;
+  border-top: 1px solid rgba(165, 142, 116, 0.4);
+}
+.soulful-narrative-style {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 17.5px;
+  font: 400 22px Montserrat, sans-serif;
+  color: #231f20;
+  text-align: left;
+}
+.buy-button-style {
+  box-sizing: border-box;
+  display: block;
+  width: 250px;
+  min-width: 250px;
+  height: 60px;
+  margin-top: 33px;
+  font: 500 24px Montserrat, sans-serif;
+  color: #ededed;
+  cursor: pointer;
+  background: #183644;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
