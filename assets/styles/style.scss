@@ -164,6 +164,10 @@ $breakpoint: 768px;
   @media (min-width: $breakpoint + 1) {
     display: none; 
   }
+  @media (max-width: 576px) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .header__menu {

@@ -148,6 +148,12 @@ a {
     display: none;
   }
 }
+@media (max-width: 576px) {
+  .menu-drawer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 
 @media (max-width: 768px) {
   .header__menu {
