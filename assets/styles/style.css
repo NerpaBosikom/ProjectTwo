@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 @font-face {
   font-family: "Viaoda Libre";
   src: url(../fonts/viaoda_libre-regular.woff2) format("woff2");
@@ -71,4 +72,74 @@ a {
 .header__link:hover {
   color: #183644;
   transition: 0.2s;
+}
+
+/* SCSS variables goes here */
+/****************************/
+.header {
+  position: relative;
+}
+
+.menu-container {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  width: 3rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-container input {
+  display: none;
+  cursor: pointer;
+}
+.menu-container input:checked ~ span {
+  background: #183644;
+}
+.menu-container span {
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+  margin: 0.5rem 0;
+  background: #fff;
+  border-radius: 0.25rem;
+  transition: all 300ms ease;
+}
+
+.menu-container:hover span:nth-child(3) {
+  width: 50%;
+}
+.menu-container:hover span:nth-child(4) {
+  width: 25%;
+}
+
+.menu-drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  height: -moz-max-content;
+  height: max-content;
+  width: 400px;
+  padding: 6rem 4rem;
+  font-size: 1.5rem;
+  z-index: 1;
+  background: rgba(74, 95, 104, 0.85);
+  color: #ededed;
+  will-change: transform opacity;
+  transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
+}
+.menu-drawer[opened=false] {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.menu-drawer[opened=true] {
+  transform: none;
+  opacity: 1;
+}
+.menu-drawer ul li {
+  margin: 2rem 0;
+  cursor: pointer;
+}
+.menu-drawer ul li:hover {
+  color: #183644;
 }/*# sourceMappingURL=style.css.map */

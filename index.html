@@ -37,6 +37,21 @@
             </ul>
           </nav>
           <!-- Бургер меню -->
+          <label class="menu-container">
+            <input type="checkbox" name="menu-button" onclick="openDrawer();" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <div class="menu-drawer" id="menu-drawer" opened="false">
+            <ul>
+              <li>The app</li>
+              <li>Out story</li>
+              <li>Out blog</li>
+              <li>Learn more</li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -51,5 +66,6 @@
       <section class="blog"></section>
     </main>
     <footer class="footer"></footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
