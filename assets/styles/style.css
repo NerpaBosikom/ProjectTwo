@@ -31,7 +31,8 @@
 .about_wrapper{
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
+  text-align: end;
 }
 
 .about_wrapper_h2{
@@ -39,6 +40,8 @@
   font-size: 64px;
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  bottom: 120px;
 }
 
 .about_wrapper-text{
