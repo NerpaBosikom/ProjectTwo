@@ -69,34 +69,37 @@
           method="POST"
           class="contact-form container"
         >
-          <label for="name">Ваше имя:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Введите ваше имя"
-            required
-          />
-
-          <label for="email">Ваш email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Введите ваш email"
-            required
-          />
-
-          <label for="message">Ваше сообщение:</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Введите ваше сообщение"
-            required
-          ></textarea>
-
-          <button type="submit">Отправить</button>
+          <div class="contact-form__info">
+            <label for="name">Ваше имя:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введите ваше имя"
+              required
+            />
+            <label for="email">Ваш email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Введите ваш email"
+              required
+            />
+          </div>
+          <div class="contact-form__message">
+            <label for="message">Ваше сообщение:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Введите ваше сообщение"
+              required
+            ></textarea>
+          </div>
+          <div class="contact-form__button">
+            <button type="submit">Отправить</button>
+          </div>
         </form>
       </section>
       <section class="bestsellers"></section>
