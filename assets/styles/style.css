@@ -1,3 +1,37 @@
+@font-face {
+  font-family: "Viaoda Libre";
+  src: url(../fonts/viaoda_libre-regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat-regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat-medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #231f20;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ededed;
+}
+
 .container {
   max-width: 1350px;
   margin: 0 auto;
@@ -19,7 +53,7 @@
 .book__divider-line {
   width: 100%;
   height: 1px;
-  background: rgba(165, 142, 116, 0.4);
+  background-color: rgba(165, 142, 116, 0.4);
   margin: 30px 0;
 }
 
@@ -41,7 +75,8 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .book__frame {
@@ -51,6 +86,7 @@
   width: 400px;
   height: 600px;
   border: 1px solid rgba(165, 142, 116, 0.4);
+  background-color: transparent;
   z-index: -1;
 }
 
@@ -72,7 +108,7 @@
 .book__underline {
   width: 100%;
   height: 1px;
-  background: rgba(165, 142, 116, 0.4);
+  background-color: rgba(165, 142, 116, 0.4);
   margin-top: 10px;
 }
 
@@ -86,7 +122,8 @@
   margin-top: 30px;
   width: 250px;
   height: 60px;
-  background: #183644;
+  font-family: "Montserrat";
+  background-color: #183644;
   color: #fff;
   font-size: 24px;
   font-weight: 500;
@@ -100,5 +137,4 @@
 
 .book__button:hover {
   background: #0f2530;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
