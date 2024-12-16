@@ -21,8 +21,9 @@
 }
 
 .about{
+    max-width: 1600px;
+    margin: 0 auto;
     display: flex;
-    margin: 3%;
     align-items: center;
     justify-content: space-around;
 }
@@ -30,8 +31,9 @@
 .about_wrapper{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    max-width: 612px;
     text-align: end;
+    padding-bottom: 95px;
 }
 
 .about_wrapper_h2{
@@ -39,15 +41,14 @@
     font-size: 64px;
     display: flex;
     justify-content: flex-end;
-    position: relative;
-    bottom: 120px;
+    padding-bottom: 20px;
+    padding-top: 60px;
 }
 
 .about_wrapper-text{
     font-family: "Montserrat";
     font-size: 22px;
     width: 600px;
-    height: 270px;
 }
 
 .about_img-portret{
