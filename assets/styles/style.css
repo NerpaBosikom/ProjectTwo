@@ -170,8 +170,14 @@ a {
   width: auto;
 }
 .services__title {
-  padding: 20px 0 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: auto;
+  padding-left: 40px;
   color: #231F20;
+  font-family: "Viaoda Libre";
+  font-weight: 500;
+  font-size: 64px;
 }
 .services__list {
   display: grid;
@@ -196,6 +202,8 @@ a {
 .services__item-title {
   color: #231F20;
   padding: 20px;
+  font-weight: 500;
+  font-size: 30px;
 }
 .services__item-description {
   text-align: center;
