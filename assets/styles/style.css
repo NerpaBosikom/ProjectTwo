@@ -62,7 +62,7 @@ a {
   justify-content: center;
   margin-top: 30px;
   align-items: flex-start;
-  gap: 50px;
+  gap: 135px;
 }
 
 .book__image-wrapper {
@@ -76,7 +76,7 @@ a {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .book__frame {
@@ -137,4 +137,4 @@ a {
 
 .book__button:hover {
   background: #0f2530;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
