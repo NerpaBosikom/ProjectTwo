@@ -159,4 +159,42 @@ a {
   .header__menu {
     display: none;
   }
+}
+
+.features {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: rgba(74, 95, 104, 0.85);
+}
+
+.contact-form {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: flex;
+  width: clamp(250px, 30vw, 600px);
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(74, 95, 104, 0.85);
+  border-radius: 4px;
+}
+
+.contact-form button {
+  display: inline-flex;
+  justify-content: flex-start;
+  padding: 10px 15px;
+  background: #183644;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
