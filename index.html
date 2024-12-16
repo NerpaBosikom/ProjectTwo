@@ -9,7 +9,56 @@
     <title>Анна Вирсен</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__wrapper container-wrapper">
+        <div class="header__inner">
+          <img
+            src="./assets/images/icons/logo.svg"
+            alt="Логотип Анна Вирсен"
+            class="header__logo"
+            loading="lazy"
+          />
+        </div>
+        <div class="header__nav">
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="/">Обо мне</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="/">Книги</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="/">Услуги</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="/">Блог</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Бургер меню -->
+          <label class="menu-container">
+            <input type="checkbox" name="menu-button" onclick="openDrawer();" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <div class="menu-drawer" id="menu-drawer" opened="false">
+            <ul>
+              <li>Обо мне</li>
+              <li>Книги</li>
+              <li>Услуги</li>
+              <li>Блог</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero"></section>
       <section class="book"></section>
@@ -61,5 +110,6 @@
       <section class="blog"></section>
     </main>
     <footer class="footer"></footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
