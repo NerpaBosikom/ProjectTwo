@@ -57,6 +57,98 @@ a {
 
 // Света
 // Ира Н.
+
+.book {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.book__divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: $border-color;
+  margin: 30px 0;
+}
+
+.book__story-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.book__image-wrapper {
+  position: relative;
+  flex: 0 0 400px;
+  height: 600px;
+}
+
+.book__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book__frame {
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  width: 400px;
+  height: 600px;
+  background-color: $border-color;
+  z-index: -1;
+}
+
+.book__content {
+  max-width: 664px;
+}
+
+.book__author {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.book__title {
+  margin: 0;
+  font-size: 64px;
+  font-family: "Viaoda Libre";
+}
+
+.book__underline {
+  width: 100%;
+  height: 1px;
+  background-color: $border-color;
+  margin-top: 10px;
+}
+
+.book__description {
+  margin-top: 20px;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.book__button {
+  margin-top: 30px;
+  width: 250px;
+  height: 60px;
+  background-color: #183644;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s;
+}
+
+.book__button:hover {
+  background: #0f2530;
+}
 // Аня
 //
 //
