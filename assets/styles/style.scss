@@ -151,6 +151,11 @@ a {
 .book__button:hover {
   background: #0f2530;
 }
+
+.book__button:active {
+  transform: scale(0.95);
+  outline: none;
+}
 // Аня
 //
 //

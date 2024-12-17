@@ -137,4 +137,10 @@ a {
 
 .book__button:hover {
   background: #0f2530;
-} /*# sourceMappingURL=style.css.map */
+}
+
+.book__button:active {
+  transform: scale(0.95);
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
