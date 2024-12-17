@@ -159,4 +159,50 @@ a {
   .header__menu {
     display: none;
   }
+}
+
+.bestsellers {
+  text-align: left;
+  padding-left: 140px;
+  padding-top: 120px;
+}
+.bestsellers .title {
+  font-family: "Viaoda Libre";
+  font-size: 3rem;
+  color: #231f20;
+  padding-bottom: 50px;
+}
+.bestsellers .books {
+  display: flex;
+  justify-content: flex-start;
+  gap: 205px;
+}
+.bestsellers .books .book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bestsellers .books .book img {
+  width: 300px;
+  height: 400px;
+}
+.bestsellers .books .book .buy_button {
+  margin-top: 30px;
+  background-color: rgba(74, 95, 104, 0.85);
+  color: #ededed;
+  border: none;
+  padding: 15px 80px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bestsellers .books .book .buy_button:hover {
+  background-color: #183644;
+}
+
+.blog__wrapper__cards {
+  display: flex;
+  justify-content: space-evenly;
 }/*# sourceMappingURL=style.css.map */

@@ -22,7 +22,7 @@
   font-display: swap;
 }
 
-$primary-color: rgba(74, 95, 104, 0.85); 
+$primary-color: rgba(74, 95, 104, 0.85);
 $secondary-color: #ededed;
 $accent-color: #183644;
 $background-color: #ffffff;
@@ -66,32 +66,32 @@ a {
   background-color: $primary-color;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
-    &__wrapper {
-      height: 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  &__wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+  }
+
+  &__item {
+    font-size: 18px;
+  }
+
+  &__link {
+    color: $secondary-color;
+
+    &:hover {
+      color: $accent-color;
+      transition: 0.2s;
     }
 
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      column-gap: 40px;
-    }
-
-      &__item {
-        font-size: 18px;
-      }
-
-        &__link {
-          color: $secondary-color;
-
-          &:hover {
-          color: $accent-color;
-          transition: 0.2s;
-        }
-
-      }   
+  }
 }
 
 /* SCSS variables goes here */
@@ -107,12 +107,16 @@ $breakpoint: 768px;
   width: 3rem;
   cursor: pointer;
   z-index: 2;
-  
-  input { display: none; cursor: pointer; }
-  input:checked ~ span {
+
+  input {
+    display: none;
+    cursor: pointer;
+  }
+
+  input:checked~span {
     background: $accent-color;
   }
-  
+
   span {
     display: block;
     width: 100%;
@@ -124,15 +128,20 @@ $breakpoint: 768px;
   }
 
   @media (min-width: $breakpoint + 1) {
-    display: none; 
+    display: none;
   }
 
 }
 
 .menu-container:hover {
   span {
-    &:nth-child(3) { width: 50%; }
-    &:nth-child(4) { width: 25%; }
+    &:nth-child(3) {
+      width: 50%;
+    }
+
+    &:nth-child(4) {
+      width: 25%;
+    }
   }
 }
 
@@ -149,21 +158,33 @@ $breakpoint: 768px;
   background: $primary-color;
   color: $secondary-color;
   will-change: transform, opacity;
-  transition: all 500ms cubic-bezier(.14,.65,.15,1);
-  
-  &[opened='false'] { transform: translateY(-100%); opacity: 0; }
-  &[opened='true'] { transform: none; opacity: 1; }
-  
+  transition: all 500ms cubic-bezier(.14, .65, .15, 1);
+
+  &[opened='false'] {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  &[opened='true'] {
+    transform: none;
+    opacity: 1;
+  }
+
   ul {
     li {
       margin: 2rem 0;
       cursor: pointer;
     }
-    li:hover { color: $accent-color; }
+
+    li:hover {
+      color: $accent-color;
+    }
   }
+
   @media (min-width: $breakpoint + 1) {
-    display: none; 
+    display: none;
   }
+
   @media (max-width: 576px) {
     display: flex;
     justify-content: flex-end;
@@ -176,14 +197,64 @@ $breakpoint: 768px;
   }
 }
 
+//Виолетта
+
+.bestsellers {
+  text-align: left;
+  padding-left: 140px;
+  padding-top: 120px;
+
+
+  .title {
+    font-family: "Viaoda Libre";
+    font-size: 3rem;
+    color: $text-color;
+    padding-bottom: 50px;
+  }
+
+  .books {
+    display: flex;
+    justify-content: flex-start;
+    gap: 205px;
+
+    .book {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 300px;
+        height: 400px;
+      }
+
+      .buy_button {
+        margin-top: 30px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: none;
+        padding: 15px 80px;
+        border-radius: 15px;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+        &:hover {
+          background-color: $accent-color;
+        }
+      }
+    }
+  }
+}
 
 // Ира Н.
 // Аня
 // Ирина Я. 
-.blog__wrapper__cards{
+.blog__wrapper__cards {
   display: flex;
   justify-content: space-evenly;
 }
+
 // 
 // 
 // 
