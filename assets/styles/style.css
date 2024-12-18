@@ -115,26 +115,32 @@ a {
 }
 
 .book__description {
+  height: 232px;
   margin-top: 30px;
   font-size: 22px;
+  font-weight: 400;
   line-height: 27px;
+  letter-spacing: 0;
 }
 
 .book__button {
   margin-top: 40px;
   width: 250px;
   height: 60px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   background-color: rgb(103, 112, 71);
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 550;
+  line-height: 29px;
+  letter-spacing: 0;
   text-align: center;
   border: none;
   border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  transition: background 0.3s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Тень под кнопкой */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тень под текстом */
+  transition: background-color 0.3s;
 }
 
 .book__button:active {
