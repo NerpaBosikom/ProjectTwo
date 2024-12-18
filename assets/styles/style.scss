@@ -193,18 +193,18 @@ $breakpoint: 768px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-right: auto;
-  padding-left: 40px;
+  padding-left: 50px;
   color: #231F20;
   font-family: "Viaoda Libre";
   font-weight: 500;
-  font-size: 64px;
+  font-size: clamp(40px, 4.4vw, 64px);
 }
 .services__list {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: 400px;
   gap: 50px 35px;
   padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .services__item {
   display: flex;
@@ -213,6 +213,12 @@ $breakpoint: 768px;
   align-items: center;
   border: 1px solid rgba(35, 31, 32, 0.85);
   transition: transform 0.3s, box-shadow 0.3s;
+  width: 400px;
+  height: 400px;
+  @media (max-width: 575px) {
+    width: 300px;
+    height: 300px;
+  }
 }
 .services__item:hover {
   transform: scale(1.05); 
@@ -223,11 +229,16 @@ $breakpoint: 768px;
   color: #231F20;
   padding: 20px;
   font-weight: 500;
-  font-size: 30px;
+  font-size: clamp(20px, 2.08vw, 30px);
 }
 .services__item-description {
   text-align: center;
   color: #231F20;
   padding: 20px;
+}
+
+.services__item-price {
+  font-weight: 300;
+  font-size: clamp(15px,1.04vw, 18px);
 }
 // 
