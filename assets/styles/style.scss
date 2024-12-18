@@ -182,5 +182,52 @@ $breakpoint: 768px;
 // 
 // 
 // 
-// 
+// Катя
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+.services__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: auto;
+  padding-left: 40px;
+  color: #231F20;
+  font-family: "Viaoda Libre";
+  font-weight: 500;
+  font-size: 64px;
+}
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 400px;
+  gap: 50px 35px;
+  padding-bottom: 50px;
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(35, 31, 32, 0.85);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.services__item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.services__item-title {
+  color: #231F20;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 30px;
+}
+.services__item-description {
+  text-align: center;
+  color: #231F20;
+  padding: 20px;
+}
 // 

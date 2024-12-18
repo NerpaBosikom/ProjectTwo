@@ -159,9 +159,7 @@ a {
   .header__menu {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
-
-/* Екатерина */
+}
 
 .services {
   display: flex;
@@ -169,6 +167,7 @@ a {
   align-items: center;
   width: auto;
 }
+
 .services__title {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -179,13 +178,15 @@ a {
   font-weight: 500;
   font-size: 64px;
 }
+
 .services__list {
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(2, 400px);
+  grid-template-rows: 400px;
   gap: 50px 35px;
   padding-bottom: 50px;
 }
+
 .services__item {
   display: flex;
   flex-direction: column;
@@ -194,8 +195,9 @@ a {
   border: 1px solid rgba(35, 31, 32, 0.85);
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .services__item:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -205,8 +207,9 @@ a {
   font-weight: 500;
   font-size: 30px;
 }
+
 .services__item-description {
   text-align: center;
   color: #231F20;
   padding: 20px;
-}
+}/*# sourceMappingURL=style.css.map */
