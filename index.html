@@ -67,87 +67,94 @@
       <section class="quote"></section>
       <section class="services"></section>
       <section class="contact-form">
-        <!-- <form
-          action="https://script.google.com/macros/s/AKfycbyD5MlzGKYZT71dTl0LnkZIV6pOUft8PCabBKarAAjL7IiZBx8xYFRB9jHjgSocPys/exec"
-          method="POST"
-          class="contact-form container"
-        >
+        <div class="contact-form__wrapper container">
           <div class="contact-form__info">
-            <label for="name">Ваше имя:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Введите ваше имя"
-              required
-            />
-            <label for="email">Ваш email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Введите ваш email"
-              required
-            />
+            <h2 class="contact-form__title">Остались вопросы?</h2>
+            <p class="contact-form__text">
+              Заполните заявку и я отвечу на ваше сообщение
+            </p>
           </div>
-          <div class="contact-form__message">
-            <label for="message">Ваше сообщение:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Введите ваше сообщение"
-              required
-            ></textarea>
-          </div>
-          <div class="contact-form__button">
-            <button type="submit">Отправить</button>
-          </div>
-        </form> -->
-        <form
-          class="contact-form__wrapper container"
-          action="https://script.google.com/macros/s/AKfycbyD5MlzGKYZT71dTl0LnkZIV6pOUft8PCabBKarAAjL7IiZBx8xYFRB9jHjgSocPys/exec"
-          method="POST"
-        >
-          <div class="contact-form__info">
-            <label for="name">Ваше имя:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Введите ваше имя"
-              required
-            />
-            <label for="email">Ваш email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Введите ваш email"
-              required
-            />
-          </div>
-          <div class="contact-form__message">
-            <label for="message">Ваше сообщение:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Введите ваше сообщение"
-              required
-            ></textarea>
-          </div>
-          <!-- Новый чекбокс -->
-          <div class="contact-form__checkbox">
-            <input type="checkbox" id="consent" name="consent" required />
-            <label for="consent">
-              Я даю согласие на обработку персональных данных
-            </label>
-          </div>
-          <div class="contact-form__button">
-            <button type="submit" disabled>Отправить</button>
-          </div>
-        </form>
+
+          <!-- <form
+            action="https://script.google.com/macros/s/AKfycbyD5MlzGKYZT71dTl0LnkZIV6pOUft8PCabBKarAAjL7IiZBx8xYFRB9jHjgSocPys/exec"
+            method="POST"
+            class="contact-form container"
+          >
+            <div class="contact-form__info">
+              <label for="name">Ваше имя:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Введите ваше имя"
+                required
+              />
+              <label for="email">Ваш email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Введите ваш email"
+                required
+              />
+            </div>
+            <div class="contact-form__message">
+              <label for="message">Ваше сообщение:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Введите ваше сообщение"
+                required
+              ></textarea>
+            </div>
+            <div class="contact-form__button">
+              <button type="submit">Отправить</button>
+            </div>
+          </form> -->
+          <form
+            class="contact-form__feedback"
+            action="https://script.google.com/macros/s/AKfycbyD5MlzGKYZT71dTl0LnkZIV6pOUft8PCabBKarAAjL7IiZBx8xYFRB9jHjgSocPys/exec"
+            method="POST"
+          >
+            <div class="contact-form__message">
+              <label for="name">Ваше имя:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Введите ваше имя"
+                required
+              />
+              <label for="email">Ваш email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Введите ваш email"
+                required
+              />
+              <label for="message">Ваше сообщение:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Введите ваше сообщение"
+                required
+              ></textarea>
+            </div>
+            <!-- Новый чекбокс -->
+            <div class="contact-form__checkbox">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent">
+                Я даю согласие на обработку персональных данных
+              </label>
+            </div>
+            <div class="contact-form__button">
+              <button type="submit" disabled>Отправить</button>
+            </div>
+          </form>
+        </div>
       </section>
       <section class="blog"></section>
     </main>
