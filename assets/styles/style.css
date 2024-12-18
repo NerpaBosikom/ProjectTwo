@@ -161,34 +161,15 @@ a {
   }
 }
 
-.features {
+.contact-form {
   max-width: 1600px;
   margin: 0 auto;
   background: rgba(74, 95, 104, 0.85);
 }
 
-.contact-form {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+.contact-form__wrapper {
   padding-block: 60px;
   font-size: 22px;
-}
-
-.contact-form__info {
-  grid-column: 1/2;
-  justify-self: end;
-}
-
-.contact-form__message {
-  grid-column: 2/3;
-  justify-self: start;
-}
-
-.contact-form__button {
-  grid-column: 1/3;
 }
 
 .contact-form label {
@@ -221,5 +202,24 @@ textarea {
   border: none;
   border-radius: 10px;
   font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-form__checkbox {
+  margin: 20px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-form__checkbox input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.contact-form__checkbox label {
+  color: #555;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
