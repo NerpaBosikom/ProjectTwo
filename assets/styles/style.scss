@@ -179,7 +179,52 @@ $breakpoint: 768px;
 
 // Ира Н.
 // Аня
-// 
+// /* Banner */
+.banner {
+  max-width: 1600px;
+  max-height: 900px;
+  margin: 0 auto;
+}
+
+.banner_name {
+  font-family: "Viaoda Libre";
+  // src: url(../fonts/viaoda_libre-regular.woff2) format("woff2");
+  color: #EDEDED;
+  position: absolute;
+  padding-top: 400px;
+  padding-left: 528px;
+  font-size: 100px;
+  width: 700px;
+}
+
+
+.banner_profession {
+  font-family: "Montserrat";
+  // src: url(../fonts/montserrat-regular.woff2) format("woff2");
+  color: #EDEDED;
+  position: absolute;
+  padding-top: 370px;
+  padding-left: 647px;
+  font-size: 28px;
+  width: 550px;
+
+}
+
+@media screen (min-width: 300px) and (max-width:1100px ) {
+  .banner_name {
+    width: 550px;
+
+  }
+  .banner {
+    max-width: 700px;
+  }
+
+  .banner_profession {
+    width: ;
+  }
+}
+  
+
 // 
 // 
 // 
