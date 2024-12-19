@@ -201,8 +201,3 @@ a {
 .bestsellers .books .book .buy_button:hover {
   background-color: #183644;
 }
-
-.blog__wrapper__cards {
-  display: flex;
-  justify-content: space-evenly;
-}/*# sourceMappingURL=style.css.map */
