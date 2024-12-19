@@ -160,3 +160,10 @@ a {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
+
+/* Banner */
+.banner {
+  max-width: 1600px;
+  max-height: 900px;
+  margin: 0 auto;
+}
