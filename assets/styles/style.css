@@ -25,13 +25,13 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: #889164;
 }
 
 .about_wrapper {
   display: flex;
   flex-direction: column;
   max-width: 612px;
-  text-align: end;
   padding-bottom: 95px;
 }
 
@@ -39,7 +39,6 @@
   font-family: "Viaoda Libre";
   font-size: 64px;
   display: flex;
-  justify-content: flex-end;
   padding-bottom: 20px;
   padding-top: 60px;
 }
