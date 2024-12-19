@@ -179,7 +179,38 @@ $breakpoint: 768px;
 
 // Ира Н.
 // Аня
-// 
+// Ира Я.
+.blog__wrapper__text{
+    font-family: "Viaoda Libre";
+
+}
+.blog__wrapper__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-family: "Viaoda Libre"; 
+}
+.blog__wrapper__cards__text{
+    font-family: "Montserrat";
+}
+.blog__wrapper__cards__name{
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+}
+.blog__wrapper__cards__1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.blog__wrapper__cards__2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.blog__wrapper__cards__3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
 // 
 // 
 // 
