@@ -44,14 +44,40 @@
   color: white;
 }
 
+.about_wrapper_h2-underline {
+  display: block;
+  width: 40%;
+  border-bottom: 0.5px solid #ffffff;
+}
+
 .about_wrapper_text {
   font-family: "Montserrat";
   font-size: 22px;
   width: 600px;
   color: white;
+  margin-top: 5%;
 }
 
-.about_img-portret {
+.about_img-portrait {
   width: 600px;
   height: 400px;
+}
+
+@media (max-width: 770px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 430px) {
+  .about_img-portrait {
+    width: 366px;
+    height: 247px;
+  }
+}
+@media (max-width: 322px) {
+  .about_img-portrait {
+    width: 260px;
+    height: 170px;
+  }
 }/*# sourceMappingURL=style.css.map */
