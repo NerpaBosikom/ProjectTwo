@@ -49,7 +49,7 @@ a {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #889164;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(237, 237, 237, 0.2);
 }
 .header__wrapper {
   height: 100px;
@@ -70,7 +70,7 @@ a {
   color: #ededed;
 }
 .header__link:hover {
-  color: #677047;
+  font-weight: 600;
   transition: 0.2s;
 }
 
@@ -164,10 +164,11 @@ a {
 .contact-form {
   max-width: 1600px;
   margin: 0 auto;
-  background: rgba(74, 95, 104, 0.85);
+  background: #889164;
 }
 
 .contact-form__wrapper {
+  padding-block: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -187,24 +188,35 @@ a {
 }
 
 .contact-form__feedback {
-  padding-block: 60px;
-  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(237, 237, 237, 0.85);
+  border-radius: 30px;
+  max-width: 700px;
+  height: -moz-max-content;
+  height: max-content;
+  color: #ededed;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  padding-inline: 50px;
 }
 
 .contact-form label {
   display: block;
-  margin-bottom: 15px;
+  padding-top: 21px;
+  align-items: flex-end;
 }
 
 .contact-form input,
 .contact-form textarea {
   display: flex;
-  width: clamp(230px, 30vw, 450px);
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid rgba(74, 95, 104, 0.85);
-  border-radius: 4px;
+  width: clamp(230px, 30vw, 600px);
+  padding: 20px;
   font-size: 18px;
+  border: 1px solid rgba(237, 237, 237, 0.85);
+  border-radius: 15px;
 }
 
 textarea {
@@ -214,31 +226,30 @@ textarea {
 
 .contact-form button {
   display: flex;
-  margin-top: 30px;
+  margin-block: 30px;
   padding: 10px 25px;
-  background: #183644;
+  background: #677047;
   color: white;
   border: none;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
 }
 
 .contact-form__checkbox {
-  margin: 20px 0;
   font-size: 16px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 10px;
 }
 
 .contact-form__checkbox input {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
 .contact-form__checkbox label {
-  color: #555;
+  color: #ededed;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
