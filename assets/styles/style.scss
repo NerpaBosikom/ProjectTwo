@@ -264,6 +264,12 @@ $breakpoint: 768px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (max-width: 960px) {
+      flex: none;
+      background-size: unset;
+      width: 100%;
+    }
   }
 
   &__frame {
@@ -279,7 +285,6 @@ $breakpoint: 768px;
 
   &__content {
     max-width: 855px;
-    -webkit-tap-highlight-color: transparent;
 
     @media (max-width: 960px) {
       text-align: center;

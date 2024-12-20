@@ -233,6 +233,13 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media (max-width: 960px) {
+  .book__image-wrapper {
+    flex: none;
+    background-size: unset;
+    width: 100%;
+  }
+}
 .book__frame {
   position: absolute;
   bottom: -25px;
@@ -245,7 +252,6 @@ a {
 }
 .book__content {
   max-width: 855px;
-  -webkit-tap-highlight-color: transparent;
 }
 @media (max-width: 960px) {
   .book__content {
