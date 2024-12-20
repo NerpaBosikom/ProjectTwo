@@ -22,13 +22,14 @@
   font-display: swap;
 }
 
-$primary-color: rgba(74, 95, 104, 0.85); 
+$primary-color: #889164; 
 $secondary-color: #ededed;
-$accent-color: #183644;
+$accent-color: #575F37;
+$hover-color: #CA825B;
 $background-color: #ffffff;
-$text-color: #231f20;
-$border-color: rgba(165, 142, 116, 0.4);
-$border-color-dark: rgba(217, 217, 217, 0);
+$text-color: #171715;
+$border-color: rgba(23, 23, 21, 0.25);
+$border-color-dark: rgba(23, 23, 21, 0.85);
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -95,7 +96,7 @@ a {
 }
 
 /* SCSS variables goes here */
-$menu-drawer-width: 400px;
+$menu-drawer-width: 250px;
 $breakpoint: 768px;
 
 /****************************/
@@ -168,6 +169,12 @@ $breakpoint: 768px;
     display: flex;
     justify-content: flex-end;
   }
+}
+
+.menu-drawer {
+  @media (max-width: 500px) {
+  width: 100vw;
+}
 }
 
 .header__menu {
