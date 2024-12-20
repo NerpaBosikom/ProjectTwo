@@ -225,13 +225,14 @@ $breakpoint: 576px;
   max-width: 1600px;
   margin: 0 auto;
   background-color: $primary-color; 
-  color: $secondary-color;  
+  color: $secondary-color; 
+  height: 100px; 
   
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
     max-width: 100%;
     margin: 0 auto;
   }
@@ -246,6 +247,7 @@ $breakpoint: 576px;
     list-style: none;
     padding: 0;
     display: flex;
+    gap: 15px;
   }
   
   &__list-item {
@@ -277,7 +279,7 @@ $breakpoint: 576px;
     &--telegram .footer__social-icon,
     &--instagram .footer__social-icon,
     &--vk .footer__social-icon {
-      font-size: 30px; 
+      font-size: 40px; 
       color: inherit;
     }
 
@@ -293,7 +295,7 @@ $breakpoint: 576px;
 }
 &__paragraph {
   text-align: center;
-  margin-top: auto;  // Это делает параграф фиксированным внизу футера
+  margin-top: -15px;
   padding: 20px 0;
   font-size: 12px; 
 }
