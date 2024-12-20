@@ -210,28 +210,45 @@ $breakpoint: 768px;
   text-align: left;
   padding-left: 140px;
   padding-top: 120px;
+  padding-right: 140px;
 
 
   .title {
     font-family: "Viaoda Libre";
-    font-size: 3rem;
+    font-size: clamp(2rem, 25vw, 3rem);
     color: $text-color;
     padding-bottom: 50px;
   }
 
   .books {
     display: flex;
-    justify-content: flex-start;
-    gap: 205px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 60px;
 
     .book {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      img {
+      .bestsellers_book_img {
         width: 300px;
         height: 400px;
+      }
+
+      .placeholder_book_img {
+        width: 300px;
+        height: 400px;
+        background-color: #8383837a;
+      }
+
+      .bestsellers_pic_line {
+        width: 300px;
+        height: 400px;
+        border: 1px solid $border-color;
+        margin-top: -390px;
+        margin-left: 20px;
+        z-index: -1;
       }
 
       .buy_button {
@@ -241,7 +258,7 @@ $breakpoint: 768px;
         border: none;
         padding: 15px 80px;
         border-radius: 15px;
-        font-size: 1rem;
+        font-size: clamp(0.7rem, 66,66vw, 1rem);
         font-weight: 500;
         cursor: pointer;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
