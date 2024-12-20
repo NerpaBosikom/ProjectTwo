@@ -61,7 +61,7 @@ a {
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
 }
 .header__item {
   font-size: 18px;
@@ -70,7 +70,7 @@ a {
   color: #ededed;
 }
 .header__link:hover {
-  color: #575F37;
+  color: #575f37;
   transition: 0.2s;
 }
 
@@ -89,7 +89,7 @@ a {
   cursor: pointer;
 }
 .menu-container input:checked ~ span {
-  background: #575F37;
+  background: #575f37;
 }
 .menu-container span {
   display: block;
@@ -128,11 +128,11 @@ a {
   will-change: transform, opacity;
   transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
 }
-.menu-drawer[opened="false"] {
+.menu-drawer[opened=false] {
   transform: translateY(-100%);
   opacity: 0;
 }
-.menu-drawer[opened="true"] {
+.menu-drawer[opened=true] {
   transform: none;
   opacity: 1;
 }
@@ -141,7 +141,7 @@ a {
   cursor: pointer;
 }
 .menu-drawer ul li:hover {
-  color: #575F37;
+  color: #575f37;
 }
 @media (min-width: 769px) {
   .menu-drawer {
@@ -171,37 +171,31 @@ a {
   /*max-width: 1600px;
   margin: 0 auto;*/
   padding: 132px 0;
+  /*.book__divider-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(165, 142, 116, 0.4);
+    margin: 30px 0;
+  } */
 }
-
-/*.book__divider-line {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(165, 142, 116, 0.4);
-  margin: 30px 0;
-} */
-
 .book__story-box {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 65px;
   align-items: center;
+  gap: 65px;
 }
-
 .book__image-wrapper {
   position: relative;
   flex: 0 0 400px;
   height: 600px;
 }
-
 .book__image {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
-
 .book__frame {
   position: absolute;
   bottom: -25px;
@@ -212,30 +206,25 @@ a {
   background-color: transparent;
   z-index: -1;
 }
-
 .book__content {
   max-width: 855px;
   -webkit-tap-highlight-color: transparent;
 }
-
 .book__author {
   margin: 0 0 10px;
   font-size: 20px;
 }
-
 .book__title {
   margin: 0;
   font-size: 64px;
   font-family: "Viaoda Libre";
 }
-
 .book__underline {
   width: 378px;
   height: 1px;
   background-color: rgba(23, 23, 21, 0.25);
   margin-top: 10px;
 }
-
 .book__description {
   height: 232px;
   margin-top: 30px;
@@ -244,28 +233,25 @@ a {
   line-height: 27px;
   letter-spacing: 0;
 }
-
 .book__button {
   margin-top: 40px;
   width: 250px;
   height: 60px;
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(103, 112, 71);
+  background-color: #889164;
   color: #ffffff;
   font-size: 24px;
   font-weight: 580;
   line-height: 29px;
-  letter-spacing: 0;
   text-align: center;
   border: none;
   border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Тень под кнопкой */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тень под текстом */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   transition: background-color 0.3s;
 }
-
 .book__button:active {
   transform: scale(0.95);
   outline: none;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
