@@ -263,12 +263,10 @@ $breakpoint: 768px;
   }
 
   &__description {
-    height: 232px;
     margin-top: 30px;
     font-size: 22px;
     font-weight: 400;
     line-height: 27px;
-    letter-spacing: 0;
   }
 
   &__button {
@@ -280,7 +278,6 @@ $breakpoint: 768px;
     color: #ffffff;
     font-size: 24px;
     font-weight: 580;
-    line-height: 29px;
     text-align: center;
     border: none;
     border-radius: 15px;
