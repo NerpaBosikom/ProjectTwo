@@ -175,7 +175,7 @@ a {
 .bestsellers .title {
   font-family: "Viaoda Libre";
   font-size: 3rem;
-  color: #231f20;
+  color: #171715;
   padding-bottom: 50px;
 }
 .bestsellers .books {
@@ -194,7 +194,7 @@ a {
 }
 .bestsellers .books .book .buy_button {
   margin-top: 30px;
-  background-color: rgba(74, 95, 104, 0.85);
+  background-color: #889164;
   color: #ededed;
   border: none;
   padding: 15px 80px;
@@ -205,5 +205,5 @@ a {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .bestsellers .books .book .buy_button:hover {
-  background-color: #183644;
-}
+  background-color: #CA825B;
+}/*# sourceMappingURL=style.css.map */
