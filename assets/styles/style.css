@@ -276,15 +276,21 @@ a {
   overflow-wrap: break-word;
 }
 
-@media (min-width: 375px) and (max-width: 1600px) {
+@media (min-width: 320px) and (max-width: 1600px) {
   .footer__warning {
     font-size: clamp(8px, 2vw + 8px, 12px);
+  }
+}
+@media (max-width: 576px) {
+  .footer__warning {
+    font-size: 8px;
+    line-height: 1.3;
+    margin-top: -15px;
   }
 }
 @media (max-width: 375px) {
   .footer__warning {
     font-size: 8px;
-    padding: 8px 15px;
     line-height: 1.3;
     margin-top: -15px;
   }
