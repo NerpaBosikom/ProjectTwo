@@ -197,7 +197,7 @@ $breakpoint: 576px;
   background-color: $primary-color;
   color: $secondary-color; 
 }
-.quote__paragraph {
+.quote__text {
   position: relative;
   color: $secondary-color;
   text-align: center;
@@ -214,10 +214,18 @@ $breakpoint: 576px;
 .quote__image {      
   width: 1600px;         
   height: 200px;   
-  object-fit: cover;  
+  object-fit: contain;  
   z-index: 0;   
   transform: scaleX(-1);
 }
+
+@media (min-width: 375px) and (max-width: 1600px) {
+  .quote__text {
+  font-size: clamp(20px, 2.75vw, 44px);
+}
+}
+
+
 // 
 // 
 // Настя
@@ -283,20 +291,26 @@ $breakpoint: 576px;
       color: inherit;
     }
 
-    &--instagram .star {
-      font-size: 10px;
+    &--instagram .footer__social-link__star {
+      font-size: 12px;
       color: $secondary-color;
       margin-bottom: 13px;
       transition: color 0.3s ease;
   }
-  &--instagram:hover .star {
+  &--instagram:hover .footer__social-link__star {
       color: $hover-color;
 }
 }
-&__paragraph {
+&__warning {
   text-align: center;
   margin-top: -15px;
   padding: 20px 0;
   font-size: 12px; 
 }
+}
+
+@media (min-width: 375px) and (max-width: 1600px) {
+  .footer__warning {
+    font-size: clamp(8px, 2vw + 8px, 12px); 
+  }
 }
