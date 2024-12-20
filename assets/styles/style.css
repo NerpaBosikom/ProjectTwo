@@ -89,6 +89,9 @@ a {
        column-gap: 40px;
 }
 .header__item {
+  font-size: 18px;
+}
+.header__item {
   font-size: clamp(18px, 1.38vw, 22px);
 }
 .header__link {
@@ -107,7 +110,12 @@ a {
   right: 2rem;
   width: 3rem;
   cursor: pointer;
+  z-index: 2;
   z-index: 5;
+}
+.menu-container input {
+  display: none;
+  cursor: pointer;
 }
 .menu-container input {
   display: none;
