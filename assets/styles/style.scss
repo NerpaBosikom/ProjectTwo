@@ -313,7 +313,7 @@ $breakpoint: 576px;
 }
 }
 
-@media (min-width: 320px) and (max-width: 1600px) {
+@media (min-width: 375px) and (max-width: 1600px) {
   .footer__warning {
     font-size: clamp(8px, calc(2vw + 8px), 12px); 
   }
