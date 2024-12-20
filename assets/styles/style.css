@@ -63,10 +63,31 @@
   height: 400px;
 }
 
+@media (max-width: 1260px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 770px) {
   .about {
     display: flex;
     flex-wrap: wrap;
+  }
+  .about_wrapper_h2 {
+    font-size: clamp(38px, 2.5vw, 64px);
+  }
+  .about_wrapper_h2-underline {
+    width: 25%;
+  }
+  .about_wrapper_text {
+    font-size: clamp(14px, 7.2vw, 22px);
+  }
+}
+@media (max-width: 610px) {
+  .about_img-portrait {
+    width: 352px;
+    height: 233px;
   }
 }
 @media (max-width: 430px) {
