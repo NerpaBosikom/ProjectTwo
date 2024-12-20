@@ -189,32 +189,31 @@ $breakpoint: 768px;
 // /* Banner */
 .banner {
   max-width: 1600px;
-  max-height: 900px;
+  height: 900px;
   margin: 0 auto;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner_name {
   font-family: "Viaoda Libre";
-  // src: url(../fonts/viaoda_libre-regular.woff2) format("woff2");
   color: #EDEDED;
-  position: absolute;
-  padding-top: 400px;
-  padding-left: 528px;
   font-size: 100px;
   width: 700px;
+  text-align: center;
 }
 
 
 .banner_profession {
   font-family: "Montserrat";
-  // src: url(../fonts/montserrat-regular.woff2) format("woff2");
   color: #EDEDED;
-  position: absolute;
-  padding-top: 370px;
-  padding-left: 647px;
   font-size: 28px;
   width: 550px;
-
+  text-align: center;
 }
 
 @media screen (min-width: 300px) and (max-width:1100px ) {
@@ -227,7 +226,7 @@ $breakpoint: 768px;
   }
 
   .banner_profession {
-    width: ;
+    width: 400px;;
   }
 }
   

@@ -169,28 +169,30 @@ a {
 
 .banner {
   max-width: 1600px;
-  max-height: 900px;
+  height: 900px;
   margin: 0 auto;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner_name {
   font-family: "Viaoda Libre";
   color: #EDEDED;
-  position: absolute;
-  padding-top:  400px;
-  padding-left: 528px;
   font-size: 100px; 
   width: 700px;
+  text-align: center;
 }
 
 .banner_profession {
   font-family: "Montserrat";
   color: #EDEDED;
-  position: absolute;
-  padding-top: 370px;
-  padding-left: 647px;
   font-size: 28px;
   width: 550px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
 
 @media screen (min-width: 300px) and (max-width:1100px ) {
