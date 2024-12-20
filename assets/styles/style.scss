@@ -93,6 +93,10 @@ $primary-color: #889164;
 }
 
 @media (max-width: 610px){
+    .about_wrapper_text{
+        width: 90%;
+    }
+
     .about_img-portrait{
         width: 352px;
         height: 233px;
