@@ -64,6 +64,8 @@ a {
   white-space: nowrap;
   text-align: center;
   cursor: pointer;
+  font-size: 24px;
+  font-weight: 590;
   background: $accent-color;
   color: $background-color;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
@@ -236,6 +238,10 @@ $breakpoint: 768px;
     position: relative;
     flex: 0 0 400px;
     height: 600px;
+    background-image: url(../images/book.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   &__image {
@@ -290,23 +296,6 @@ $breakpoint: 768px;
     margin-top: 40px;
     width: 250px;
     height: 60px;
-    font-family: "Montserrat", sans-serif;
-    /*background-color: $primary-color;
-    color: #ffffff; */
-    font-size: 24px;
-    font-weight: 580;
-    /*text-align: center;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s; */
-
-    /*&:active {
-      transform: scale(0.95);
-      outline: none;
-    } */
   }
 }
 
