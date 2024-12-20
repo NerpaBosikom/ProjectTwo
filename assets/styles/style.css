@@ -209,6 +209,13 @@ a {
   align-items: center;
   gap: 65px;
 }
+@media (max-width: 960px) {
+  .book__story-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
 .book__image-wrapper {
   position: relative;
   flex: 0 0 400px;
@@ -232,6 +239,11 @@ a {
   max-width: 855px;
   -webkit-tap-highlight-color: transparent;
 }
+@media (max-width: 960px) {
+  .book__content {
+    text-align: center;
+  }
+}
 .book__author {
   margin: 0 0 10px;
   font-size: 20px;
@@ -246,6 +258,13 @@ a {
   height: 1px;
   background-color: rgba(23, 23, 21, 0.25);
   margin-top: 10px;
+}
+@media (max-width: 960px) {
+  .book__underline {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .book__description {
   margin-top: 30px;
