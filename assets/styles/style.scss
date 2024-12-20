@@ -97,7 +97,7 @@ a {
 
 /* SCSS variables goes here */
 $menu-drawer-width: 250px;
-$breakpoint: 768px;
+$breakpoint-plus-1: 768px;
 
 /****************************/
 
@@ -124,7 +124,7 @@ $breakpoint: 768px;
     transition: all 300ms ease;
   }
 
-  @media (min-width: $breakpoint + 1) {
+  @media (min-width: $breakpoint-plus-1) {
     display: none; 
   }
 
@@ -162,7 +162,7 @@ $breakpoint: 768px;
     }
     li:hover { color: $accent-color; }
   }
-  @media (min-width: $breakpoint + 1) {
+  @media (min-width: $breakpoint-plus-1) {
     display: none; 
   }
   @media (max-width: 576px) {
@@ -170,7 +170,7 @@ $breakpoint: 768px;
     justify-content: flex-end;
   }
 }
-
+$breakpoint: 576px;
 .menu-drawer {
   @media (max-width: 500px) {
   width: 100vw;
@@ -187,7 +187,114 @@ $breakpoint: 768px;
 // Ира Н.
 // Аня
 // 
+// Настя
+.quote {
+  place-items: center;
+  position: relative;
+  max-width: 1600px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: $primary-color;
+  color: $secondary-color; 
+}
+.quote__paragraph {
+  position: relative;
+  color: $secondary-color;
+  text-align: center;
+  z-index: 1; 
+  margin-top: -140px; 
+  font-family: "Viaoda Libre";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 62.08px;
+  font-style: normal;
+  font-display: swap;
+}
+
+.quote__image {      
+  width: 1600px;         
+  height: 200px;   
+  object-fit: cover;  
+  z-index: 0;   
+  transform: scaleX(-1);
+}
 // 
 // 
-// 
-// 
+// Настя
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: $primary-color; 
+  color: $secondary-color;  
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  &__list-item {
+    margin: 0;
+  }
+  
+  &__social-link {
+    display: inline-block;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    background-color: transparent;
+    
+    &:hover {
+      color: $hover-color;
+    }
+
+    &--telegram,
+    &--instagram,
+    &--vk {
+      color: $secondary-color;
+    }
+    
+    &--telegram .footer__social-icon,
+    &--instagram .footer__social-icon,
+    &--vk .footer__social-icon {
+      font-size: 30px; 
+      color: inherit;
+    }
+
+    &--instagram .star {
+      font-size: 10px;
+      color: $secondary-color;
+      margin-bottom: 13px;
+      transition: color 0.3s ease;
+  }
+  &--instagram:hover .star {
+      color: $hover-color;
+}
+}
+&__paragraph {
+  text-align: center;
+  margin-top: auto;  // Это делает параграф фиксированным внизу футера
+  padding: 20px 0;
+  font-size: 12px; 
+}
+}
