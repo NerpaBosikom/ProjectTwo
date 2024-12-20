@@ -57,27 +57,27 @@ a {
 }
 
 .button {
-  gap: 10px;
   padding: 15px 80px;
-  border-radius: 15px;
+  gap: 10px;
   border: none;
-  cursor: pointer;
-  text-align: center;
-  background: $accent-color;
+  border-radius: 15px;
   white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  background: $accent-color;
   color: $background-color;
-  transition: transform 0.2s ease;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    background: $hover-color;
+    transition: background-color 0.2s ease;
+  }
 
   &:active {
     transform: scale(0.95);
     outline: none;
-  }
-
-  &:hover {
-    background: $hover-color;
-    transition: 0.2s;
   }
 }
 // Света
