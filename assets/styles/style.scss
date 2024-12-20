@@ -107,6 +107,9 @@ a {
   &__item {
     font-size: 18px;
   }
+  &__item {
+    font-size: clamp(18px, 1.38vw, 22px);
+  }
 
   &__link {
     color: $secondary-color;
@@ -131,6 +134,12 @@ $breakpoint: 768px;
   width: 3rem;
   cursor: pointer;
   z-index: 2;
+
+  input {
+    display: none;
+    cursor: pointer;
+  }
+  z-index: 5;
 
   input {
     display: none;
@@ -175,7 +184,7 @@ $breakpoint: 768px;
   width: $menu-drawer-width;
   padding: 6rem 4rem;
   font-size: 1.5rem;
-  z-index: 1;
+  z-index: 5;
   background: $primary-color;
   color: $secondary-color;
   will-change: transform, opacity;

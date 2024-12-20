@@ -89,7 +89,7 @@ a {
        column-gap: 40px;
 }
 .header__item {
-  font-size: 18px;
+  font-size: clamp(18px, 1.38vw, 22px);
 }
 .header__link {
   color: #ededed;
@@ -107,7 +107,7 @@ a {
   right: 2rem;
   width: 3rem;
   cursor: pointer;
-  z-index: 2;
+  z-index: 5;
 }
 .menu-container input {
   display: none;
@@ -147,7 +147,7 @@ a {
   width: 250px;
   padding: 6rem 4rem;
   font-size: 1.5rem;
-  z-index: 1;
+  z-index: 5;
   background: #889164;
   color: #ededed;
   will-change: transform, opacity;
