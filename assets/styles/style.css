@@ -44,6 +44,28 @@ a {
   padding-inline: 15px;
 }
 
+.button {
+  gap: 10px;
+  padding: 15px 80px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  background: #575f37;
+  white-space: nowrap;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.button:active {
+  transform: scale(0.95);
+  outline: none;
+}
+.button:hover {
+  background: #ca825b;
+  transition: 0.2s;
+}
+
 .header {
   position: relative;
   max-width: 1600px;
@@ -168,15 +190,9 @@ a {
 }
 
 .book {
-  /*max-width: 1600px;
-  margin: 0 auto;*/
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 132px 0;
-  /*.book__divider-line {
-    width: 100%;
-    height: 1px;
-    background-color: rgba(165, 142, 116, 0.4);
-    margin: 30px 0;
-  } */
 }
 .book__story-box {
   display: flex;
@@ -236,19 +252,19 @@ a {
   width: 250px;
   height: 60px;
   font-family: "Montserrat", sans-serif;
-  background-color: #889164;
-  color: #ffffff;
+  /*background-color: $primary-color;
+  color: #ffffff; */
   font-size: 24px;
   font-weight: 580;
-  text-align: center;
+  /*text-align: center;
   border: none;
   border-radius: 15px;
   cursor: pointer;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s;
-}
-.book__button:active {
-  transform: scale(0.95);
-  outline: none;
+  transition: background-color 0.3s; */
+  /*&:active {
+    transform: scale(0.95);
+    outline: none;
+  } */
 }/*# sourceMappingURL=style.css.map */
