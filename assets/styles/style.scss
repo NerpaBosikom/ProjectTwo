@@ -265,20 +265,6 @@ $breakpoint: 768px;
     background-position: center;
     background-repeat: no-repeat;
 
-    /*&__frame {
-    position: absolute;
-    bottom: -25px;
-    right: -25px;
-    width: 400px;
-    height: 600px;
-    border: 1px solid $border-color;
-    background-color: transparent;
-    z-index: -1;
-
-    @media (max-width: 960px) {
-    }
-  } */
-
     &::after {
       content: "";
       position: absolute;
