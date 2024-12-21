@@ -281,6 +281,9 @@ $breakpoint: 768px;
     border: 1px solid $border-color;
     background-color: transparent;
     z-index: -1;
+
+    @media (max-width: 960px) {
+    }
   }
 
   &__content {
@@ -293,15 +296,12 @@ $breakpoint: 768px;
 
   &__author {
     margin: 0 0 10px;
-    font-size: 20px;
-
-    @media (max-width: 960px) {
-    }
+    font-size: clamp(17px, 0.34vw, 20px);
   }
 
   &__title {
     margin: 0;
-    font-size: 64px;
+    font-size: clamp(38px, 2.95vw, 64px);
     font-family: "Viaoda Libre";
   }
 
@@ -320,7 +320,6 @@ $breakpoint: 768px;
 
   &__description {
     margin-top: 30px;
-    font-size: 22px;
     font-weight: 400;
     line-height: 27px;
   }
@@ -329,6 +328,7 @@ $breakpoint: 768px;
     margin-top: 40px;
     width: 250px;
     height: 60px;
+    font-size: clamp(16px, 0.91vw, 24px);
   }
 }
 
