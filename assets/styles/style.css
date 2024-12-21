@@ -232,15 +232,22 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /*&__frame {
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+    width: 400px;
+    height: 600px;
+    border: 1px solid $border-color;
+    background-color: transparent;
+    z-index: -1;
+
+    @media (max-width: 960px) {
+    }
+  } */
 }
-@media (max-width: 960px) {
-  .book__image-wrapper {
-    flex: none;
-    background-size: unset;
-    width: 100%;
-  }
-}
-.book__frame {
+.book__image-wrapper::after {
+  content: "";
   position: absolute;
   bottom: -25px;
   right: -25px;
@@ -249,6 +256,23 @@ a {
   border: 1px solid rgba(23, 23, 21, 0.25);
   background-color: transparent;
   z-index: -1;
+}
+@media (max-width: 960px) {
+  .book__image-wrapper::after {
+    right: calc(50% - 230px);
+  }
+}
+@media (max-width: 600px) {
+  .book__image-wrapper::after {
+    right: calc(50% - 230px);
+  }
+}
+@media (max-width: 960px) {
+  .book__image-wrapper {
+    flex: none;
+    background-size: unset;
+    width: 100%;
+  }
 }
 .book__content {
   max-width: 855px;
