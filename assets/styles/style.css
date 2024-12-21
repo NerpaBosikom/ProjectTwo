@@ -165,4 +165,32 @@ a {
   .header__menu {
     display: none;
   }
+}
+
+.banner {
+  max-width: 1600px;
+  height: 90vh;
+  margin: 0 auto;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_name {
+  font-family: "Viaoda Libre";
+  color: #ededed;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: clamp(75px, 6.25vw, 100px);
+  text-align: center;
+}
+
+.banner_profession {
+  color: #ededed;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: clamp(20px, 1.75vw, 28px);
 }/*# sourceMappingURL=style.css.map */
