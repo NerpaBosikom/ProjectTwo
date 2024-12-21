@@ -266,6 +266,7 @@ a {
 }
 @media (max-width: 960px) {
   .book__content {
+    margin-top: 40px;
     text-align: center;
   }
 }
@@ -279,7 +280,7 @@ a {
   font-family: "Viaoda Libre";
 }
 .book__underline {
-  width: 378px;
+  max-width: 378px;
   height: 1px;
   background-color: rgba(23, 23, 21, 0.25);
   margin-top: 10px;

@@ -296,6 +296,7 @@ $breakpoint: 768px;
     max-width: 855px;
 
     @media (max-width: 960px) {
+      margin-top: 40px;
       text-align: center;
     }
   }
@@ -312,7 +313,7 @@ $breakpoint: 768px;
   }
 
   &__underline {
-    width: 378px;
+    max-width: 378px;
     height: 1px;
     background-color: $border-color;
     margin-top: 10px;
