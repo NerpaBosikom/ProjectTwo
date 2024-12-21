@@ -49,7 +49,7 @@ a {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #889164;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(237, 237, 237, 0.2);
 }
 .header__wrapper {
   height: 100px;
@@ -70,11 +70,12 @@ a {
   color: #ededed;
 }
 .header__link:hover {
-  color: #575F37;
+  font-weight: 600;
   transition: 0.2s;
 }
 
 /* SCSS variables goes here */
+/****************************/
 .menu-container {
   position: absolute;
   top: 1.5rem;
@@ -99,7 +100,7 @@ a {
   border-radius: 0.25rem;
   transition: all 300ms ease;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .menu-container {
     display: none;
   }
@@ -142,7 +143,7 @@ a {
 .menu-drawer ul li:hover {
   color: #575F37;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .menu-drawer {
     display: none;
   }
@@ -151,6 +152,18 @@ a {
   .menu-drawer {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-drawer {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    display: none;
   }
 }
 
