@@ -189,10 +189,12 @@ $breakpoint: 768px;
 // /* Banner */
 .banner {
   max-width: 1600px;
-  height: 900px;
+  height: 90vh;
   margin: 0 auto;
   background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,33 +203,16 @@ $breakpoint: 768px;
 
 .banner_name {
   font-family: "Viaoda Libre";
-  color: #EDEDED;
-  font-size: 100px;
-  width: 700px;
+  color: $secondary-color;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: clamp(75px, 6.25vw, 100px);
   text-align: center;
 }
-
 
 .banner_profession {
-  font-family: "Montserrat";
-  color: #EDEDED;
-  font-size: 28px;
-  width: 550px;
-  text-align: center;
-}
-
-@media screen (min-width: 300px) and (max-width:1100px ) {
-  .banner_name {
-    width: 550px;
-
-  }
-  .banner {
-    max-width: 700px;
-  }
-
-  .banner_profession {
-    width: 400px;;
-  }
+  color: $secondary-color;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size:clamp(20px, 1.75vw, 28px);
 }
   
 
