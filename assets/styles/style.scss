@@ -380,7 +380,10 @@ $breakpoint: 768px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.09fr 0.25fr 0.04fr 0.07fr 0.03fr 0.25fr 0.04fr 0.07fr 0.03fr 0.25fr 0.04fr 0.07fr 0.03fr;
+    margin-left: 5vw;
+    margin-right: 25vw;
   }
+
   .blog__wrapper__cards__img2{
     grid-column: 1/2;
     grid-row: 6/7;
