@@ -206,6 +206,8 @@ $breakpoint: 768px;
 
 //Виолетта
 
+// $breakpoint-bestsellers: 673px;
+
 .bestsellers {
 
   padding-top: 120px;
@@ -224,6 +226,9 @@ $breakpoint: 768px;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 60px;
+    @media (max-width: $breakpoint-bestsellers) {
+      justify-content: center;
+    }
 
     .book {
       display: flex;
