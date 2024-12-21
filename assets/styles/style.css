@@ -75,7 +75,6 @@ a {
 }
 
 /* SCSS variables goes here */
-/****************************/
 .menu-container {
   position: absolute;
   top: 1.5rem;
@@ -155,18 +154,6 @@ a {
   }
 }
 
-@media (max-width: 500px) {
-  .menu-drawer {
-    width: 100vw;
-  }
-}
-
-@media (max-width: 576px) {
-  .header__menu {
-    display: none;
-  }
-}
-
 .banner {
   max-width: 1600px;
   height: 90vh;
@@ -215,8 +202,8 @@ a {
   z-index: 1;
   font-family: "Viaoda Libre";
   font-weight: 400;
-  font-size: 44px;
-  line-height: 62.08px;
+  font-size: clamp(20px, 2.75vw, 44px);
+  line-height: 38px;
   font-style: normal;
   font-display: swap;
 }
@@ -235,11 +222,6 @@ a {
   top: 0;
 }
 
-@media (min-width: 375px) and (max-width: 1600px) {
-  .quote__text {
-    font-size: clamp(20px, 2.75vw, 44px);
-  }
-}
 .footer {
   max-width: 1600px;
   margin: 0 auto;
@@ -303,16 +285,16 @@ a {
 .footer__warning {
   text-align: center;
   margin-top: -15px;
-  padding: 20px 0;
-  font-size: 12px;
+  padding-top: 20px;
+  font-size: clamp(4px, 2vw, 12px);
   word-wrap: break-word;
   box-sizing: border-box;
   max-width: 100%;
   overflow-wrap: break-word;
 }
 
-@media (min-width: 375px) and (max-width: 1600px) {
-  .footer__warning {
-    font-size: clamp(4px, 2vw, 12px);
+@media (max-width: 375px) {
+  .footer__list {
+    gap: 5px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -95,11 +95,13 @@ a {
       }   
 }
 
+
+
 /* SCSS variables goes here */
 $menu-drawer-width: 250px;
 $breakpoint-plus-1: 768px;
 
-/****************************/
+
 
 .menu-container {
   position: absolute;
@@ -170,19 +172,7 @@ $breakpoint-plus-1: 768px;
     justify-content: flex-end;
   }
 }
-$breakpoint: 576px;
-.menu-drawer {
-  @media (max-width: 500px) {
-  width: 100vw;
-}
-}
-
-.header__menu {
-  @media (max-width: $breakpoint) {
-    display: none;
-  }
-}
-
+// $breakpoint: 576px;
 
 // Ира Н.
 // Аня
@@ -235,8 +225,8 @@ $breakpoint: 576px;
   z-index: 1; 
   font-family: "Viaoda Libre";
   font-weight: 400;
-  font-size: 44px;
-  line-height: 62.08px;
+  font-size: clamp(20px, 2.75vw, 44px);
+  line-height: 38px;
   font-style: normal;
   font-display: swap;
 }
@@ -255,11 +245,11 @@ $breakpoint: 576px;
   top: 0;
 }
 
-@media (min-width: 375px) and (max-width: 1600px) {
-  .quote__text {
-  font-size: clamp(20px, 2.75vw, 44px);
-}
-}
+// @media (min-width: 375px) and (max-width: 1600px) {
+//   .quote__text {
+  
+// }
+// }
 
 
 // 
@@ -340,17 +330,17 @@ $breakpoint: 576px;
 &__warning {
   text-align: center;
   margin-top: -15px;
-  padding: 20px 0;
-  font-size: 12px; 
+  padding-top: 20px;
+  font-size: clamp(4px, 2vw, 12px); 
   word-wrap: break-word;
   box-sizing: border-box;
   max-width: 100%;
   overflow-wrap: break-word;
 }
-}
 
-@media (min-width: 375px) and (max-width: 1600px) {
-  .footer__warning {
-    font-size: clamp(4px, 2vw, 12px); 
+}
+.footer__list{
+  @media (max-width: 375px) {
+    gap: 5px;
   }
 }
