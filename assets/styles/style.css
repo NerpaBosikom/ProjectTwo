@@ -19,9 +19,7 @@
   font-style: normal;
   font-display: swap;
 }
-<<<<<<< HEAD
 .about {
-=======
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -49,7 +47,6 @@ a {
 
 .header {
   position: relative;
->>>>>>> dcd762f002f68b45451d4d4ebb1e1e2c4c808e1c
   max-width: 1600px;
   margin: 0 auto;
   display: flex;
@@ -60,7 +57,6 @@ a {
 
 .about_wrapper {
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
   max-width: 612px;
   padding-bottom: 95px;
@@ -73,7 +69,6 @@ a {
   padding-bottom: 20px;
   padding-top: 60px;
   color: white;
-=======
   justify-content: space-between;
   -moz-column-gap: 40px;
        column-gap: 40px;
@@ -98,7 +93,6 @@ a {
   width: 3rem;
   cursor: pointer;
   z-index: 5;
->>>>>>> dcd762f002f68b45451d4d4ebb1e1e2c4c808e1c
 }
 
 .about_wrapper_h2-underline {
@@ -115,11 +109,9 @@ a {
   margin-top: 5%;
 }
 
-<<<<<<< HEAD
 .about_img-portrait {
   width: 600px;
   height: 400px;
-=======
 .menu-drawer {
   position: absolute;
   top: 0;
@@ -134,7 +126,6 @@ a {
   color: #ededed;
   will-change: transform, opacity;
   transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
->>>>>>> dcd762f002f68b45451d4d4ebb1e1e2c4c808e1c
 }
 
 @media (max-width: 1260px) {
