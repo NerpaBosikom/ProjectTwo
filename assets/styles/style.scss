@@ -197,12 +197,12 @@ $breakpoint: 768px;
   margin: 0 auto;
 }
 .services__title {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 120px;
+  padding-bottom: 50px;
   margin-right: auto;
   color: #171715;
   font-family: "Viaoda Libre";
-  font-weight: 500;
+  // font-weight: 500;
   font-size: clamp(40px, 4.4vw, 64px);
 }
 .services__list {
@@ -211,6 +211,9 @@ $breakpoint: 768px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media (max-width: 1360px) {
+  justify-content: flex-start;
+  }
 }
 .services__item {
   display: flex;
@@ -221,11 +224,18 @@ $breakpoint: 768px;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 400px;
   height: 400px;
+
   @media (max-width: 575px) {
     width: 300px;
     height: 300px;
   }
-}
+
+  @media (max-width: 1360px) {
+    margin-bottom: 50px;
+    }
+    
+  }
+
 .services__item:hover {
   transform: scale(1.05); 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -239,8 +249,9 @@ $breakpoint: 768px;
 }
 .services__item-description {
   text-align: center;
-  color: #171715;
   padding: 20px;
+  color: #171715;
+  line-height: 27px;
 }
 
 .services__item-price {
