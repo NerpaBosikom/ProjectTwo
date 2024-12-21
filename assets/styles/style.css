@@ -168,10 +168,7 @@ a {
 }
 
 .bestsellers {
-  text-align: left;
-  padding-left: 140px;
   padding-top: 120px;
-  padding-right: 140px;
 }
 .bestsellers .title {
   font-family: "Viaoda Libre";
@@ -197,7 +194,7 @@ a {
 .bestsellers .books .book .placeholder_book_img {
   width: 300px;
   height: 400px;
-  background-color: rgba(131, 131, 131, 0.4784313725);
+  background-color: #cfcfcf
 }
 .bestsellers .books .book .bestsellers_pic_line {
   width: 300px;
