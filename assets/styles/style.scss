@@ -125,7 +125,7 @@ $breakpoint: 768px;
     transition: all 300ms ease;
   }
 
-  @media (min-width: $breakpoint + 1) {
+  @media (min-width: $breakpoint-plus-1) {
     display: none; 
   }
 
@@ -147,7 +147,7 @@ $breakpoint: 768px;
   width: $menu-drawer-width;
   padding: 6rem 4rem;
   font-size: 1.5rem;
-  z-index: 5;
+  z-index: 4;
   background: $primary-color;
   color: $secondary-color;
   will-change: transform, opacity;
@@ -163,7 +163,7 @@ $breakpoint: 768px;
     }
     li:hover { color: $accent-color; }
   }
-  @media (min-width: $breakpoint + 1) {
+  @media (min-width: $breakpoint-plus-1) {
     display: none; 
   }
   @media (max-width: 576px) {
@@ -187,7 +187,37 @@ $breakpoint: 768px;
 
 // Ира Н.
 // Аня
+
 // 
+.banner {
+  max-width: 1600px;
+  height: 90vh;
+  margin: 0 auto;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_name {
+  font-family: "Viaoda Libre";
+  color: $secondary-color;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: clamp(75px, 6.25vw, 100px);
+  text-align: center;
+}
+
+.banner_profession {
+  color: $secondary-color;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size:clamp(20px, 1.75vw, 28px);
+}
+  
+
 // 
 // 
 // 
