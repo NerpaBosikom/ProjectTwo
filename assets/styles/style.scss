@@ -181,8 +181,9 @@ $breakpoint: 768px;
 .about_wrapper{
   display: flex;
   flex-direction: column;
-  max-width: 612px;
+  /*max-width: 612px;*/
   padding-bottom: 95px;
+  margin: 0;
 }
 
 .about_wrapper_h2{
@@ -206,6 +207,7 @@ $breakpoint: 768px;
   width: 600px;
   color: white;
   margin-top: 5%;
+  line-height: 130%;
 }
 
 .about_img-portrait{
@@ -243,6 +245,9 @@ $breakpoint: 768px;
   .about_img-portrait{
       width: 352px;
       height: 233px;
+  }
+  .about_wrapper_text{
+    width: 90%;
   }
 }
 
