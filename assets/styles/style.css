@@ -122,7 +122,7 @@ a {
   width: 250px;
   padding: 6rem 4rem;
   font-size: 1.5rem;
-  z-index: 5;
+  z-index: 4;
   background: #889164;
   color: #ededed;
   will-change: transform, opacity;
