@@ -56,6 +56,33 @@ a {
   padding-inline: 15px;
 }
 
+.button {
+  padding: 15px 80px;
+  gap: 10px;
+  border: none;
+  border-radius: 15px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  background: $accent-color;
+  color: $background-color;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    background: $hover-color;
+    transition: background-color 0.2s ease;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    outline: none;
+  }
+}
+
 // Света
 
 .header {
@@ -194,10 +221,8 @@ $breakpoint: 768px;
   }
 }
 
-// Ира Н.
-// Аня
+//Баннер
 
-//
 .banner {
   max-width: 1600px;
   height: 90vh;
@@ -224,6 +249,112 @@ $breakpoint: 768px;
   color: $secondary-color;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   font-size: clamp(20px, 1.75vw, 28px);
+}
+
+// Ира Н.
+
+.book {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-bottom: 132px;
+  overflow-x: hidden;
+
+  &__divider-line {
+    width: 100%;
+    height: 1px;
+    margin: 66px 0;
+    background-color: $border-color;
+  }
+
+  &__story-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+
+    @media (max-width: 960px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  .book__image-wrapper {
+    position: relative;
+    flex: 0 0 400px;
+    height: 600px;
+
+    @media (max-width: 960px) {
+      display: flex;
+      justify-content: center;
+      flex: none;
+      height: auto;
+    }
+
+    .book__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      right: -25px;
+      bottom: -25px;
+      border: 1px solid rgba(23, 23, 21, 0.25);
+      background-color: transparent;
+      z-index: -1;
+    }
+  }
+
+  &__content {
+    max-width: 855px;
+
+    @media (max-width: 960px) {
+      margin-top: 40px;
+      text-align: center;
+    }
+  }
+
+  &__author {
+    margin: 0 0 10px;
+    font-size: clamp(16px, 1.25vw, 20px);
+  }
+
+  &__title {
+    margin: 0;
+    font-size: clamp(48px, 4.44vw, 64px);
+    font-family: "Viaoda Libre";
+  }
+
+  &__underline {
+    max-width: 378px;
+    height: 1px;
+    background-color: $border-color;
+    margin-top: 10px;
+
+    @media (max-width: 960px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__description {
+    margin-top: 30px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  &__button {
+    margin-top: 40px;
+    width: 250px;
+    height: 60px;
+    font-size: clamp(18px, 1.66vw, 24px);
+  }
 }
 
 .quote {
@@ -313,7 +444,7 @@ $breakpoint: 768px;
 
 .contact-form__decor-two {
   display: block;
-  background-image: url("../images/i");
+  background-image: url("../images/icons/wave2.svg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -451,8 +582,8 @@ textarea {
   z-index: 1;
 }
 
+//
 // Настя
-
 .footer {
   max-width: 1600px;
   margin: 0 auto;
