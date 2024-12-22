@@ -228,11 +228,20 @@ a {
   position: relative;
   flex: 0 0 400px;
   height: 600px;
-  background-image: url(../images/book.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+  @media (max-width: 960px) {
+    flex: none;
+    height: auto;
+  }
 }
+
+.book__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
 .book__image-wrapper::after {
   content: "";
   position: absolute;
@@ -249,18 +258,7 @@ a {
     right: calc(50% - 230px);
   }
 }
-@media (max-width: 600px) {
-  .book__image-wrapper::after {
-    right: calc(50% - 230px);
-  }
-}
-@media (max-width: 960px) {
-  .book__image-wrapper {
-    flex: none;
-    background-size: unset;
-    width: 100%;
-  }
-}
+
 .book__content {
   max-width: 855px;
 }
