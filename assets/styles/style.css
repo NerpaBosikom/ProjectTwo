@@ -266,11 +266,11 @@ a {
 }
 .book__author {
   margin: 0 0 10px;
-  font-size: clamp(17px, 0.34vw, 20px);
+  font-size: clamp(16px, 1.25vw, 20px);
 }
 .book__title {
   margin: 0;
-  font-size: clamp(38px, 2.95vw, 64px);
+  font-size: clamp(48px, 4.44vw, 64px);
   font-family: "Viaoda Libre";
 }
 .book__underline {
