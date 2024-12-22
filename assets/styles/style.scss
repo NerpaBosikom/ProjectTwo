@@ -124,7 +124,7 @@ $breakpoint: 768px;
     transition: all 300ms ease;
   }
 
-  @media (min-width: $breakpoint + 1) {
+  @media (min-width: 769px) {
     display: none; 
   }
 
@@ -162,7 +162,7 @@ $breakpoint: 768px;
     }
     li:hover { color: $accent-color; }
   }
-  @media (min-width: $breakpoint + 1) {
+  @media (min-width: 769px) {
     display: none; 
   }
   @media (max-width: 576px) {
