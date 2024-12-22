@@ -295,5 +295,5 @@ a {
   margin-top: 40px;
   width: 250px;
   height: 60px;
-  font-size: clamp(16px, 0.91vw, 24px);
+  font-size: clamp(18px, 1.66vw, 24px);
 }/*# sourceMappingURL=style.css.map */
