@@ -72,7 +72,56 @@
         <p class="quote__text">"Каждое слово — шаг в новый мир, каждая история — ключ к душе."</p>
       </section>
       <section class="services"></section>
-      <section class="contact-form"></section>
+      <section class="contact-form">
+        <span class="contact-form__decor-one"></span>
+        <span class="contact-form__decor-two"></span>
+        <div class="contact-form__wrapper container">
+          <div class="contact-form__info">
+            <h2 class="contact-form__title">Остались вопросы?</h2>
+            <p class="contact-form__text">
+              Заполните заявку и я отвечу</br> на ваше сообщение
+            </p>
+          </div>
+          <form
+            class="contact-form__feedback"
+            action="https://script.google.com/macros/s/AKfycbyD5MlzGKYZT71dTl0LnkZIV6pOUft8PCabBKarAAjL7IiZBx8xYFRB9jHjgSocPys/exec" method="POST"
+            >
+              <div class="contact-form__message">
+                <label for="name">Ваше имя:</label>
+                <input
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+              <label for="email">Ваш email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+              <label for="message">Ваше сообщение:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                ></textarea>
+              </div>
+              <!-- Новый чекбокс -->
+              <div class="contact-form__checkbox">
+                <input type="checkbox" id="consent" name="consent" required />
+                <label for="consent">
+                  Я даю согласие на обработку персональных данных
+                </label>
+              </div>
+              <div class="contact-form__button">
+                <button type="submit" disabled>Отправить</button>
+              </div>
+            </form>
+          </div>
+        </section>
       <section class="blog"></section>
     </main>
     <footer class="footer">
