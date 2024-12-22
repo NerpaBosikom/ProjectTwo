@@ -89,7 +89,7 @@ a {
   max-width: 1600px;
   margin: 0 auto;
   background-color: $primary-color;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(237, 237, 237, 0.2);
 
   &__wrapper {
     height: 100px;
@@ -104,9 +104,6 @@ a {
     column-gap: 40px;
   }
 
-  &__item {
-    font-size: 18px;
-  }
   &__item {
     font-size: clamp(18px, 1.38vw, 22px);
   }
@@ -133,12 +130,6 @@ $breakpoint: 768px;
   right: 2rem;
   width: 3rem;
   cursor: pointer;
-  z-index: 2;
-
-  input {
-    display: none;
-    cursor: pointer;
-  }
   z-index: 5;
 
   input {
@@ -184,7 +175,7 @@ $breakpoint: 768px;
   width: $menu-drawer-width;
   padding: 6rem 4rem;
   font-size: 1.5rem;
-  z-index: 5;
+  z-index: 4;
   background: $primary-color;
   color: $secondary-color;
   will-change: transform, opacity;
@@ -228,6 +219,8 @@ $breakpoint: 768px;
     display: none;
   }
 }
+
+// Баннер
 
 .banner {
   max-width: 1600px;
