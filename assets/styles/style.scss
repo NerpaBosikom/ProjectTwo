@@ -57,7 +57,6 @@ a {
 }
 
 
-
 // Света 
 
 .header {
@@ -65,7 +64,7 @@ a {
   max-width: 1600px;
   margin: 0 auto;
   background-color: $primary-color;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(237, 237, 237, 0.2);
 
     &__wrapper {
       height: 100px;
@@ -88,7 +87,8 @@ a {
           color: $secondary-color;
 
           &:hover {
-          color: $accent-color;
+            font-weight: 600;
+          // color: $accent-color;
           transition: 0.2s;
         }
 
@@ -146,7 +146,7 @@ $breakpoint: 768px;
   width: $menu-drawer-width;
   padding: 6rem 4rem;
   font-size: 1.5rem;
-  z-index: 5;
+  z-index: 4;
   background: $primary-color;
   color: $secondary-color;
   will-change: transform, opacity;
@@ -184,8 +184,177 @@ $breakpoint: 768px;
 }
 
 
+
 // Ира Н.
 // Аня
+
+// 
+.banner {
+  max-width: 1600px;
+  height: 90vh;
+  margin: 0 auto;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_name {
+  font-family: "Viaoda Libre";
+  color: $secondary-color;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: clamp(75px, 6.25vw, 100px);
+  text-align: center;
+}
+
+.banner_profession {
+  color: $secondary-color;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size:clamp(20px, 1.75vw, 28px);
+}
+  
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  position: relative;
+  max-width: 1600px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: $primary-color;
+  color: $secondary-color; 
+}
+.quote__text {
+  position: relative;
+  color: $secondary-color;
+  text-align: center;
+  z-index: 1; 
+  font-family: "Viaoda Libre";
+  font-weight: 400;
+  font-size: clamp(20px, 2.75vw, 44px);
+  line-height: 38px;
+  font-style: normal;
+  font-display: swap;
+}
+
+.quote__decor-three {
+  display: block;
+  background-image: url(../images/line.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  top: 0;
+}
+
+// @media (min-width: 375px) and (max-width: 1600px) {
+//   .quote__text {
+  
+// }
+// }
+
+
+// 
+// 
+// Настя
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: $primary-color; 
+  color: $secondary-color; 
+  height: 100px; 
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  &__list-item {
+    margin: 0;
+  }
+  
+  &__social-link {
+    display: inline-block;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    background-color: transparent;
+    
+    &:hover {
+      color: $hover-color;
+    }
+
+    &--telegram,
+    &--instagram,
+    &--vk {
+      color: $secondary-color;
+    }
+    
+    &--telegram .footer__social-icon,
+    &--instagram .footer__social-icon,
+    &--vk .footer__social-icon {
+      font-size: 40px; 
+      color: inherit;
+    }
+
+    &--instagram .footer__social-link__star {
+      font-size: 12px;
+      color: $secondary-color;
+      margin-bottom: 13px;
+      transition: color 0.3s ease;
+  }
+  &--instagram:hover .footer__social-link__star {
+      color: $hover-color;
+}
+}
+&__warning {
+  text-align: center;
+  margin-top: -15px;
+  padding-top: 20px;
+  font-size: clamp(4px, 2vw, 12px); 
+  word-wrap: break-word;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+}
+.footer__list{
+  @media (max-width: 375px) {
+    gap: 5px;
+  }
+}
 // 
 // 
 // 
