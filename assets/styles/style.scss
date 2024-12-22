@@ -22,10 +22,10 @@
   font-display: swap;
 }
 
-$primary-color: #889164; 
+$primary-color: #889164;
 $secondary-color: #ededed;
-$accent-color: #575F37;
-$hover-color: #CA825B;
+$accent-color: #575f37;
+$hover-color: #ca825b;
 $background-color: #ffffff;
 $text-color: #171715;
 $border-color: rgba(23, 23, 21, 0.25);
@@ -56,8 +56,7 @@ a {
   padding-inline: 15px;
 }
 
-
-// Света 
+// Света
 
 .header {
   position: relative;
@@ -66,32 +65,31 @@ a {
   background-color: $primary-color;
   border-bottom: 1px solid rgba(237, 237, 237, 0.2);
 
-    &__wrapper {
-      height: 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  &__wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+  }
+
+  &__item {
+    font-size: clamp(18px, 1.38vw, 22px);
+  }
+
+  &__link {
+    color: $secondary-color;
+
+    &:hover {
+      color: $accent-color;
+      transition: 0.2s;
     }
-
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      column-gap: 40px;
-    }
-
-      &__item {
-        font-size: clamp(18px, 1.38vw, 22px);;
-      }
-
-        &__link {
-          color: $secondary-color;
-
-          &:hover {
-          color: $accent-color;
-          transition: 0.2s;
-        }
-
-      }   
+  }
 }
 
 /* SCSS variables goes here */
@@ -107,12 +105,15 @@ $breakpoint: 768px;
   width: 3rem;
   cursor: pointer;
   z-index: 5;
-  
-  input { display: none; cursor: pointer; }
+
+  input {
+    display: none;
+    cursor: pointer;
+  }
   input:checked ~ span {
     background: $accent-color;
   }
-  
+
   span {
     display: block;
     width: 100%;
@@ -124,15 +125,18 @@ $breakpoint: 768px;
   }
 
   @media (min-width: #{$breakpoint + 1}) {
-    display: none; 
+    display: none;
   }
-
 }
 
 .menu-container:hover {
   span {
-    &:nth-child(3) { width: 50%; }
-    &:nth-child(4) { width: 25%; }
+    &:nth-child(3) {
+      width: 50%;
+    }
+    &:nth-child(4) {
+      width: 25%;
+    }
   }
 }
 
@@ -149,20 +153,28 @@ $breakpoint: 768px;
   background: $primary-color;
   color: $secondary-color;
   will-change: transform, opacity;
-  transition: all 500ms cubic-bezier(.14,.65,.15,1);
-  
-  &[opened='false'] { transform: translateY(-100%); opacity: 0; }
-  &[opened='true'] { transform: none; opacity: 1; }
-  
+  transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
+
+  &[opened="false"] {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  &[opened="true"] {
+    transform: none;
+    opacity: 1;
+  }
+
   ul {
     li {
       margin: 2rem 0;
       cursor: pointer;
     }
-    li:hover { color: $accent-color; }
+    li:hover {
+      color: $accent-color;
+    }
   }
   @media (min-width: #{$breakpoint + 1}) {
-    display: none; 
+    display: none;
   }
   @media (max-width: 576px) {
     display: flex;
@@ -172,8 +184,8 @@ $breakpoint: 768px;
 
 .menu-drawer {
   @media (max-width: 500px) {
-  width: 100vw;
-}
+    width: 100vw;
+  }
 }
 
 .header__menu {
@@ -182,12 +194,10 @@ $breakpoint: 768px;
   }
 }
 
-
-
 // Ира Н.
 // Аня
 
-// 
+//
 .banner {
   max-width: 1600px;
   height: 90vh;
@@ -213,9 +223,9 @@ $breakpoint: 768px;
 .banner_profession {
   color: $secondary-color;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  font-size:clamp(20px, 1.75vw, 28px);
+  font-size: clamp(20px, 1.75vw, 28px);
 }
-  
+
 .quote {
   display: flex;
   justify-content: center;
@@ -226,13 +236,13 @@ $breakpoint: 768px;
   height: 200px;
   margin: 0 auto;
   background-color: $primary-color;
-  color: $secondary-color; 
+  color: $secondary-color;
 }
 .quote__text {
   position: relative;
   color: $secondary-color;
   text-align: center;
-  z-index: 1; 
+  z-index: 1;
   font-family: "Viaoda Libre";
   font-weight: 400;
   font-size: clamp(20px, 2.75vw, 44px);
@@ -257,10 +267,9 @@ $breakpoint: 768px;
 
 // @media (min-width: 375px) and (max-width: 1600px) {
 //   .quote__text {
-  
-// }
-// }
 
+// }
+// }
 
 // Света Форма
 
@@ -354,7 +363,7 @@ $breakpoint: 768px;
 
   @media (max-width: 375px) {
     padding-inline: 15px;
-}
+  }
 }
 
 // .contact-form__info {
@@ -442,15 +451,15 @@ textarea {
   z-index: 1;
 }
 
-// 
 // Настя
+
 .footer {
   max-width: 1600px;
   margin: 0 auto;
-  background-color: $primary-color; 
-  color: $secondary-color; 
-  height: 100px; 
-  
+  background-color: $primary-color;
+  color: $secondary-color;
+  height: 100px;
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -459,28 +468,28 @@ textarea {
     max-width: 100%;
     margin: 0 auto;
   }
-  
+
   &__logo {
     display: flex;
     justify-content: flex-start;
     align-content: flex-start;
   }
-  
+
   &__list {
     list-style: none;
     padding: 0;
     display: flex;
     gap: 15px;
   }
-  
+
   &__list-item {
     margin: 0;
   }
-  
+
   &__social-link {
     display: inline-block;
-    width: 50px; 
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -488,7 +497,7 @@ textarea {
     transition: background-color 0.3s ease;
     text-decoration: none;
     background-color: transparent;
-    
+
     &:hover {
       color: $hover-color;
     }
@@ -498,11 +507,11 @@ textarea {
     &--vk {
       color: $secondary-color;
     }
-    
+
     &--telegram .footer__social-icon,
     &--instagram .footer__social-icon,
     &--vk .footer__social-icon {
-      font-size: 40px; 
+      font-size: 40px;
       color: inherit;
     }
 
@@ -511,24 +520,23 @@ textarea {
       color: $secondary-color;
       margin-bottom: 13px;
       transition: color 0.3s ease;
-  }
-  &--instagram:hover .footer__social-link__star {
+    }
+    &--instagram:hover .footer__social-link__star {
       color: $hover-color;
+    }
+  }
+  &__warning {
+    text-align: center;
+    margin-top: -15px;
+    padding-top: 20px;
+    font-size: clamp(4px, 2vw, 12px);
+    word-wrap: break-word;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
 }
-}
-&__warning {
-  text-align: center;
-  margin-top: -15px;
-  padding-top: 20px;
-  font-size: clamp(4px, 2vw, 12px); 
-  word-wrap: break-word;
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow-wrap: break-word;
-}
-
-}
-.footer__list{
+.footer__list {
   @media (max-width: 375px) {
     gap: 5px;
   }

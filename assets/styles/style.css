@@ -70,7 +70,7 @@ a {
   color: #ededed;
 }
 .header__link:hover {
-  color: #575F37;
+  color: #575f37;
   transition: 0.2s;
 }
 
@@ -89,7 +89,7 @@ a {
   cursor: pointer;
 }
 .menu-container input:checked ~ span {
-  background: #575F37;
+  background: #575f37;
 }
 .menu-container span {
   display: block;
@@ -141,7 +141,7 @@ a {
   cursor: pointer;
 }
 .menu-drawer ul li:hover {
-  color: #575F37;
+  color: #575f37;
 }
 @media (min-width: 769px) {
   .menu-drawer {
@@ -368,7 +368,7 @@ textarea {
   display: flex;
   margin-block: 30px;
   padding: 10px 25px;
-  background: #575F37;
+  background: #575f37;
   color: white;
   border: none;
   border-radius: 10px;
@@ -445,7 +445,7 @@ textarea {
   background-color: transparent;
 }
 .footer__social-link:hover {
-  color: #CA825B;
+  color: #ca825b;
 }
 .footer__social-link--telegram, .footer__social-link--instagram, .footer__social-link--vk {
   color: #ededed;
@@ -461,7 +461,7 @@ textarea {
   transition: color 0.3s ease;
 }
 .footer__social-link--instagram:hover .footer__social-link__star {
-  color: #CA825B;
+  color: #ca825b;
 }
 .footer__warning {
   text-align: center;
