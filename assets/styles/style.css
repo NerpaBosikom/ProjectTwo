@@ -247,23 +247,13 @@ a {
 .book .book__image-wrapper::after {
   content: "";
   position: absolute;
-  bottom: -25px;
+  top: 25px;
+  left: 25px;
   right: -25px;
-  width: 400px;
-  height: 600px;
+  bottom: -25px;
   border: 1px solid rgba(23, 23, 21, 0.25);
   background-color: transparent;
   z-index: -1;
-}
-@media (max-width: 960px) {
-  .book .book__image-wrapper::after {
-    right: calc(50% - 230px);
-  }
-}
-@media (max-width: 600px) {
-  .book .book__image-wrapper::after {
-    right: calc(50% - 230px);
-  }
 }
 .book__content {
   max-width: 855px;
