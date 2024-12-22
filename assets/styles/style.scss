@@ -204,7 +204,6 @@ $breakpoint: 768px;
   margin-top: 120px;
 }
 .blog__wrapper__cards__img1{
-  
   margin-bottom: 15px;
   display: block;
   position: relative;
@@ -216,8 +215,17 @@ $breakpoint: 768px;
   right: -10px; bottom: -10px;
   border: 1px solid rgba(23, 23, 21, 0.25);
   z-index: -1;
+  width: clamp(250px, 30vw, 407px);
 }
-
+.blog__wrapper__cards__img1 img{
+  width: clamp(250px, 30vw, 407px);
+}
+.blog__wrapper__cards__img2 img{
+  width: clamp(250px, 30vw, 407px);
+}
+.blog__wrapper__cards__img3 img{
+  width: clamp(250px, 30vw, 407px);
+}
 .blog__wrapper__cards__name1{
   margin-bottom: 25px; 
   font-family: "Viaoda Libre";
@@ -244,6 +252,7 @@ $breakpoint: 768px;
   right: -10px; bottom: -10px;
   border: 1px solid rgba(23, 23, 21, 0.25);
   z-index: -1;
+  width: clamp(250px, 30vw, 407px);
 }
 .blog__wrapper__cards__name2{
   margin-bottom: 25px; 
@@ -271,6 +280,7 @@ $breakpoint: 768px;
   right: -10px; bottom: -10px;
   border: 1px solid rgba(23, 23, 21, 0.25);
   z-index: -1;
+  width: clamp(250px, 30vw, 407px);
 }
 .blog__wrapper__cards__name3{
   margin-bottom: 25px; 
@@ -335,14 +345,39 @@ $breakpoint: 768px;
 }
 @media (max-width: 1024px){
   .blog__wrapper__container{
-    
     column-gap: 100px; 
+  }
+  .blog__wrapper__cards__button1{
+    margin-bottom: 20px;
+  }
+  .blog__wrapper__cards__button2{
+    margin-bottom: 20px;
+  }
+  .blog__wrapper__cards__button3{
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 994px){
   .blog__wrapper__container{
-    
     column-gap: 30px; 
+  }
+  .blog__wrapper__cards__img1 img{
+    width: clamp(250px, 40vw, 407px);
+  }
+  .blog__wrapper__cards__img2 img{
+    width: clamp(250px, 40vw, 407px);
+  }
+  .blog__wrapper__cards__img3 img{
+    width: clamp(250px, 40vw, 407px);
+  }
+  .blog__wrapper__cards__img1::before {
+    width: clamp(250px, 40vw, 407px);
+  }
+  .blog__wrapper__cards__img2::before {
+    width: clamp(250px, 40vw, 407px);
+  }
+  .blog__wrapper__cards__img3::before {
+    width: clamp(250px, 40vw, 407px);
   }
 }
 @media (max-width: 912px){
@@ -353,6 +388,7 @@ $breakpoint: 768px;
     align-items: center;
   }
 }
+
 
 
 // 
