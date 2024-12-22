@@ -74,7 +74,7 @@ a {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #889164;
-  border-bottom: 1px solid rgba(237, 237, 237, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .header__wrapper {
   height: 100px;
@@ -86,7 +86,7 @@ a {
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
 }
 .header__item {
   font-size: 18px;
@@ -99,7 +99,6 @@ a {
 }
 .header__link:hover {
   color: #575f37;
-  font-weight: 600;
   transition: 0.2s;
 }
 
@@ -156,17 +155,17 @@ a {
   width: 250px;
   padding: 6rem 4rem;
   font-size: 1.5rem;
-  z-index: 4;
+  z-index: 5;
   background: #889164;
   color: #ededed;
   will-change: transform, opacity;
   transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
 }
-.menu-drawer[opened="false"] {
+.menu-drawer[opened=false] {
   transform: translateY(-100%);
   opacity: 0;
 }
-.menu-drawer[opened="true"] {
+.menu-drawer[opened=true] {
   transform: none;
   opacity: 1;
 }
@@ -201,106 +200,53 @@ a {
   }
 }
 
-.banner {
+.book {
   max-width: 1600px;
-  height: 90vh;
   margin: 0 auto;
-  background-image: url(../images/banner.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 132px;
+  overflow-x: hidden;
 }
-
-.banner_name {
-  font-family: "Viaoda Libre";
-  color: #ededed;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  font-size: clamp(75px, 6.25vw, 100px);
-  text-align: center;
+.book__divider-line {
+  width: 100%;
+  height: 1px;
+  margin: 66px 0;
+  background-color: rgba(23, 23, 21, 0.25);
 }
-
-.banner_profession {
-  color: #ededed;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  font-size: clamp(20px, 1.75vw, 28px);
-}
-
-.quote {
+.book__story-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  place-items: center;
-  position: relative;
-  max-width: 1600px;
-  height: 200px;
-  margin: 0 auto;
-  background-color: #889164;
-  color: #ededed;
-}
-
-.quote__text {
   gap: 65px;
+}
+@media (max-width: 960px) {
+  .book__story-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 }
 .book .book__image-wrapper {
   position: relative;
-  color: #ededed;
-  text-align: center;
-  z-index: 1;
-  font-family: "Viaoda Libre";
-  font-weight: 400;
-  font-size: clamp(20px, 2.75vw, 44px);
-  line-height: 38px;
-  font-style: normal;
-  font-display: swap;
-}
-
-.quote__decor-three {
-  display: block;
-  background-image: url(../images/line.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
   flex: 0 0 400px;
   height: 600px;
+}
+@media (max-width: 960px) {
+  .book .book__image-wrapper {
+    display: flex;
+    justify-content: center;
+    flex: none;
+    height: auto;
+  }
 }
 .book .book__image-wrapper .book__image {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.book .book__image-wrapper::after {
+  content: "";
   position: absolute;
-  left: 0;
-  z-index: 0;
-  top: 0;
-}
-
-.footer {
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: #889164;
-  color: #ededed;
-  height: 100px;
-}
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-.footer__logo {
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-}
-.footer__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 15px;
   bottom: -25px;
   right: -25px;
   width: 400px;
@@ -319,57 +265,45 @@ a {
     right: calc(50% - 230px);
   }
 }
-.footer__list-item {
-  margin: 0;
+.book__content {
+  max-width: 855px;
 }
-.footer__social-link {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  background-color: transparent;
-}
-.footer__social-link:hover {
-  color: #ca825b;
-}
-.footer__social-link--telegram,
-.footer__social-link--instagram,
-.footer__social-link--vk {
-  color: #ededed;
-}
-.footer__social-link--telegram .footer__social-icon,
-.footer__social-link--instagram .footer__social-icon,
-.footer__social-link--vk .footer__social-icon {
-  font-size: 40px;
-  color: inherit;
-}
-.footer__social-link--instagram .footer__social-link__star {
-  font-size: 12px;
-  color: #ededed;
-  margin-bottom: 13px;
-  transition: color 0.3s ease;
-}
-.footer__social-link--instagram:hover .footer__social-link__star {
-  color: #ca825b;
-}
-.footer__warning {
-  text-align: center;
-  margin-top: -15px;
-  padding-top: 20px;
-  font-size: clamp(4px, 2vw, 12px);
-  word-wrap: break-word;
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow-wrap: break-word;
-}
-
-@media (max-width: 375px) {
-  .footer__list {
-    gap: 5px;
+@media (max-width: 960px) {
+  .book__content {
+    margin-top: 40px;
+    text-align: center;
   }
-} /*# sourceMappingURL=style.css.map */
+}
+.book__author {
+  margin: 0 0 10px;
+  font-size: clamp(17px, 0.34vw, 20px);
+}
+.book__title {
+  margin: 0;
+  font-size: clamp(38px, 2.95vw, 64px);
+  font-family: "Viaoda Libre";
+}
+.book__underline {
+  max-width: 378px;
+  height: 1px;
+  background-color: rgba(23, 23, 21, 0.25);
+  margin-top: 10px;
+}
+@media (max-width: 960px) {
+  .book__underline {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.book__description {
+  margin-top: 30px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.book__button {
+  margin-top: 40px;
+  width: 250px;
+  height: 60px;
+  font-size: clamp(16px, 0.91vw, 24px);
+}/*# sourceMappingURL=style.css.map */
