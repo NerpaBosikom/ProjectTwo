@@ -217,12 +217,20 @@ a {
 .bestsellers .books .book .bestsellers_book_img {
   width: 300px;
   height: 400px;
+  @media (max-width: 673px) {
+    width: 200px;;
+    height: 300px;
+  }
 }
 
 .bestsellers .books .book .placeholder_book_img {
   width: 300px;
   height: 400px;
-  background-color: #cfcfcf
+  background-color: #cfcfcf;
+  @media (max-width: 673px) {
+    width: 200px;;
+    height: 300px;
+  }
 }
 
 .bestsellers .books .book .bestsellers_pic_line {
@@ -232,6 +240,11 @@ a {
   margin-top: -390px;
   margin-left: 20px;
   z-index: -1;
+  @media (max-width: 673px) {
+    width: 200px;;
+    height: 300px;
+    margin-top: -290px;
+  }
 }
 
 .bestsellers .books .book .buy_button {
