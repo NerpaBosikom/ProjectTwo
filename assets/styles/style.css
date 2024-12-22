@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Viaoda Libre";
   src: url(../fonts/viaoda_libre-regular.woff2) format("woff2");
@@ -243,7 +242,7 @@ a {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* Сохранение пропорций */
+     object-fit: cover;
 }
 .book .book__image-wrapper::after {
   content: "";
