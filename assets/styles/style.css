@@ -70,7 +70,7 @@ a {
   color: #ededed;
 }
 .header__link:hover {
-  font-weight: 600;
+  color: #575F37;
   transition: 0.2s;
 }
 
