@@ -231,6 +231,9 @@ $breakpoint: 768px;
 
 // Ира Н.
 
+//$breakpoint-md: 960px;
+//$breakpoint-sm:  600px;
+
 .book {
   max-width: 1600px;
   margin: 0 auto;
@@ -250,7 +253,7 @@ $breakpoint: 768px;
     align-items: center;
     gap: 65px;
 
-    @media (max-width: 960px) {
+    @media (max-width: $breakpoint-md) {
       flex-direction: column;
       align-items: center;
       gap: 40px;
@@ -262,7 +265,7 @@ $breakpoint: 768px;
     flex: 0 0 400px;
     height: 600px;
 
-    @media (max-width: 960px) {
+    @media (max-width: $breakpoint-md) {
       display: flex;
       justify-content: center;
       flex: none;
@@ -286,11 +289,11 @@ $breakpoint: 768px;
       background-color: transparent;
       z-index: -1;
 
-      @media (max-width: 960px) {
+      @media (max-width: $breakpoint-md) {
         right: calc(50% - 230px);
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: $breakpoint-sm) {
         right: calc(50% - 230px);
       }
     }
@@ -299,7 +302,7 @@ $breakpoint: 768px;
   &__content {
     max-width: 855px;
 
-    @media (max-width: 960px) {
+    @media (max-width: $breakpoint-md) {
       margin-top: 40px;
       text-align: center;
     }
@@ -322,7 +325,7 @@ $breakpoint: 768px;
     background-color: $border-color;
     margin-top: 10px;
 
-    @media (max-width: 960px) {
+    @media (max-width: $breakpoint-md) {
       display: block;
       margin-left: auto;
       margin-right: auto;
