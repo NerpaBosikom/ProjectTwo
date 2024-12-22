@@ -253,6 +253,12 @@ a {
 @media (max-width: 850px) {
   .contact-form__wrapper {
     justify-content: center;
+    padding-block: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-form__wrapper {
+    padding-block: 20px;
   }
 }
 

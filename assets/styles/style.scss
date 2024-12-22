@@ -281,6 +281,11 @@ $breakpoint: 768px;
 
   @media (max-width: 850px) {
     justify-content: center;
+    padding-block: 50px;
+  }
+
+  @media (max-width: $breakpoint) {
+    padding-block: 20px;
   }
 }
 
