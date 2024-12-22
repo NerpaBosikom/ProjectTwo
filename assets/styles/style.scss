@@ -263,7 +263,173 @@ $breakpoint: 768px;
 // }
 
 
-// 
+// Света Форма
+
+.contact-form {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: $primary-color;
+}
+
+.contact-form__wrapper {
+  padding-block: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form__decor-one {
+  display: block;
+  background-image: url("../images/icons/wave1.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.contact-form__decor-two {
+  display: block;
+  background-image: url("../images/icons/wave2.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -25px;
+  z-index: 0;
+}
+
+.contact-form__text {
+  font-size: 24px;
+  line-height: 29px;
+  color: $secondary-color;
+  z-index: 1;
+}
+
+.contact-form__title {
+  font-family: "Viaoda Libre", sans-serif;
+  font-size: 64px;
+  line-height: 90px;
+  color: $secondary-color;
+}
+
+.contact-form__feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgba(237, 237, 237, 0.85);
+  border-radius: 30px;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: $secondary-color;
+  // display: grid;
+  // justify-items: center;
+  // grid-template-columns: repeat(2, 1fr);
+  // column-gap: 20px;
+  // max-width: 100vw;
+  // margin: 0 auto;
+  // padding-block: 70px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  padding-inline: 50px;
+  // background: $primary-color;
+  // border-radius: 10px;
+  // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.contact-form__info {
+  // grid-column: 1/2;
+  // justify-self: end;
+}
+
+.contact-form__message {
+  // grid-column: 2/3;
+  // justify-self: start;
+}
+.contact-form__button {
+  // grid-column: 1/3;
+}
+
+.contact-form label {
+  display: block;
+  padding-top: 21px;
+  align-items: flex-end;
+  z-index: 1;
+  // margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: flex;
+  width: clamp(230px, 37.5vw, 600px);
+  padding: 20px;
+  // margin-bottom: 12px;
+  font-size: 18px;
+  border: 1px solid rgba(237, 237, 237, 0.85);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+textarea {
+  height: 114px;
+  /* overflow: auto; */
+  z-index: 1;
+}
+
+.contact-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.contact-form button {
+  display: flex;
+  margin-block: 30px;
+  padding: 10px 25px;
+  background: $accent-color;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.contact-form__checkbox {
+  font-size: 16px;
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  z-index: 1;
+}
+
+.contact-form__checkbox input {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.contact-form__checkbox label {
+  color: $secondary-color;
+  cursor: pointer;
+  z-index: 1;
+}
+
 // 
 // Настя
 .footer {
