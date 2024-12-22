@@ -86,7 +86,7 @@ a {
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
 }
 .header__item {
   font-size: 18px;
@@ -161,11 +161,11 @@ a {
   will-change: transform, opacity;
   transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
 }
-.menu-drawer[opened="false"] {
+.menu-drawer[opened=false] {
   transform: translateY(-100%);
   opacity: 0;
 }
-.menu-drawer[opened="true"] {
+.menu-drawer[opened=true] {
   transform: none;
   opacity: 1;
 }
@@ -270,22 +270,18 @@ a {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .book .book__image-wrapper::after {
   content: "";
   position: absolute;
-  left: 0;
-  z-index: 0;
-  top: 0;
-}
-
-.footer {
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: #889164;
-  color: #ededed;
-  height: 100px;
+  top: 25px;
+  left: 25px;
+  right: -25px;
+  bottom: -25px;
+  border: 1px solid rgba(23, 23, 21, 0.25);
+  background-color: transparent;
+  z-index: -1;
 }
 .book__content {
   max-width: 855px;
@@ -329,6 +325,7 @@ a {
   height: 60px;
   font-size: clamp(18px, 1.66vw, 24px);
 }
+
 .quote {
   display: flex;
   justify-content: center;
@@ -367,7 +364,7 @@ a {
   left: 0;
   z-index: 0;
   top: 0;
-} /*# sourceMappingURL=style.css.map */
+}
 
 .contact-form {
   position: relative;
@@ -581,14 +578,10 @@ textarea {
 .footer__social-link:hover {
   color: #ca825b;
 }
-.footer__social-link--telegram,
-.footer__social-link--instagram,
-.footer__social-link--vk {
+.footer__social-link--telegram, .footer__social-link--instagram, .footer__social-link--vk {
   color: #ededed;
 }
-.footer__social-link--telegram .footer__social-icon,
-.footer__social-link--instagram .footer__social-icon,
-.footer__social-link--vk .footer__social-icon {
+.footer__social-link--telegram .footer__social-icon, .footer__social-link--instagram .footer__social-icon, .footer__social-link--vk .footer__social-icon {
   font-size: 40px;
   color: inherit;
 }
@@ -616,4 +609,4 @@ textarea {
   .footer__list {
     gap: 5px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
