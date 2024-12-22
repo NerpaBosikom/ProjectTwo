@@ -107,44 +107,121 @@
       <section class="about"></section>
       <section class="features"></section>
       <section class="bestsellers"></section>
-      <section class="services"></section>
-      <section class="quote"></section>
-      <section class="blog">
-        <div class="blog__wrapper__line1">
-          <img src="assets/images/blog/Line.png" />
-        </div>
-        <div class="blog__wrapper">
-          <h2 class="blog__wrapper__text">Блог</h2>
-        </div>
-        <div class="blog__wrapper__cards">
-          <div class="blog__wrapper__cards__1">
-            <img src="assets/images/blog/1.png" />
-            <p>
-              Таким образом реализация намеченных плановых заданий представляет
-              собой интересный эксперимент проверки
-            </p>
-          </div>
-          <div class="blog__wrapper__cards__2">
-            <img src="assets/images/blog/2.png" />
-            <p>
-              Таким образом реализация намеченных плановых заданий представляет
-              собой интересный эксперимент проверки
-            </p>
-          </div>
-          <div class="blog__wrapper__cards__3">
-            <img src="assets/images/blog/3.png" />
-            <p>
-              Таким образом реализация намеченных плановых заданий представляет
-              собой интересный эксперимент проверки
-            </p>
-          </div>
-        </div>
-        <div class="blog__wrapper__line1">
-          <img src="assets/images/blog/Line.png" />
-        </div>
+      <section class="quote">
+        <span class="quote-form__decor-three"></span>
+        <p class="quote__text">"Каждое слово — шаг в новый мир, каждая история — ключ к душе."</p>
       </section>
+      <section class="services"></section>
+      <section class="contact-form">
+        <span class="contact-form__decor-one"></span>
+        <span class="contact-form__decor-two"></span>
+        <div class="contact-form__wrapper container">
+          <div class="contact-form__info">
+            <h2 class="contact-form__title">Остались вопросы?</h2>
+            <p class="contact-form__text">
+              Заполните заявку и я отвечу</br> на ваше сообщение
+            </p>
+          </div>
+          <form
+            class="contact-form__feedback"
+            action="https://script.google.com/macros/s/AKfycbyD5MlzGKYZT71dTl0LnkZIV6pOUft8PCabBKarAAjL7IiZBx8xYFRB9jHjgSocPys/exec" method="POST"
+            >
+              <div class="contact-form__message">
+                <label for="name">Ваше имя:</label>
+                <input
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+              <label for="email">Ваш email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+              <label for="message">Ваше сообщение:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                ></textarea>
+              </div>
+              <!-- Новый чекбокс -->
+              <div class="contact-form__checkbox">
+                <input type="checkbox" id="consent" name="consent" required />
+                <label for="consent">
+                  Я даю согласие на обработку персональных данных
+                </label>
+              </div>
+              <div class="contact-form__button">
+                <button type="submit" disabled>Отправить</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="blog">
+          <div class="blog__wrapper__line1">
+            <img src="assets/images/blog/Line.png" />
+          </div>
+          <div class="blog__wrapper">
+            <h2 class="blog__wrapper__text">Блог</h2>
+          </div>
+          <div class="blog__wrapper__cards">
+            <div class="blog__wrapper__cards__1">
+              <img src="assets/images/blog/1.png" />
+              <p>
+                Таким образом реализация намеченных плановых заданий представляет
+                собой интересный эксперимент проверки
+              </p>
+            </div>
+            <div class="blog__wrapper__cards__2">
+              <img src="assets/images/blog/2.png" />
+              <p>
+                Таким образом реализация намеченных плановых заданий представляет
+                собой интересный эксперимент проверки
+              </p>
+            </div>
+            <div class="blog__wrapper__cards__3">
+              <img src="assets/images/blog/3.png" />
+              <p>
+                Таким образом реализация намеченных плановых заданий представляет
+                собой интересный эксперимент проверки
+              </p>
+            </div>
+          </div>
+          <div class="blog__wrapper__line1">
+            <img src="assets/images/blog/Line.png" />
+          </div>
+        </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container-wrapper">
+        <img class="footer__logo" src="./assets/images/icons/logo.svg" alt="logo">
+        <ul class="footer__list">
+          <li class="footer__list-item">
+          <a href="https://web.telegram.org/k/#@asamarkina" class="footer__social-link footer__social-link--telegram" target="_blank">
+            <i class="fab fa-telegram-plane footer__social-icon"></i>
+          </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="https://www.instagram.com/anna_virsen/" class="footer__social-link footer__social-link--instagram" target="_blank">
+            <i class="fab fa-instagram footer__social-icon"></i>
+            <span class="footer__social-link__star">*</span> 
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="https://vk.com/lublu_lubima" class="footer__social-link footer__social-link--vk" target="_blank">
+              <i class="fab fa-vk footer__social-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__warning">*META признана экстремистской организацией и запрещена на территории РФ</p> 
+    </footer>
     <script src="./assets/js/main.js"></script>
+    </footer>
   </body>
 </html>
