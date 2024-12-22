@@ -22,7 +22,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: clamp(14px, 1.38vw, 22px);
   color: #171715;
   background-color: #ffffff;
 }
@@ -49,7 +49,7 @@ a {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #889164;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(237, 237, 237, 0.2);
 }
 .header__wrapper {
   height: 100px;
@@ -64,13 +64,13 @@ a {
        column-gap: 40px;
 }
 .header__item {
-  font-size: 18px;
+  font-size: clamp(18px, 1.38vw, 22px);
 }
 .header__link {
   color: #ededed;
 }
 .header__link:hover {
-  color: #575F37;
+  font-weight: 600;
   transition: 0.2s;
 }
 
@@ -82,7 +82,7 @@ a {
   right: 2rem;
   width: 3rem;
   cursor: pointer;
-  z-index: 2;
+  z-index: 5;
 }
 .menu-container input {
   display: none;
@@ -122,7 +122,7 @@ a {
   width: 250px;
   padding: 6rem 4rem;
   font-size: 1.5rem;
-  z-index: 1;
+  z-index: 4;
   background: #889164;
   color: #ededed;
   will-change: transform, opacity;
@@ -168,17 +168,16 @@ a {
 }
 
 .blog__wrapper__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.17fr 0.49fr 0.08fr 0.15fr 0.11fr;
+  display: flex;
   gap: 20px;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .blog__wrapper__text {
-  grid-column: 1/2;
-  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
   font-family: "Viaoda Libre";
   font-size: clamp(38px, 2vw, 64px);
   margin-bottom: 50px;
@@ -186,8 +185,6 @@ a {
 }
 
 .blog__wrapper__cards__img1 {
-  grid-column: 1/2;
-  grid-row: 2/3;
   margin-bottom: 15px;
   display: block;
   position: relative;
@@ -205,16 +202,12 @@ a {
 }
 
 .blog__wrapper__cards__name1 {
-  grid-column: 1/2;
-  grid-row: 3/4;
   margin-bottom: 25px;
   font-family: "Viaoda Libre";
   font-size: clamp(25px, 2vw, 33px);
 }
 
 .blog__wrapper__cards__text1 {
-  grid-column: 1/2;
-  grid-row: 4/5;
   margin-bottom: 25px;
   font-family: "Montserrat";
   line-height: 27px;
@@ -222,14 +215,10 @@ a {
 }
 
 .blog__wrapper__cards__button1 {
-  grid-column: 1/2;
-  grid-row: 5/6;
   margin-bottom: 120px;
 }
 
 .blog__wrapper__cards__img2 {
-  grid-column: 2/3;
-  grid-row: 2/3;
   margin-bottom: 15px;
   display: block;
   position: relative;
@@ -247,16 +236,12 @@ a {
 }
 
 .blog__wrapper__cards__name2 {
-  grid-column: 2/3;
-  grid-row: 3/4;
   margin-bottom: 25px;
   font-family: "Viaoda Libre";
   font-size: clamp(25px, 2vw, 33px);
 }
 
 .blog__wrapper__cards__text2 {
-  grid-column: 2/3;
-  grid-row: 4/5;
   margin-bottom: 25px;
   font-family: "Montserrat";
   line-height: 27px;
@@ -264,14 +249,10 @@ a {
 }
 
 .blog__wrapper__cards__button2 {
-  grid-column: 2/3;
-  grid-row: 5/6;
   margin-bottom: 120px;
 }
 
 .blog__wrapper__cards__img3 {
-  grid-column: 3/4;
-  grid-row: 2/3;
   margin-bottom: 15px;
   display: block;
   position: relative;
@@ -289,16 +270,12 @@ a {
 }
 
 .blog__wrapper__cards__name3 {
-  grid-column: 3/4;
-  grid-row: 3/4;
   margin-bottom: 25px;
   font-family: "Viaoda Libre";
   font-size: clamp(25px, 2vw, 33px);
 }
 
 .blog__wrapper__cards__text3 {
-  grid-column: 3/4;
-  grid-row: 4/5;
   margin-bottom: 25px;
   font-family: "Montserrat";
   line-height: 27px;
@@ -306,8 +283,6 @@ a {
 }
 
 .blog__wrapper__cards__button3 {
-  grid-column: 3/4;
-  grid-row: 5/6;
   margin-bottom: 120px;
 }
 
@@ -354,75 +329,179 @@ a {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
   .blog__wrapper__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.09fr 0.25fr 0.04fr 0.07fr 0.03fr 0.25fr 0.04fr 0.07fr 0.03fr;
-  }
-  .blog__wrapper__cards__button1 {
-    margin-bottom: 30px;
-  }
-  .blog__wrapper__cards__button2 {
-    margin-bottom: 30px;
-  }
-  .blog__wrapper__cards__img3 {
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
-  .blog__wrapper__cards__name3 {
-    grid-column: 1/2;
-    grid-row: 7/8;
-  }
-  .blog__wrapper__cards__text3 {
-    grid-column: 1/2;
-    grid-row: 8/9;
-    margin-bottom: 30px;
-  }
-  .blog__wrapper__cards__button3 {
-    grid-column: 1/2;
-    grid-row: 9/10;
+    gap: 10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1330px) {
   .blog__wrapper__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.09fr 0.25fr 0.04fr 0.07fr 0.03fr 0.25fr 0.04fr 0.07fr 0.03fr 0.25fr 0.04fr 0.07fr 0.03fr;
-    margin-left: 5vw;
-    margin-right: 25vw;
+    justify-content: start;
+    -moz-column-gap: 170px;
+         column-gap: 170px;
   }
-  .blog__wrapper__cards__img2 {
-    grid-column: 1/2;
-    grid-row: 6/7;
+}
+@media (max-width: 1024px) {
+  .blog__wrapper__container {
+    -moz-column-gap: 100px;
+         column-gap: 100px;
   }
-  .blog__wrapper__cards__name2 {
-    grid-column: 1/2;
-    grid-row: 7/8;
+}
+@media (max-width: 994px) {
+  .blog__wrapper__container {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
-  .blog__wrapper__cards__text2 {
-    grid-column: 1/2;
-    grid-row: 8/9;
+}
+@media (max-width: 912px) {
+  .blog__wrapper__container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
   }
-  .blog__wrapper__cards__button2 {
-    grid-column: 1/2;
-    grid-row: 9/10;
-  }
-  .blog__wrapper__cards__img3 {
-    grid-column: 1/2;
-    grid-row: 10/11;
-  }
-  .blog__wrapper__cards__name3 {
-    grid-column: 1/2;
-    grid-row: 11/12;
-  }
-  .blog__wrapper__cards__text3 {
-    grid-column: 1/2;
-    grid-row: 12/13;
-    margin-bottom: 30px;
-  }
-  .blog__wrapper__cards__button3 {
-    grid-column: 1/2;
-    grid-row: 13/14;
+}
+.banner {
+  max-width: 1600px;
+  height: 90vh;
+  margin: 0 auto;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_name {
+  font-family: "Viaoda Libre";
+  color: #ededed;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: clamp(75px, 6.25vw, 100px);
+  text-align: center;
+}
+
+.banner_profession {
+  color: #ededed;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: clamp(20px, 1.75vw, 28px);
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  position: relative;
+  max-width: 1600px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #889164;
+  color: #ededed;
+}
+
+.quote__text {
+  position: relative;
+  color: #ededed;
+  text-align: center;
+  z-index: 1;
+  font-family: "Viaoda Libre";
+  font-weight: 400;
+  font-size: clamp(20px, 2.75vw, 44px);
+  line-height: 38px;
+  font-style: normal;
+  font-display: swap;
+}
+
+.quote__decor-three {
+  display: block;
+  background-image: url(../images/line.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  top: 0;
+}
+
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #889164;
+  color: #ededed;
+  height: 100px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.footer__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+.footer__list-item {
+  margin: 0;
+}
+.footer__social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  background-color: transparent;
+}
+.footer__social-link:hover {
+  color: #CA825B;
+}
+.footer__social-link--telegram, .footer__social-link--instagram, .footer__social-link--vk {
+  color: #ededed;
+}
+.footer__social-link--telegram .footer__social-icon, .footer__social-link--instagram .footer__social-icon, .footer__social-link--vk .footer__social-icon {
+  font-size: 40px;
+  color: inherit;
+}
+.footer__social-link--instagram .footer__social-link__star {
+  font-size: 12px;
+  color: #ededed;
+  margin-bottom: 13px;
+  transition: color 0.3s ease;
+}
+.footer__social-link--instagram:hover .footer__social-link__star {
+  color: #CA825B;
+}
+.footer__warning {
+  text-align: center;
+  margin-top: -15px;
+  padding-top: 20px;
+  font-size: clamp(4px, 2vw, 12px);
+  word-wrap: break-word;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 375px) {
+  .footer__list {
+    gap: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
