@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/reset.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <title>Анна Вирсен</title>
   </head>
   <body>
@@ -23,7 +24,7 @@
           <nav class="header__menu">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link" href="/">Обо мне</a>
+                <a class="header__link" href="/">Главная</a>
               </li>
               <li class="header__item">
                 <a class="header__link" href="/">Книги</a>
@@ -46,10 +47,9 @@
             <span></span>
             <span></span>
           </label>
-
           <div class="menu-drawer" id="menu-drawer" opened="false">
             <ul>
-              <li>Обо мне</li>
+              <li>Главная</li>
               <li>Книги</li>
               <li>Услуги</li>
               <li>Блог</li>
@@ -60,98 +60,46 @@
       </div>
     </header>
     <main>
-      <section class="hero"></section>
+      <section class="banner">
+        <div class="banner_profession">Писатель, сценарист</div>
+        <div class="banner_name">Анна Вирсен</div>
+      </section>
       <section class="book"></section>
       <section class="about"></section>
-      <section class="quote"></section>
       <section class="bestsellers"></section>
-      <section class="services"></section>
-      <section class="contact-form">
-        <!-- <form
-          action="https://script.google.com/macros/s/AKfycbyD5MlzGKYZT71dTl0LnkZIV6pOUft8PCabBKarAAjL7IiZBx8xYFRB9jHjgSocPys/exec"
-          method="POST"
-          class="contact-form container"
-        >
-          <div class="contact-form__info">
-            <label for="name">Ваше имя:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Введите ваше имя"
-              required
-            />
-            <label for="email">Ваш email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Введите ваш email"
-              required
-            />
-          </div>
-          <div class="contact-form__message">
-            <label for="message">Ваше сообщение:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Введите ваше сообщение"
-              required
-            ></textarea>
-          </div>
-          <div class="contact-form__button">
-            <button type="submit">Отправить</button>
-          </div>
-        </form> -->
-        <form
-          class="contact-form__wrapper container"
-          action="https://script.google.com/macros/s/AKfycbyD5MlzGKYZT71dTl0LnkZIV6pOUft8PCabBKarAAjL7IiZBx8xYFRB9jHjgSocPys/exec"
-          method="POST"
-        >
-          <div class="contact-form__info">
-            <label for="name">Ваше имя:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Введите ваше имя"
-              required
-            />
-            <label for="email">Ваш email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Введите ваш email"
-              required
-            />
-          </div>
-          <div class="contact-form__message">
-            <label for="message">Ваше сообщение:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Введите ваше сообщение"
-              required
-            ></textarea>
-          </div>
-          <!-- Новый чекбокс -->
-          <div class="contact-form__checkbox">
-            <input type="checkbox" id="consent" name="consent" required />
-            <label for="consent">
-              Я даю согласие на обработку персональных данных
-            </label>
-          </div>
-          <div class="contact-form__button">
-            <button type="submit" disabled>Отправить</button>
-          </div>
-        </form>
+      <section class="quote">
+        <span class="quote-form__decor-three"></span>
+        <p class="quote__text">"Каждое слово — шаг в новый мир, каждая история — ключ к душе."</p>
       </section>
+      <section class="services"></section>
+      <section class="contact-form"></section>
       <section class="blog"></section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container-wrapper">
+        <img class="footer__logo" src="./assets/images/icons/logo.svg" alt="logo">
+        <ul class="footer__list">
+          <li class="footer__list-item">
+          <a href="https://web.telegram.org/k/#@asamarkina" class="footer__social-link footer__social-link--telegram" target="_blank">
+            <i class="fab fa-telegram-plane footer__social-icon"></i>
+          </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="https://www.instagram.com/anna_virsen/" class="footer__social-link footer__social-link--instagram" target="_blank">
+            <i class="fab fa-instagram footer__social-icon"></i>
+            <span class="footer__social-link__star">*</span> 
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="https://vk.com/lublu_lubima" class="footer__social-link footer__social-link--vk" target="_blank">
+              <i class="fab fa-vk footer__social-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__warning">*META признана экстремистской организацией и запрещена на территории РФ</p> 
+    </footer>
     <script src="./assets/js/main.js"></script>
+    </footer>
   </body>
 </html>

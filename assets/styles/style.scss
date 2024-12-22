@@ -22,18 +22,19 @@
   font-display: swap;
 }
 
-$primary-color: rgba(74, 95, 104, 0.85); 
+$primary-color: #889164; 
 $secondary-color: #ededed;
-$accent-color: #183644;
+$accent-color: #575F37;
+$hover-color: #CA825B;
 $background-color: #ffffff;
-$text-color: #231f20;
-$border-color: rgba(165, 142, 116, 0.4);
-$border-color-dark: rgba(217, 217, 217, 0);
+$text-color: #171715;
+$border-color: rgba(23, 23, 21, 0.25);
+$border-color-dark: rgba(23, 23, 21, 0.85);
 
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: clamp(14px, 1.38vw, 22px);
   color: $text-color;
   background-color: $background-color;
 }
@@ -56,7 +57,6 @@ a {
 }
 
 
-
 // Света 
 
 .header {
@@ -64,7 +64,7 @@ a {
   max-width: 1600px;
   margin: 0 auto;
   background-color: $primary-color;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(237, 237, 237, 0.2);
 
     &__wrapper {
       height: 100px;
@@ -80,14 +80,15 @@ a {
     }
 
       &__item {
-        font-size: 18px;
+        font-size: clamp(18px, 1.38vw, 22px);;
       }
 
         &__link {
           color: $secondary-color;
 
           &:hover {
-          color: $accent-color;
+            font-weight: 600;
+          // color: $accent-color;
           transition: 0.2s;
         }
 
@@ -95,7 +96,7 @@ a {
 }
 
 /* SCSS variables goes here */
-$menu-drawer-width: 400px;
+$menu-drawer-width: 250px;
 $breakpoint: 768px;
 
 /****************************/
@@ -106,7 +107,7 @@ $breakpoint: 768px;
   right: 2rem;
   width: 3rem;
   cursor: pointer;
-  z-index: 2;
+  z-index: 5;
   
   input { display: none; cursor: pointer; }
   input:checked ~ span {
@@ -145,7 +146,7 @@ $breakpoint: 768px;
   width: $menu-drawer-width;
   padding: 6rem 4rem;
   font-size: 1.5rem;
-  z-index: 1;
+  z-index: 4;
   background: $primary-color;
   color: $secondary-color;
   will-change: transform, opacity;
@@ -170,6 +171,12 @@ $breakpoint: 768px;
   }
 }
 
+.menu-drawer {
+  @media (max-width: 500px) {
+  width: 100vw;
+}
+}
+
 .header__menu {
   @media (max-width: $breakpoint) {
     display: none;
@@ -177,96 +184,174 @@ $breakpoint: 768px;
 }
 
 
+
 // Ира Н.
 // Аня
-// 
-// 
-// 
-// 
-// 
 
-.contact-form {
+// 
+.banner {
+  max-width: 1600px;
+  height: 90vh;
+  margin: 0 auto;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_name {
+  font-family: "Viaoda Libre";
+  color: $secondary-color;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size: clamp(75px, 6.25vw, 100px);
+  text-align: center;
+}
+
+.banner_profession {
+  color: $secondary-color;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-size:clamp(20px, 1.75vw, 28px);
+}
+  
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  position: relative;
+  max-width: 1600px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: $primary-color;
+  color: $secondary-color; 
+}
+.quote__text {
+  position: relative;
+  color: $secondary-color;
+  text-align: center;
+  z-index: 1; 
+  font-family: "Viaoda Libre";
+  font-weight: 400;
+  font-size: clamp(20px, 2.75vw, 44px);
+  line-height: 38px;
+  font-style: normal;
+  font-display: swap;
+}
+
+.quote__decor-three {
+  display: block;
+  background-image: url(../images/line.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  top: 0;
+}
+
+// @media (min-width: 375px) and (max-width: 1600px) {
+//   .quote__text {
+  
+// }
+// }
+
+
+// 
+// 
+// Настя
+.footer {
   max-width: 1600px;
   margin: 0 auto;
-  background: $primary-color;
+  background-color: $primary-color; 
+  color: $secondary-color; 
+  height: 100px; 
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  &__list-item {
+    margin: 0;
+  }
+  
+  &__social-link {
+    display: inline-block;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    background-color: transparent;
+    
+    &:hover {
+      color: $hover-color;
+    }
+
+    &--telegram,
+    &--instagram,
+    &--vk {
+      color: $secondary-color;
+    }
+    
+    &--telegram .footer__social-icon,
+    &--instagram .footer__social-icon,
+    &--vk .footer__social-icon {
+      font-size: 40px; 
+      color: inherit;
+    }
+
+    &--instagram .footer__social-link__star {
+      font-size: 12px;
+      color: $secondary-color;
+      margin-bottom: 13px;
+      transition: color 0.3s ease;
+  }
+  &--instagram:hover .footer__social-link__star {
+      color: $hover-color;
 }
-.contact-form__wrapper {
-  // display: grid;
-  // justify-items: center;
-  // grid-template-columns: repeat(2, 1fr);
-  // column-gap: 20px;
-  // max-width: 100vw;
-  // margin: 0 auto;
-  padding-block: 60px;
-  font-size: 22px;
-  // background: $primary-color;
-  // border-radius: 10px;
-  // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+&__warning {
+  text-align: center;
+  margin-top: -15px;
+  padding-top: 20px;
+  font-size: clamp(4px, 2vw, 12px); 
+  word-wrap: break-word;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
-.contact-form__info {
-  // grid-column: 1/2;
-  // justify-self: end;
 }
-.contact-form__message {
-  // grid-column: 2/3;
-  // justify-self: start;
+.footer__list{
+  @media (max-width: 375px) {
+    gap: 5px;
+  }
 }
-.contact-form__button {
-  // grid-column: 1/3;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  display: flex;
-  width: clamp(230px, 30vw, 450px);
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid $primary-color;
-  border-radius: 4px;
-  font-size: 18px;
-}
-
-textarea {
-  height: 114px;
-  /* overflow: auto; */
-}
-
-.contact-form button {
-  display: flex;
-  // width: 200px;
-  margin-top: 30px;
-  padding: 10px 25px;
-  background: $accent-color;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.contact-form__checkbox {
-  margin: 20px 0;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-form__checkbox input {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.contact-form__checkbox label {
-  color: #555;
-  cursor: pointer;
-}
-
-
