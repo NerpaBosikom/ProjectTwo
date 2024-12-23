@@ -292,18 +292,20 @@ $breakpoint: 768px;
     }
 
     .book__image {
-      width: 100%;
-      height: 100%;
+      width: clamp(250px, 25vw, 400px);
+      height: clamp(350px, 37.5vw, 600px);
       object-fit: cover;
     }
 
     &::after {
       content: "";
       position: absolute;
-      top: 25px;
-      left: 25px;
-      right: -25px;
-      bottom: -25px;
+      width: clamp(250px, 25vw, 400px);
+      height: clamp(350px, 37.5vw, 600px);
+      top: 20px;
+      left: 20px;
+      right: -20px;
+      bottom: -20px;
       border: 1px solid rgba(23, 23, 21, 0.25);
       background-color: transparent;
       z-index: -1;
