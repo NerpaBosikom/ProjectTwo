@@ -659,3 +659,83 @@ textarea {
     gap: 5px;
   }
 }
+
+
+// Катя Services
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 1360px) {
+    margin-inline: 8vw;
+  }
+}
+.services__title {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin-right: auto;
+  color: #171715;
+  font-family: "Viaoda Libre";
+  font-size: clamp(40px, 4.4vw, 64px);
+
+  @media (max-width: 1065px) {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+}
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 60px;
+  padding-bottom: 50px;
+
+  @media (max-width: 1065px) {
+    justify-content: center;
+  }
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgba(35, 31, 32, 0.85);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  @media (max-width: 575px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: 1360px) {
+    margin-bottom: 50px;
+    }    
+  }
+
+.services__item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.services__item-title {
+  padding: 20px;
+  font-weight: 500;
+  font-size: clamp(20px, 2.08vw, 30px);
+  color: #171715;
+}
+.services__item-description {
+  text-align: center;
+  padding: 20px;
+  color: #171715;
+  line-height: 27px;
+}
+
+.services__item-price {
+  font-weight: 400;
+  font-size: clamp(15px,1.04vw, 18px);
+  color: rgba(23, 23, 21, 0.65);
+}
