@@ -665,21 +665,16 @@ textarea {
 .services {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  @media (max-width: 1360px) {
-    margin-inline: 8vw;
-  }
+  // align-items: center;
 }
 .services__title {
   padding-top: 120px;
   padding-bottom: 50px;
   margin-right: auto;
-  color: #171715;
   font-family: "Viaoda Libre";
   font-size: clamp(40px, 4.4vw, 64px);
 
-  @media (max-width: 1065px) {
+  @media (max-width: $breakpoint) {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -689,8 +684,8 @@ textarea {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 60px;
-  padding-bottom: 50px;
+  gap: 40px;
+  padding-bottom: 120px;
 
   @media (max-width: 1065px) {
     justify-content: center;
@@ -701,19 +696,21 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: clamp(280px, 25vw, 400px);
+  aspect-ratio: 1;
+  // width: 400px;
+  // height: 400px;
   border: 1px solid rgba(35, 31, 32, 0.85);
   transition: transform 0.3s, box-shadow 0.3s;
 
-  @media (max-width: 575px) {
-    width: 300px;
-    height: 300px;
-  }
+  // @media (max-width: 575px) {
+  //   width: 300px;
+  //   height: 300px;
+  // }
 
-  @media (max-width: 1360px) {
-    margin-bottom: 50px;
-    }    
+  // @media (max-width: 1360px) {
+  //   margin-bottom: 50px;
+  //   }    
   }
 
 .services__item:hover {
@@ -725,17 +722,15 @@ textarea {
   padding: 20px;
   font-weight: 500;
   font-size: clamp(20px, 2.08vw, 30px);
-  color: #171715;
 }
 .services__item-description {
   text-align: center;
-  padding: 20px;
-  color: #171715;
-  line-height: 27px;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+  line-height: 24px;
 }
 
 .services__item-price {
-  font-weight: 400;
   font-size: clamp(15px,1.04vw, 18px);
   color: rgba(23, 23, 21, 0.65);
 }
