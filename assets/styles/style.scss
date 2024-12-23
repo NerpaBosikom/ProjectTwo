@@ -281,8 +281,8 @@ $breakpoint: 768px;
 
   .book__image-wrapper {
     position: relative;
-    flex: 0 0 400px;
-    height: 600px;
+    // flex: 0 0 400px;
+    // height: 600px;
 
     @media (max-width: 960px) {
       display: flex;

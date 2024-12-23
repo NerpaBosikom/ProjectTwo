@@ -247,8 +247,6 @@ a {
 }
 .book .book__image-wrapper {
   position: relative;
-  flex: 0 0 400px;
-  height: 600px;
 }
 @media (max-width: 960px) {
   .book .book__image-wrapper {
