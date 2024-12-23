@@ -57,7 +57,7 @@ a {
 }
 
 
-// Света 
+// Света Header
 
 .header {
   position: relative;
@@ -97,8 +97,6 @@ a {
 /* SCSS variables goes here */
 $menu-drawer-width: 250px;
 $breakpoint: 768px;
-
-/****************************/
 
 .menu-container {
   position: absolute;
@@ -187,7 +185,7 @@ $breakpoint: 768px;
 // Ира Н.
 // Аня
 
-// 
+// Оля Света Banner
 .banner {
   max-width: 1600px;
   height: 90vh;
@@ -216,12 +214,14 @@ $breakpoint: 768px;
   font-size:clamp(20px, 1.75vw, 28px);
 }
   
+
+//Настя Quote
 .quote {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   place-items: center;
-  position: relative;
   max-width: 1600px;
   height: 200px;
   margin: 0 auto;
@@ -229,10 +229,10 @@ $breakpoint: 768px;
   color: $secondary-color; 
 }
 .quote__text {
-  position: relative;
+  // position: relative;
   color: $secondary-color;
   text-align: center;
-  z-index: 1; 
+  // z-index: 1; 
   font-family: "Viaoda Libre";
   font-weight: 400;
   font-size: clamp(20px, 2.75vw, 44px);
@@ -241,9 +241,9 @@ $breakpoint: 768px;
   font-display: swap;
 }
 
-.quote__decor-three {
+.quote-form__decor-three {
   display: block;
-  background-image: url(../images/line.svg);
+  background-image: url('../images/icons/line.svg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -255,14 +255,9 @@ $breakpoint: 768px;
   top: 0;
 }
 
-// @media (min-width: 375px) and (max-width: 1600px) {
-//   .quote__text {
-  
-// }
-// }
 
 
-// Света Форма
+// Света Form
 
 .contact-form {
   position: relative;
@@ -357,19 +352,6 @@ $breakpoint: 768px;
 }
 }
 
-// .contact-form__info {
-//   // grid-column: 1/2;
-//   // justify-self: end;
-// }
-
-// .contact-form__message {
-//   // grid-column: 2/3;
-//   // justify-self: start;
-// }
-// .contact-form__button {
-//   // grid-column: 1/3;
-// }
-
 .contact-form label {
   display: block;
   padding-top: 21px;
@@ -443,7 +425,7 @@ textarea {
 }
 
 // 
-// Настя
+// Настя Footer
 .footer {
   max-width: 1600px;
   margin: 0 auto;
