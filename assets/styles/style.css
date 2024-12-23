@@ -100,7 +100,6 @@ a {
 }
 
 /* SCSS variables goes here */
-/****************************/
 .menu-container {
   position: absolute;
   top: 1.5rem;
@@ -319,11 +318,11 @@ a {
 }
 
 .quote {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   place-items: center;
-  position: relative;
   max-width: 1600px;
   height: 200px;
   margin: 0 auto;
@@ -332,10 +331,8 @@ a {
 }
 
 .quote__text {
-  position: relative;
   color: #ededed;
   text-align: center;
-  z-index: 1;
   font-family: "Viaoda Libre";
   font-weight: 400;
   font-size: clamp(20px, 2.75vw, 44px);
@@ -344,9 +341,9 @@ a {
   font-display: swap;
 }
 
-.quote__decor-three {
+.quote-form__decor-three {
   display: block;
-  background-image: url(../images/line.svg);
+  background-image: url("../images/icons/line.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
