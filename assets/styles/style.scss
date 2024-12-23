@@ -37,6 +37,7 @@ body {
   font-size: clamp(14px, 1.38vw, 22px);
   color: $text-color;
   background-color: $background-color;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -76,7 +77,6 @@ a {
     background: $hover-color;
     transition: background-color 0.2s ease;
   }
-
 
   &:active {
     transform: scale(0.95);
@@ -251,7 +251,6 @@ $breakpoint: 768px;
   font-size: clamp(20px, 1.75vw, 28px);
 }
 
-
 // Ира Н.
 
 .book {
@@ -358,10 +357,7 @@ $breakpoint: 768px;
   }
 }
 
-  
-
 //Настя Quote
-
 
 .quote {
   position: relative;
@@ -389,7 +385,7 @@ $breakpoint: 768px;
 
 .quote-form__decor-three {
   display: block;
-  background-image: url('../images/icons/line.svg');
+  background-image: url("../images/icons/line.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -400,7 +396,6 @@ $breakpoint: 768px;
   z-index: 0;
   top: 0;
 }
-
 
 // Света Form
 
@@ -547,7 +542,6 @@ textarea {
   z-index: 1;
 }
 
-
 .contact-form__checkbox {
   display: flex;
   align-items: end;
@@ -573,7 +567,6 @@ textarea {
   cursor: pointer;
   z-index: 1;
 }
-
 
 // Настя Footer
 .footer {
