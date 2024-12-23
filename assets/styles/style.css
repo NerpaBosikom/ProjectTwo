@@ -257,18 +257,6 @@ a {
 }
 .bestsellers .bestsellers__books .bestsellers__book .bestsellers__button {
   margin-top: 30px;
-  background-color: #889164;
-  color: #ededed;
-  border: none;
-  padding: 15px 80px;
-  border-radius: 15px;
-  font-size: clamp(0.7rem, 66.66vw, 1rem);
-  font-weight: 500;
-  cursor: pointer;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-.bestsellers .bestsellers__books .bestsellers__book .bestsellers__button:hover {
-  background-color: #ca825b;
 }
 
 .banner {
