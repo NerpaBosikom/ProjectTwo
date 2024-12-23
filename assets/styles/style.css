@@ -25,6 +25,7 @@ body {
   font-size: clamp(14px, 1.38vw, 22px);
   color: #171715;
   background-color: #ffffff;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -42,6 +43,31 @@ a {
   max-width: 1510px;
   margin: 0 auto;
   padding-inline: 15px;
+}
+
+.button {
+  padding: 15px 80px;
+  gap: 10px;
+  border: none;
+  border-radius: 15px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  font-size: clamp(18px, 1.66vw, 24px);
+  font-weight: 500;
+  background: #575f37;
+  color: #ffffff;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+.button:hover {
+  background: #ca825b;
+  transition: background-color 0.2s ease;
+}
+.button:active {
+  transform: scale(0.95);
+  outline: none;
 }
 
 .header {
@@ -86,12 +112,11 @@ a {
   color: #ededed;
 }
 .header__link:hover {
-  font-weight: 600;
+  color: #575f37;
   transition: 0.2s;
 }
 
 /* SCSS variables goes here */
-/****************************/
 .menu-container {
   position: absolute;
   top: 1.5rem;
@@ -105,7 +130,7 @@ a {
   cursor: pointer;
 }
 .menu-container input:checked ~ span {
-  background: #575F37;
+  background: #575f37;
 }
 .menu-container span {
   display: block;
@@ -157,7 +182,7 @@ a {
   cursor: pointer;
 }
 .menu-drawer ul li:hover {
-  color: #575F37;
+  color: #575f37;
 }
 @media (min-width: 769px) {
   .menu-drawer {
@@ -290,12 +315,108 @@ a {
   font-size: clamp(20px, 1.75vw, 28px);
 }
 
+.book {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-bottom: 132px;
+  overflow-x: hidden;
+}
+.book__divider-line {
+  width: 100%;
+  height: 1px;
+  margin: 66px 0;
+  background-color: rgba(23, 23, 21, 0.25);
+}
+.book__story-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+@media (max-width: 960px) {
+  .book__story-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.book .book__image-wrapper {
+  position: relative;
+}
+@media (max-width: 960px) {
+  .book .book__image-wrapper {
+    display: flex;
+    justify-content: center;
+    flex: none;
+    height: auto;
+  }
+}
+.book .book__image-wrapper .book__image {
+  width: clamp(250px, 25vw, 400px);
+  height: clamp(350px, 37.5vw, 600px);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.book .book__image-wrapper::after {
+  content: "";
+  position: absolute;
+  width: clamp(250px, 25vw, 400px);
+  height: clamp(350px, 37.5vw, 600px);
+  top: 20px;
+  left: 20px;
+  right: -20px;
+  bottom: -20px;
+  border: 1px solid rgba(23, 23, 21, 0.25);
+  background-color: transparent;
+  z-index: -1;
+}
+.book__content {
+  max-width: 855px;
+}
+@media (max-width: 960px) {
+  .book__content {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+.book__author {
+  margin: 0 0 10px;
+  font-size: clamp(16px, 1.25vw, 20px);
+}
+.book__title {
+  margin: 0;
+  font-size: clamp(48px, 4.44vw, 64px);
+  font-family: "Viaoda Libre";
+}
+.book__underline {
+  max-width: 378px;
+  height: 1px;
+  background-color: rgba(23, 23, 21, 0.25);
+  margin-top: 10px;
+}
+@media (max-width: 960px) {
+  .book__underline {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.book__description {
+  margin-top: 30px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.book__button {
+  margin-top: 40px;
+  height: 60px;
+}
+
 .quote {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   place-items: center;
-  position: relative;
   max-width: 1600px;
   height: 200px;
   margin: 0 auto;
@@ -304,10 +425,8 @@ a {
 }
 
 .quote__text {
-  position: relative;
   color: #ededed;
   text-align: center;
-  z-index: 1;
   font-family: "Viaoda Libre";
   font-weight: 400;
   font-size: clamp(20px, 2.75vw, 44px);
@@ -316,9 +435,9 @@ a {
   font-display: swap;
 }
 
-.quote__decor-three {
+.quote-form__decor-three {
   display: block;
-  background-image: url(../images/line.svg);
+  background-image: url("../images/icons/line.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -328,6 +447,172 @@ a {
   left: 0;
   z-index: 0;
   top: 0;
+}
+
+.contact-form {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #889164;
+}
+
+.contact-form__wrapper {
+  padding-block: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+@media (max-width: 850px) {
+  .contact-form__wrapper {
+    justify-content: center;
+    padding-block: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-form__wrapper {
+    padding-block: 20px;
+  }
+}
+
+.contact-form__decor-one {
+  display: block;
+  background-image: url("../images/icons/wave1.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.contact-form__decor-two {
+  display: block;
+  background-image: url("../images/icons/wave2.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -25px;
+  z-index: 0;
+}
+
+.contact-form__text {
+  font-size: clamp(16px, 1.5vw, 24px);
+  line-height: 25px;
+  color: #ededed;
+  z-index: 1;
+}
+
+.contact-form__title {
+  font-family: "Viaoda Libre", sans-serif;
+  font-size: clamp(38px, 4.5vw, 64px);
+  line-height: 60px;
+  color: #ededed;
+}
+
+.contact-form__feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(237, 237, 237, 0.85);
+  border-radius: 30px;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: #ededed;
+  font-weight: 500;
+  font-size: clamp(14px, 1.5vw, 24px);
+  line-height: 29px;
+  padding-inline: 50px;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .contact-form__feedback {
+    padding-inline: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .contact-form__feedback {
+    padding-inline: 15px;
+  }
+}
+
+.contact-form label {
+  display: block;
+  padding-top: 21px;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: flex;
+  width: clamp(230px, 37.5vw, 600px);
+  padding: 20px;
+  font-size: clamp(10px, 1vw, 18px);
+  border: 1px solid rgba(237, 237, 237, 0.85);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+textarea {
+  height: 114px;
+  /* overflow: auto; */
+  z-index: 1;
+}
+
+.contact-form button {
+  display: flex;
+  background: transparent;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.contact-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 30px;
+  z-index: 1;
+}
+
+.contact-form__checkbox {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  width: 100%;
+  font-size: clamp(12px, 1vw, 16px);
+  z-index: 1;
+}
+@media (max-width: 885px) {
+  .contact-form__checkbox {
+    align-items: center;
+  }
+}
+
+.contact-form__checkbox input {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.contact-form__checkbox label {
+  color: #ededed;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .footer {
@@ -372,7 +657,7 @@ a {
   background-color: transparent;
 }
 .footer__social-link:hover {
-  color: #CA825B;
+  color: #ca825b;
 }
 .footer__social-link--telegram, .footer__social-link--instagram, .footer__social-link--vk {
   color: #ededed;
@@ -388,7 +673,7 @@ a {
   transition: color 0.3s ease;
 }
 .footer__social-link--instagram:hover .footer__social-link__star {
-  color: #CA825B;
+  color: #ca825b;
 }
 .footer__warning {
   text-align: center;
@@ -405,4 +690,71 @@ a {
   .footer__list {
     gap: 5px;
   }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__title {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin-right: auto;
+  font-family: "Viaoda Libre";
+  font-size: clamp(40px, 4.4vw, 64px);
+}
+@media (max-width: 768px) {
+  .services__title {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 120px;
+}
+@media (max-width: 1065px) {
+  .services__list {
+    justify-content: center;
+  }
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: clamp(280px, 25vw, 400px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(35, 31, 32, 0.85);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.services__item-title {
+  padding: 20px;
+  font-weight: 500;
+  font-size: clamp(20px, 2.08vw, 30px);
+}
+
+.services__item-description {
+  text-align: center;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+  line-height: 24px;
+}
+
+.services__item-price {
+  font-size: clamp(15px, 1.04vw, 18px);
+  color: rgba(23, 23, 21, 0.65);
 }/*# sourceMappingURL=style.css.map */
