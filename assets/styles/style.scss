@@ -235,7 +235,7 @@ $bestsellers-breakpoint: 995px;
 
   .bestsellers__title {
     font-family: "Viaoda Libre";
-    font-size: clamp(2rem, 25vw, 3rem);
+    font-size: clamp(48px, 4.44vw, 64px);
     color: $text-color;
     padding-bottom: 50px;
   }

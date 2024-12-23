@@ -90,22 +90,6 @@ a {
        column-gap: 40px;
 }
 .header__item {
-  font-size: 18px;
-}
-.header__link {
-  color: #ededed;
-}
-.header__link:hover {
-  color: #575F37;
-  transition: 0.2s;
-}
-.header__list {
-  display: flex;
-  justify-content: space-between;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-}
-.header__item {
   font-size: clamp(18px, 1.38vw, 22px);
 }
 .header__link {
@@ -214,7 +198,7 @@ a {
 }
 .bestsellers .bestsellers__title {
   font-family: "Viaoda Libre";
-  font-size: clamp(2rem, 25vw, 3rem);
+  font-size: clamp(48px, 4.44vw, 64px);
   color: #171715;
   padding-bottom: 50px;
 }
@@ -284,7 +268,7 @@ a {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .bestsellers .bestsellers__books .bestsellers__book .bestsellers__button:hover {
-  background-color: #CA825B;
+  background-color: #ca825b;
 }
 
 .banner {
