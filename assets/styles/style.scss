@@ -316,6 +316,130 @@ $bestsellers-breakpoint: 995px;
 }
 
 // Аня
+// Ира Я.
+.blog__container{
+  display: flex; 
+  gap: 10px; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog__title{
+  display: flex;
+  flex-direction: row;
+  font-family: "Viaoda Libre";
+  font-size: clamp(38px, 2vw, 64px); 
+  margin-bottom: 50px;
+  margin-top: 120px;
+}
+.blog__image{
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+}
+.blog__image::before {
+  content: '';
+  position: absolute;
+  top: 10px; left: 10px;
+  right: -10px; bottom: -10px;
+  border: 1px solid rgba(23, 23, 21, 0.25);
+  z-index: -1;
+  width: clamp(250px, 30vw, 407px);
+}
+.blog__image img{
+  width: clamp(250px, 30vw, 407px);
+}
+.blog__name{
+  margin-bottom: 25px; 
+  margin-top: 15px; 
+  font-family: "Viaoda Libre";
+  font-size: clamp(25px, 2vw, 33px);  
+}
+.blog__text{
+  margin-bottom: 25px; 
+  font-family: "Montserrat";
+  line-height: 27px;
+  font-size: clamp(14px, 2vw, 22px);
+}
+.blog__button{
+  margin-bottom: 120px;
+}
+
+.page__blog{
+  max-width: 1600px; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.page__blog__img img{
+  width: 100%;
+}
+.page__blog__tittle{
+  font-family: "Viaoda Libre";
+  color: #171715;
+  margin-top: 120px;
+  margin-bottom: 25px;
+  font-size: clamp(38px, 2vw, 64px); 
+}
+.page__blog__text{
+  font-family: "Montserrat";
+  font-size: clamp(14px, 1.5vw, 22px);
+  margin-bottom: 10px;
+}
+.page__blog__text1{
+  font-family: "Montserrat";
+  font-size: clamp(14px, 1.5vw, 22px);
+  margin-bottom: 20px;
+}
+.page__blog__text2{
+  font-family: "Montserrat";
+  font-size: clamp(14px, 1.5vw, 22px);
+  margin-bottom: 40px;
+}
+.page__blog__tittle__h3{
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: clamp(14px, 1.5vw, 22px);
+  color: #171715;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 1350px){
+  .blog__container{
+    gap: 10px; 
+  }
+}
+@media (max-width: 1170px){
+  .blog__container{
+    justify-content: center;
+    column-gap: 40px; 
+  }
+}
+@media (max-width: 1024px){
+  .blog__button{
+    margin-bottom: 20px;
+  }
+  .page__blog__tittle{
+    margin-top: 80px;
+  }
+}
+@media (max-width: 994px){
+  .blog__container{
+    column-gap: 30px; 
+  }
+}
+@media (max-width: 912px){
+  .blog__container{
+    justify-content: center;
+    align-items: center;
+  }
+  .page__blog__tittle{
+    margin-top: 30px;
+  }
+}
+
+
 
 // Оля Света Banner
 .banner {
