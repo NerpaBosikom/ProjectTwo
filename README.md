@@ -7,7 +7,7 @@ ___
 Второй командный проект в рамках обучения в школе ITGIRLSCHOOL.<br>
 Данный проект представляет собой вёрстку сайта визитки для писателя Анны Вирсен. Проект включает в себя общение с Заказчиком, согласование и разработку макета в Figma. Данный проект служит демонстрацией базовых навыков работы с HTML,CSS, SCSS, тренировкой командной работы по методологии Agile. Также в данном проекте была возможность попрактиковаться в разных ролях как в настоящих командах (Дизайнер, Team Lead, Project Manager). К проекту применена адаптивность, классы прописаны по методологии БЭМ.<br><br>
 The second team project within the framework of studying at ITGIRLSCHOOL.<br>
-This project is a layout of a business card website for the writer Anna Virsen. The project includes communication with the Customer, coordination and development of the layout in Figma. This project serves as a demonstration of basic skills in working with HTML, CSS, SCSS and teamwork training in Agile methodology. Also in this project there was an opportunity to practice in different roles as in real teams (Designer, Team Lead, Project Manager). Adaptivity has been applied to the project, classes are prescribed according to the BEM methodology..
+This project is a layout of a business card website for the writer Anna Virsen. The project includes communication with the Customer, coordination and development of the layout in Figma. This project serves as a demonstration of basic skills in working with HTML, CSS, SCSS and teamwork training in Agile methodology. Also in this project there was an opportunity to practice in different roles as in real teams (Designer, Team Lead, Project Manager). Adaptivity has been applied to the project, classes are prescribed according to the BEM methodology.
 
 ---
 
