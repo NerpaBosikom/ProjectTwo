@@ -192,6 +192,64 @@ a {
   }
 }
 
+.about {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #889164;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.about__inner {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 95px;
+  margin: 0;
+}
+
+.about_wrapper_h2 {
+  font-family: "Viaoda Libre";
+  font-size: clamp(38px, 4.1vw, 64px);
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 60px;
+  color: #ededed;
+}
+
+.about_wrapper_h2-underline {
+  display: block;
+  width: 40%;
+  border-bottom: 0.5px solid #ffffff;
+}
+
+.about_wrapper_text {
+  max-width: 655px;
+  color: #ededed;
+  margin-top: 5%;
+  line-height: 130%;
+}
+
+.about_img-portrait {
+  width: clamp(290px, 37.5vw, 600px);
+}
+
+@media (max-width: 854px) {
+  .about__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .about__inner {
+    display: flex;
+    padding-bottom: 0;
+    align-items: center;
+  }
+}
 .bestsellers {
   padding-top: 120px;
   padding-bottom: 120px;

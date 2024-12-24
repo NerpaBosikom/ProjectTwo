@@ -224,6 +224,107 @@ $breakpoint: 768px;
   }
 }
 
+
+//Аня
+
+.about{
+  max-width: 1600px;
+  margin: 0 auto;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-around;
+  background-color: $primary-color;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.about__inner{
+  display: flex;
+  flex-direction: column;
+  // max-width: 612px;
+  padding-bottom: 95px;
+  margin: 0;
+}
+
+.about_wrapper_h2{
+  font-family: "Viaoda Libre";
+  font-size: clamp(38px, 4.1vw, 64px);
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 60px;
+  color: $secondary-color;
+}
+
+.about_wrapper_h2-underline{
+  display: block;
+  width: 40%;
+  border-bottom: 0.5px solid #ffffff;
+}
+
+.about_wrapper_text{
+  // font-family: "Montserrat";
+  // font-size: 22px;
+  max-width: 655px;
+  color: $secondary-color;
+  margin-top: 5%;
+  line-height: 130%;
+}
+
+.about_img-portrait{
+  width: clamp(290px, 37.5vw, 600px);
+  // height: auto;
+}
+
+@media (max-width: 854px){
+  .about__wrapper{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      }
+  .about__inner {
+      display: flex;
+      padding-bottom: 0;
+      align-items: center;
+  }
+}
+
+// @media (max-width: 770px){
+//   .about{
+//   display: flex;
+//   flex-wrap: wrap;
+//   }
+
+  // .about_wrapper_h2{
+  //   font-size: clamp(38px, 2.5vw, 64px);
+  // }
+
+  // .about_wrapper_h2-underline{
+  //     width: 25%;
+  // }
+
+  // .about_wrapper_text{
+  //     font-size: clamp(14px, 7.2vw, 22px);
+  // }
+// }
+
+// @media (max-width: 610px){
+//   .about_img-portrait{
+//       width: 352px;
+//       height: 233px;
+//   }
+  // .about_wrapper_text{
+  //   width: 90%;
+  // }
+// }
+
+
+
+
 //Виолетта Bestsellers
 $bestsellers-breakpoint: 995px;
 
