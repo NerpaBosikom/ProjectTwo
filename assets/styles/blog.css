@@ -1,0 +1,95 @@
+
+.menu-container {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  width: 3rem;
+  cursor: pointer;
+  transition: top 0.3s ease;
+  z-index: 5;
+}
+.menu-container input {
+  display: none;
+  cursor: pointer;
+}
+.menu-container input:checked ~ span {
+  background: #575f37;
+}
+.menu-container span {
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  margin: 0.5rem 0;
+  background: #ca825b;
+  border-radius: 0.25rem;
+  transition: all 300ms ease;
+}
+.menu-container.scrolled span {
+  background-color: #ca825b;
+}
+@media (min-width: 769px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-container:hover span:nth-child(3) {
+  width: 50%;
+}
+.menu-container:hover span:nth-child(4) {
+  width: 25%;
+}
+
+.menu-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: auto;
+  height: 100vh;
+  width: 250px;
+  padding: 3rem 3rem;
+  font-size: 1.5rem;
+  z-index: 4;
+  background: #889164;
+  color: #ededed;
+  will-change: transform, opacity;
+  transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
+}
+.menu-drawer[data-opened=false] {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.menu-drawer[data-opened=true] {
+  transform: none;
+  opacity: 1;
+}
+.menu-drawer ul li {
+  margin: 2rem 0;
+  cursor: pointer;
+}
+.menu-drawer ul :hover {
+  color: #575f37;
+}
+@media (min-width: 769px) {
+  .menu-drawer {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .menu-drawer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-drawer {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
