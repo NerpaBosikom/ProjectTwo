@@ -435,6 +435,7 @@ $bestsellers-breakpoint: 995px;
 .blog__container {
   display: flex;
   gap: 10px;
+  padding-bottom: 120px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
