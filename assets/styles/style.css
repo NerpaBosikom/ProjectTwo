@@ -212,7 +212,7 @@ a {
   margin: 0;
 }
 
-.about_wrapper_h2 {
+.about__title {
   font-family: "Viaoda Libre";
   font-size: clamp(38px, 4.1vw, 64px);
   display: flex;
@@ -221,20 +221,20 @@ a {
   color: #ededed;
 }
 
-.about_wrapper_h2-underline {
+.about__title-underline {
   display: block;
   width: 40%;
   border-bottom: 0.5px solid #ffffff;
 }
 
-.about_wrapper_text {
+.about__text {
   max-width: 655px;
   color: #ededed;
   margin-top: 5%;
   line-height: 130%;
 }
 
-.about_img-portrait {
+.about__img-portrait {
   width: clamp(290px, 37.5vw, 600px);
 }
 
@@ -365,27 +365,25 @@ a {
 
 .blog__text {
   margin-bottom: 25px;
-  font-family: "Montserrat";
   line-height: 27px;
-  font-size: clamp(14px, 2vw, 22px);
 }
 
 .blog__button {
   margin-bottom: 120px;
 }
 
-.page__blog {
+.page-blog {
   max-width: 1600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-.page__blog__img img {
+.page-blog__img img {
   width: 100%;
 }
 
-.page__blog__tittle {
+.page-blog__title {
   font-family: "Viaoda Libre";
   color: #171715;
   margin-top: 120px;
@@ -393,29 +391,20 @@ a {
   font-size: clamp(38px, 2vw, 64px);
 }
 
-.page__blog__text {
-  font-family: "Montserrat";
-  font-size: clamp(14px, 1.5vw, 22px);
+.page-blog__text {
   margin-bottom: 10px;
 }
 
-.page__blog__text1 {
-  font-family: "Montserrat";
-  font-size: clamp(14px, 1.5vw, 22px);
+.page-blog__subtitle {
   margin-bottom: 20px;
 }
 
-.page__blog__text2 {
-  font-family: "Montserrat";
-  font-size: clamp(14px, 1.5vw, 22px);
+.page-blog__text-bottom {
   margin-bottom: 40px;
 }
 
-.page__blog__tittle__h3 {
-  font-family: "Montserrat";
+.page-blog__text-title {
   font-weight: 600;
-  font-size: clamp(14px, 1.5vw, 22px);
-  color: #171715;
   margin-bottom: 10px;
 }
 
@@ -435,7 +424,7 @@ a {
   .blog__button {
     margin-bottom: 20px;
   }
-  .page__blog__tittle {
+  .page-blog__tittle {
     margin-top: 80px;
   }
 }
@@ -450,7 +439,7 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .page__blog__tittle {
+  .page-blog__tittle {
     margin-top: 30px;
   }
 }
@@ -468,7 +457,7 @@ a {
   align-items: center;
 }
 
-.banner_name {
+.banner__name {
   font-family: "Viaoda Libre";
   color: #ededed;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
@@ -476,7 +465,7 @@ a {
   text-align: center;
 }
 
-.banner_profession {
+.banner__profession {
   color: #ededed;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   font-size: clamp(20px, 1.75vw, 28px);
@@ -598,11 +587,9 @@ a {
   font-weight: 400;
   font-size: clamp(20px, 2.75vw, 44px);
   line-height: 38px;
-  font-style: normal;
-  font-display: swap;
 }
 
-.quote-form__decor-three {
+.quote__decor-three {
   display: block;
   background-image: url("../images/icons/line.svg");
   background-position: center center;
