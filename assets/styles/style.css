@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Viaoda Libre";
   src: url(../fonts/viaoda_libre-regular.woff2) format("woff2");
@@ -104,13 +105,13 @@ a {
   transition: 0.2s;
 }
 
-/* SCSS variables goes here */
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   right: 2rem;
   width: 3rem;
   cursor: pointer;
+  transition: top 0.3s ease;
   z-index: 5;
 }
 .menu-container input {
@@ -129,6 +130,9 @@ a {
   border-radius: 0.25rem;
   transition: all 300ms ease;
 }
+.menu-container.scrolled span {
+  background-color: #ca825b; /* Цвет при прокрутке (например, томатный) */
+}
 @media (min-width: 769px) {
   .menu-container {
     display: none;
@@ -143,13 +147,13 @@ a {
 }
 
 .menu-drawer {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: auto;
   height: 100vh;
   width: 250px;
-  padding: 6rem 4rem;
+  padding: 3rem 3rem;
   font-size: 1.5rem;
   z-index: 4;
   background: #889164;
