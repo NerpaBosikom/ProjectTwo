@@ -1,7 +1,18 @@
 function openDrawer() {
-  let checked = document.querySelector("input[type=checkbox]").checked;
+  let checkbox = document.querySelector("input[type=checkbox]");
   let drawer = document.getElementById("menu-drawer");
-  drawer.setAttribute("data-opened", checked);
+
+  // Устанавливаем состояние меню
+  drawer.setAttribute("data-opened", checkbox.checked);
+
+  // Закрытие меню при клике на ссылку
+  const menuLinks = drawer.querySelectorAll("a");
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      checkbox.checked = false; // Сбрасываем чекбокс
+      drawer.setAttribute("data-opened", "false"); // Обновляем атрибут
+    });
+  });
 }
 
 document
