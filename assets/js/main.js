@@ -71,3 +71,14 @@ window.addEventListener("scroll", () => {
     burgerMenu.classList.remove("scrolled");
   }
 });
+
+function setVh() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+
+// Вызываем функцию при загрузке страницы
+setVh();
+
+// Обновляем значение при изменении размера окна
+window.addEventListener("resize", setVh);

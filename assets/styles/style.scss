@@ -155,8 +155,9 @@ $breakpoint: 768px;
     transition: all 300ms ease;
   }
 
-  &.scrolled span {
-    background-color: $hover-color; /* Цвет при прокрутке (например, томатный) */
+
+  &.scrolled span{
+    background-color: $hover-color; 
   }
 
   @media (min-width: #{$breakpoint + 1}) {
@@ -217,7 +218,7 @@ $breakpoint: 768px;
 
   @media (max-width: 576px) {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
@@ -238,9 +239,6 @@ $breakpoint: 768px;
 .about {
   max-width: 1600px;
   margin: 0 auto;
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-around;
   background-color: $primary-color;
 }
 
@@ -254,7 +252,6 @@ $breakpoint: 768px;
 .about__inner {
   display: flex;
   flex-direction: column;
-  // max-width: 612px;
   padding-bottom: 95px;
   margin: 0;
 }
@@ -277,9 +274,9 @@ $breakpoint: 768px;
   border-bottom: 0.5px solid #ffffff;
 }
 
-.about__text {
-  // font-family: "Montserrat";
-  // font-size: 22px;
+
+
+.about__text{
   max-width: 655px;
   color: $secondary-color;
   margin-top: 5%;
@@ -288,7 +285,6 @@ $breakpoint: 768px;
 
 .about__img-portrait {
   width: clamp(290px, 37.5vw, 600px);
-  // height: auto;
 }
 
 @media (max-width: 854px) {
@@ -314,36 +310,9 @@ $breakpoint: 768px;
   }
 }
 
-// @media (max-width: 770px){
-//   .about{
-//   display: flex;
-//   flex-wrap: wrap;
-//   }
-
-// .about_wrapper_h2{
-//   font-size: clamp(38px, 2.5vw, 64px);
-// }
-
-// .about_wrapper_h2-underline{
-//     width: 25%;
-// }
-
-// .about_wrapper_text{
-//     font-size: clamp(14px, 7.2vw, 22px);
-// }
-// }
-
-// @media (max-width: 610px){
-//   .about_img-portrait{
-//       width: 352px;
-//       height: 233px;
-//   }
-// .about_wrapper_text{
-//   width: 90%;
-// }
-// }
 
 //Виолетта Bestsellers
+
 $bestsellers-breakpoint: 995px;
 
 .bestsellers {
@@ -411,25 +380,11 @@ $bestsellers-breakpoint: 995px;
 
       .bestsellers__button {
         margin-top: 30px;
-        // background-color: $primary-color;
-        // color: $secondary-color;
-        // border: none;
-        // padding: 15px 80px;
-        // border-radius: 15px;
-        // font-size: clamp(0.7rem, 66.66vw, 1rem);
-        // font-weight: 500;
-        // cursor: pointer;
-        // box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-
-        // &:hover {
-        //   background-color: $hover-color;
-        // }
       }
     }
   }
 }
 
-// Аня
 
 // Ира Я.
 .blog__container {
@@ -553,8 +508,9 @@ $bestsellers-breakpoint: 995px;
 // Оля Света Banner
 .banner {
   max-width: 1600px;
-  height: 90vh;
+  height: calc(var(--vh, 1vh) * 90);
   margin: 0 auto;
+  background-color: $primary-color;
   background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -609,8 +565,6 @@ $bestsellers-breakpoint: 995px;
 
   .book__image-wrapper {
     position: relative;
-    // flex: 0 0 400px;
-    // height: 600px;
 
     @media (max-width: 960px) {
       display: flex;
@@ -681,9 +635,7 @@ $bestsellers-breakpoint: 995px;
 
   &__button {
     margin-top: 40px;
-    // width: 250px;
     height: 60px;
-    // font-size: clamp(18px, 1.66vw, 24px);
   }
 }
 
@@ -702,15 +654,12 @@ $bestsellers-breakpoint: 995px;
   color: $secondary-color;
 }
 .quote__text {
-  // position: relative;
   color: $secondary-color;
   text-align: center;
   font-family: "Viaoda Libre";
   font-weight: 400;
   font-size: clamp(20px, 2.75vw, 44px);
   line-height: 38px;
-  // font-style: normal;
-  // font-display: swap;
 }
 
 .quote__decor-three {
@@ -827,7 +776,6 @@ $bestsellers-breakpoint: 995px;
   padding-top: 21px;
   align-items: flex-end;
   z-index: 1;
-  // margin-bottom: 15px;
 }
 
 .contact-form input,
@@ -835,7 +783,6 @@ $bestsellers-breakpoint: 995px;
   display: flex;
   width: clamp(230px, 37.5vw, 600px);
   padding: 20px;
-  // margin-bottom: 12px;
   font-size: clamp(10px, 1vw, 18px);
   border: 1px solid rgba(237, 237, 237, 0.85);
   border-radius: 15px;
@@ -844,21 +791,15 @@ $bestsellers-breakpoint: 995px;
 
 textarea {
   height: 114px;
-  /* overflow: auto; */
   z-index: 1;
 }
 
 .contact-form button {
   display: flex;
-  // margin-block: 30px;
-  // width: 100%;
-  // padding: 10px 25px;
   background: transparent;
   color: $background-color;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border: none;
-  // border-radius: 10px;
-  // font-size: 16px;
   cursor: pointer;
   z-index: 1;
 }
@@ -868,7 +809,6 @@ textarea {
   justify-content: center;
   align-items: center;
   margin-block: 30px;
-  // width: 100%;
   z-index: 1;
 }
 
@@ -899,6 +839,7 @@ textarea {
 }
 
 // Настя Footer
+
 .footer {
   max-width: 1600px;
   margin: 0 auto;
@@ -992,7 +933,6 @@ textarea {
 .services {
   display: flex;
   flex-direction: column;
-  // align-items: center;
 }
 .services__title {
   padding-top: 120px;
@@ -1025,19 +965,8 @@ textarea {
   align-items: center;
   width: clamp(280px, 25vw, 400px);
   aspect-ratio: 1;
-  // width: 400px;
-  // height: 400px;
   border: 1px solid rgba(35, 31, 32, 0.85);
   transition: transform 0.3s, box-shadow 0.3s;
-
-  // @media (max-width: 575px) {
-  //   width: 300px;
-  //   height: 300px;
-  // }
-
-  // @media (max-width: 1360px) {
-  //   margin-bottom: 50px;
-  //   }
 }
 
 .services__item:hover {
