@@ -173,7 +173,7 @@ a {
   margin: 2rem 0;
   cursor: pointer;
 }
-.menu-drawer ul li:hover {
+.menu-drawer ul :hover {
   color: #575f37;
 }
 @media (min-width: 769px) {
