@@ -224,13 +224,16 @@ a {
   font-family: "Viaoda Libre";
   font-size: clamp(38px, 4.1vw, 64px);
   display: flex;
+  align-self: flex-start;
   padding-bottom: 20px;
   padding-top: 60px;
   color: #ededed;
+  margin: 0;
 }
 
 .about__title-underline {
   display: block;
+  align-self: flex-start;
   width: 40%;
   border-bottom: 0.5px solid #ffffff;
 }
@@ -257,6 +260,14 @@ a {
     padding-bottom: 0;
     align-items: center;
   }
+  .about__title {
+    display: block;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+  .about__title-underline {
+    justify-content: flex-start;
+  }
 }
 .bestsellers {
   padding-top: 120px;
@@ -264,7 +275,7 @@ a {
 }
 .bestsellers .bestsellers__title {
   font-family: "Viaoda Libre";
-  font-size: clamp(48px, 4.44vw, 64px);
+  font-size: clamp(38px, 4.1vw, 64px);
   color: #171715;
   padding-bottom: 50px;
 }
@@ -337,7 +348,7 @@ a {
   display: flex;
   flex-direction: row;
   font-family: "Viaoda Libre";
-  font-size: clamp(38px, 2vw, 64px);
+  font-size: clamp(38px, 4.1vw, 64px);
   margin-bottom: 50px;
   margin-top: 120px;
 }
@@ -549,7 +560,7 @@ a {
 }
 .book__title {
   margin: 0;
-  font-size: clamp(48px, 4.44vw, 64px);
+  font-size: clamp(38px, 4.1vw, 64px);
   font-family: "Viaoda Libre";
 }
 .book__underline {
@@ -675,7 +686,7 @@ a {
 
 .contact-form__title {
   font-family: "Viaoda Libre", sans-serif;
-  font-size: clamp(38px, 4.5vw, 64px);
+  font-size: clamp(38px, 4.1vw, 64px);
   line-height: 60px;
   color: #ededed;
 }
@@ -864,12 +875,12 @@ textarea {
   padding-bottom: 50px;
   margin-right: auto;
   font-family: "Viaoda Libre";
-  font-size: clamp(40px, 4.4vw, 64px);
+  font-size: clamp(38px, 4.1vw, 64px);
 }
 @media (max-width: 768px) {
   .services__title {
     display: flex;
-    justify-content: center;
+    /*justify-content: center; */
     margin: 0;
   }
 }
