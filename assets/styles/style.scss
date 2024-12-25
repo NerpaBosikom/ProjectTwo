@@ -498,6 +498,7 @@ $bestsellers-breakpoint: 995px;
   max-width: 1600px;
   height: calc(var(--vh, 1vh) * 90);
   margin: 0 auto;
+  background-color: $primary-color;
   background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
   background-position: top center;
