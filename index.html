@@ -72,9 +72,9 @@
     </div>
   </header>
     <main>
-      <section id="main" class="banner">
-        <div class="banner_profession">Писатель, сценарист</div>
-        <div class="banner_name">Анна Вирсен</div>
+      <section class="banner">
+        <div class="banner__profession">Писатель, сценарист</div>
+        <div class="banner__name">Анна Вирсен</div>
       </section>
       <section class="book container">
         <div class="book__divider-line"></div>
@@ -111,9 +111,9 @@
       <section class="about">
         <div class="about__wrapper container">
           <div class="about__inner">
-            <h2 class="about_wrapper_h2">Обо мне</h2>
-            <span class="about_wrapper_h2-underline"></span>
-            <p class="about_wrapper_text">
+            <h2 class="about__title">Обо мне</h2>
+            <span class="about__title-underline"></span>
+            <p class="about__text">
               Я — Анна Вирсен, писатель, создающий захватывающие истории, которые
               находят отклик в сердцах читателей. Мои работы вдохновлены жизнью,
               эмоциями и человеческими взаимоотношениями. Если вы ищете оригинальные
@@ -121,9 +121,10 @@
             </p>
           </div>
           <img
-            class="about_img-portrait"
+            class="about__img-portrait"
             src="assets/images/portrait.png"
             alt="portrait"
+            loading="lazy"
           />
         </div>
 </section>
@@ -151,7 +152,7 @@
         </div>
       </section>
       <section class="quote">
-        <span class="quote-form__decor-three"></span>
+        <span class="quote__decor-three"></span>
         <p class="quote__text">"Каждое слово — шаг в новый мир, каждая история — ключ к душе."</p>
       </section>
       <section id="services" class="services container">
