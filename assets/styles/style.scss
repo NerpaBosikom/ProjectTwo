@@ -31,6 +31,10 @@ $text-color: #171715;
 $border-color: rgba(23, 23, 21, 0.25);
 $border-color-dark: rgba(23, 23, 21, 0.85);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -160,7 +164,7 @@ $breakpoint: 768px;
     &:nth-child(3) {
       width: 50%;
     }
-    
+
     &:nth-child(4) {
       width: 25%;
     }
@@ -196,7 +200,7 @@ $breakpoint: 768px;
       margin: 2rem 0;
       cursor: pointer;
     }
-    
+
     li:hover {
       color: $accent-color;
     }
@@ -224,10 +228,9 @@ $breakpoint: 768px;
   }
 }
 
-
 //Аня
 
-.about{
+.about {
   max-width: 1600px;
   margin: 0 auto;
   // display: flex;
@@ -266,6 +269,7 @@ $breakpoint: 768px;
   border-bottom: 0.5px solid #ffffff;
 }
 
+
 .about__text{
   // font-family: "Montserrat";
   // font-size: 22px;
@@ -280,16 +284,16 @@ $breakpoint: 768px;
   // height: auto;
 }
 
-@media (max-width: 854px){
-  .about__wrapper{
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      }
+@media (max-width: 854px) {
+  .about__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
   .about__inner {
-      display: flex;
-      padding-bottom: 0;
-      align-items: center;
+    display: flex;
+    padding-bottom: 0;
+    align-items: center;
   }
 }
 
@@ -299,17 +303,17 @@ $breakpoint: 768px;
 //   flex-wrap: wrap;
 //   }
 
-  // .about_wrapper_h2{
-  //   font-size: clamp(38px, 2.5vw, 64px);
-  // }
+// .about_wrapper_h2{
+//   font-size: clamp(38px, 2.5vw, 64px);
+// }
 
-  // .about_wrapper_h2-underline{
-  //     width: 25%;
-  // }
+// .about_wrapper_h2-underline{
+//     width: 25%;
+// }
 
-  // .about_wrapper_text{
-  //     font-size: clamp(14px, 7.2vw, 22px);
-  // }
+// .about_wrapper_text{
+//     font-size: clamp(14px, 7.2vw, 22px);
+// }
 // }
 
 // @media (max-width: 610px){
@@ -317,13 +321,10 @@ $breakpoint: 768px;
 //       width: 352px;
 //       height: 233px;
 //   }
-  // .about_wrapper_text{
-  //   width: 90%;
-  // }
+// .about_wrapper_text{
+//   width: 90%;
 // }
-
-
-
+// }
 
 //Виолетта Bestsellers
 $bestsellers-breakpoint: 995px;
@@ -331,8 +332,6 @@ $bestsellers-breakpoint: 995px;
 .bestsellers {
   padding-top: 120px;
   padding-bottom: 120px;
-
-
 
   .bestsellers__title {
     font-family: "Viaoda Libre";
@@ -365,7 +364,6 @@ $bestsellers-breakpoint: 995px;
           width: 200px;
           height: 300px;
         }
-
       }
 
       .bestsellers__placeholder {
@@ -377,7 +375,6 @@ $bestsellers-breakpoint: 995px;
           width: 200px;
           height: 300px;
         }
-
       }
 
       .bestsellers__line {
@@ -393,7 +390,6 @@ $bestsellers-breakpoint: 995px;
           height: 300px;
           margin-top: -290px;
         }
-
       }
 
       .bestsellers__button {
@@ -418,51 +414,53 @@ $bestsellers-breakpoint: 995px;
 
 // Аня
 
-
 // Ира Я.
-.blog__container{
-  display: flex; 
-  gap: 10px; 
+.blog__container {
+  display: flex;
+  gap: 10px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.blog__title{
+.blog__title {
   display: flex;
   flex-direction: row;
   font-family: "Viaoda Libre";
-  font-size: clamp(38px, 2vw, 64px); 
+  font-size: clamp(38px, 2vw, 64px);
   margin-bottom: 50px;
   margin-top: 120px;
 }
-.blog__image{
+.blog__image {
   margin-bottom: 30px;
   display: block;
   position: relative;
 }
 .blog__image::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 10px; left: 10px;
-  right: -10px; bottom: -10px;
+  top: 10px;
+  left: 10px;
+  right: -10px;
+  bottom: -10px;
   border: 1px solid rgba(23, 23, 21, 0.25);
   z-index: -1;
   width: clamp(250px, 30vw, 407px);
 }
-.blog__image img{
+.blog__image img {
   width: clamp(250px, 30vw, 407px);
 }
-.blog__name{
-  margin-bottom: 25px; 
-  margin-top: 15px; 
+.blog__name {
+  margin-bottom: 25px;
+  margin-top: 15px;
   font-family: "Viaoda Libre";
-  font-size: clamp(25px, 2vw, 33px);  
+  font-size: clamp(25px, 2vw, 33px);
 }
+
 .blog__text{
   margin-bottom: 25px; 
   line-height: 27px;
 }
-.blog__button{
+.blog__button {
   margin-bottom: 120px;
 }
 
@@ -472,6 +470,7 @@ $bestsellers-breakpoint: 995px;
   display: flex;
   flex-direction: column;
 }
+
 .page-blog__img img{
   width: 100%;
 }
@@ -480,8 +479,9 @@ $bestsellers-breakpoint: 995px;
   color: #171715;
   margin-top: 120px;
   margin-bottom: 25px;
-  font-size: clamp(38px, 2vw, 64px); 
+  font-size: clamp(38px, 2vw, 64px);
 }
+
 .page-blog__text{
   margin-bottom: 10px;
 }
@@ -496,42 +496,41 @@ $bestsellers-breakpoint: 995px;
   margin-bottom: 10px;
 }
 
-
-@media (max-width: 1350px){
-  .blog__container{
-    gap: 10px; 
+@media (max-width: 1350px) {
+  .blog__container {
+    gap: 10px;
   }
 }
-@media (max-width: 1170px){
-  .blog__container{
+@media (max-width: 1170px) {
+  .blog__container {
     justify-content: center;
-    column-gap: 40px; 
+    column-gap: 40px;
   }
 }
-@media (max-width: 1024px){
-  .blog__button{
+@media (max-width: 1024px) {
+  .blog__button {
     margin-bottom: 20px;
   }
+
   .page-blog__tittle{
     margin-top: 80px;
   }
 }
-@media (max-width: 994px){
-  .blog__container{
-    column-gap: 30px; 
+@media (max-width: 994px) {
+  .blog__container {
+    column-gap: 30px;
   }
 }
-@media (max-width: 912px){
-  .blog__container{
+@media (max-width: 912px) {
+  .blog__container {
     justify-content: center;
     align-items: center;
   }
+
   .page-blog__tittle{
     margin-top: 30px;
   }
 }
-
-
 
 // Оля Света Banner
 .banner {
@@ -971,7 +970,6 @@ textarea {
   }
 }
 
-
 // Катя Services
 .services {
   display: flex;
@@ -1021,11 +1019,11 @@ textarea {
 
   // @media (max-width: 1360px) {
   //   margin-bottom: 50px;
-  //   }    
-  }
+  //   }
+}
 
 .services__item:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -1042,6 +1040,6 @@ textarea {
 }
 
 .services__item-price {
-  font-size: clamp(15px,1.04vw, 18px);
+  font-size: clamp(15px, 1.04vw, 18px);
   color: rgba(23, 23, 21, 0.65);
 }

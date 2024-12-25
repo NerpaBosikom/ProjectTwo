@@ -35,19 +35,19 @@
           <nav class="header__menu">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link" href="/">Главная</a>
+                <a class="header__link" href="#main">Главная</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="/">Книги</a>
+                <a class="header__link" href="#bestsellers">Книги</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="/">Услуги</a>
+                <a class="header__link" href="#services">Услуги</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="/">Блог</a>
+                <a class="header__link" href="#blog">Блог</a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="/">Контакты</a>
+                <a class="header__link" href="#contact">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -60,11 +60,11 @@
           </label>
           <div class="menu-drawer" id="menu-drawer" opened="false">
             <ul>
-              <li>Главная</li>
-              <li>Книги</li>
-              <li>Услуги</li>
-              <li>Блог</li>
-              <li>Контакты</li>
+              <li><a href="#main">Главная</a></li>
+              <li><a href="#bestsellers">Книги</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#blog">Блог</a></li>
+              <li><a href="#contact">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -128,7 +128,7 @@
           />
         </div>
 </section>
-      <section class="bestsellers container">
+      <section id="bestsellers" class="bestsellers container">
         <div class="bestsellers__wrapper">
           <h1 class="bestsellers__title">Бестселлеры</h1>
           <div class="bestsellers__books">
@@ -155,7 +155,7 @@
         <span class="quote__decor-three"></span>
         <p class="quote__text">"Каждое слово — шаг в новый мир, каждая история — ключ к душе."</p>
       </section>
-      <section class="services container">
+      <section id="services" class="services container">
         <h2 class="services__title">Услуги</h2>
         <div class="services__list">
           <div class="services__item">
@@ -234,7 +234,7 @@
             </form>
           </div>
       </section>
-      <section class="blog container">
+      <section id="blog" class="blog container">
         <div class="blog__title"> 
           <H2> Блог </H2> 
         </div>
@@ -288,7 +288,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="footer__container container-wrapper">
         <img class="footer__logo" src="./assets/images/icons/logo.svg" alt="logo">
         <ul class="footer__list">
