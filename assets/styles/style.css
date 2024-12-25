@@ -338,7 +338,7 @@ a {
 .blog__container {
   display: flex;
   gap: 10px;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -443,7 +443,7 @@ a {
   .blog__button {
     margin-bottom: 20px;
   }
-  .page-blog__tittle {
+  .page-blog__title {
     margin-top: 80px;
   }
 }
@@ -458,7 +458,7 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .page-blog__tittle {
+  .page-blog__title {
     margin-top: 30px;
   }
 }
@@ -466,6 +466,7 @@ a {
   max-width: 1600px;
   height: calc(var(--vh, 1vh) * 90);
   margin: 0 auto;
+  background-color: #889164;
   background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
   background-position: top center;
