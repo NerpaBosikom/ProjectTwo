@@ -155,10 +155,10 @@ $breakpoint: 768px;
     transition: all 300ms ease;
   }
 
+
   &.scrolled span{
     background-color: $hover-color; 
   }
-
 
   @media (min-width: #{$breakpoint + 1}) {
     display: none;
@@ -191,7 +191,6 @@ $breakpoint: 768px;
   color: $secondary-color;
   will-change: transform, opacity;
   transition: all 500ms cubic-bezier(0.14, 0.65, 0.15, 1);
-  
 
   &[data-opened="false"] {
     transform: translateY(-100%);
@@ -235,8 +234,6 @@ $breakpoint: 768px;
   }
 }
 
-
-
 //Аня
 
 .about {
@@ -263,16 +260,20 @@ $breakpoint: 768px;
   font-family: "Viaoda Libre";
   font-size: clamp(38px, 4.1vw, 64px);
   display: flex;
+  align-self: flex-start;
   padding-bottom: 20px;
   padding-top: 60px;
   color: $secondary-color;
+  margin: 0;
 }
 
 .about__title-underline {
   display: block;
+  align-self: flex-start;
   width: 40%;
   border-bottom: 0.5px solid #ffffff;
 }
+
 
 
 .about__text{
@@ -282,7 +283,7 @@ $breakpoint: 768px;
   line-height: 130%;
 }
 
-.about__img-portrait{
+.about__img-portrait {
   width: clamp(290px, 37.5vw, 600px);
 }
 
@@ -297,6 +298,16 @@ $breakpoint: 768px;
     padding-bottom: 0;
     align-items: center;
   }
+
+  .about__title {
+    display: block;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .about__title-underline {
+    justify-content: flex-start;
+  }
 }
 
 
@@ -310,7 +321,7 @@ $bestsellers-breakpoint: 995px;
 
   .bestsellers__title {
     font-family: "Viaoda Libre";
-    font-size: clamp(48px, 4.44vw, 64px);
+    font-size: clamp(38px, 4.1vw, 64px);
     color: $text-color;
     padding-bottom: 50px;
   }
@@ -379,6 +390,7 @@ $bestsellers-breakpoint: 995px;
 .blog__container {
   display: flex;
   gap: 10px;
+  padding-bottom: 120px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -387,7 +399,7 @@ $bestsellers-breakpoint: 995px;
   display: flex;
   flex-direction: row;
   font-family: "Viaoda Libre";
-  font-size: clamp(38px, 2vw, 64px);
+  font-size: clamp(38px, 4.1vw, 64px);
   margin-bottom: 50px;
   margin-top: 120px;
 }
@@ -417,25 +429,25 @@ $bestsellers-breakpoint: 995px;
   font-size: clamp(25px, 2vw, 33px);
 }
 
-.blog__text{
-  margin-bottom: 25px; 
+.blog__text {
+  margin-bottom: 25px;
   line-height: 27px;
 }
 .blog__button {
   margin-bottom: 120px;
 }
 
-.page-blog{
-  max-width: 1600px; 
+.page-blog {
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-.page-blog__img img{
+.page-blog__img img {
   width: 100%;
 }
-.page-blog__title{
+.page-blog__title {
   font-family: "Viaoda Libre";
   color: #171715;
   margin-top: 120px;
@@ -443,16 +455,16 @@ $bestsellers-breakpoint: 995px;
   font-size: clamp(38px, 2vw, 64px);
 }
 
-.page-blog__text{
+.page-blog__text {
   margin-bottom: 10px;
 }
 .page-blog__subtitle {
   margin-bottom: 20px;
 }
-.page-blog__text-bottom{
+.page-blog__text-bottom {
   margin-bottom: 40px;
 }
-.page-blog__text-title{
+.page-blog__text-title {
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -473,7 +485,7 @@ $bestsellers-breakpoint: 995px;
     margin-bottom: 20px;
   }
 
-  .page-blog__tittle{
+  .page-blog__tittle {
     margin-top: 80px;
   }
 }
@@ -488,7 +500,7 @@ $bestsellers-breakpoint: 995px;
     align-items: center;
   }
 
-  .page-blog__tittle{
+  .page-blog__tittle {
     margin-top: 30px;
   }
 }
@@ -598,7 +610,7 @@ $bestsellers-breakpoint: 995px;
 
   &__title {
     margin: 0;
-    font-size: clamp(48px, 4.44vw, 64px);
+    font-size: clamp(38px, 4.1vw, 64px);
     font-family: "Viaoda Libre";
   }
 
@@ -728,7 +740,7 @@ $bestsellers-breakpoint: 995px;
 
 .contact-form__title {
   font-family: "Viaoda Libre", sans-serif;
-  font-size: clamp(38px, 4.5vw, 64px);
+  font-size: clamp(38px, 4.1vw, 64px);
   line-height: 60px;
   color: $secondary-color;
 }
@@ -927,11 +939,11 @@ textarea {
   padding-bottom: 50px;
   margin-right: auto;
   font-family: "Viaoda Libre";
-  font-size: clamp(40px, 4.4vw, 64px);
+  font-size: clamp(38px, 4.1vw, 64px);
 
   @media (max-width: $breakpoint) {
     display: flex;
-    justify-content: center;
+    /*justify-content: center; */
     margin: 0;
   }
 }
