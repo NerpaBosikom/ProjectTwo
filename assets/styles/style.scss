@@ -390,7 +390,7 @@ $bestsellers-breakpoint: 995px;
 .blog__container {
   display: flex;
   gap: 10px;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -485,7 +485,7 @@ $bestsellers-breakpoint: 995px;
     margin-bottom: 20px;
   }
 
-  .page-blog__tittle {
+  .page-blog__title {
     margin-top: 80px;
   }
 }
@@ -500,7 +500,7 @@ $bestsellers-breakpoint: 995px;
     align-items: center;
   }
 
-  .page-blog__tittle {
+  .page-blog__title {
     margin-top: 30px;
   }
 }
