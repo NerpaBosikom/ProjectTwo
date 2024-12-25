@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/icons/favicon.svg"
+      sizes="any"
+    />
+    <link
+      rel="alternate icon"
+      type="image/x-icon"
+      href="./assets/images/icons/favicon.ico"
+    />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/reset.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
@@ -58,20 +69,120 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
     <main>
       <section class="banner">
         <div class="banner_profession">Писатель, сценарист</div>
         <div class="banner_name">Анна Вирсен</div>
       </section>
-      <section class="book"></section>
-      <section class="about"></section>
-      <section class="bestsellers"></section>
+      <section class="book container">
+        <div class="book__divider-line"></div>
+        <div class="book__story-box">
+          <div class="book__image-wrapper">
+            <img
+              src="./assets/images/book.jpg"
+              alt="Обложка книги"
+              class="book__image"
+            />
+          </div>
+          <div class="book__content">
+            <h4 class="book__author">Анна Вирсен</h4>
+            <div class="book__time-box">
+              <h1 class="book__title">Время придет</h1>
+              <div class="book__underline"></div>
+            </div>
+
+            <p class="book__description">
+              Смешная и при этом трогающая до глубины души история о маме
+              погодок, которая пытается одновременно быть достаточно хорошей
+              мамой, женой, хозяйкой, профессионалом, все успеть и при этом не
+              сойти с ума. Ей 35+, она не нравится себе в зеркале, ей кажется,
+              что она ничего не добилась и ее время уже не придет никогда. Все
+              меняется в тот момент, когда в ее жизнь врывается великая бывшая
+              любовь, а происходящее вокруг начинает напоминать сценарий
+              турецкого сериала.
+            </p>
+
+            <button class="book__button button">Купить</button>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__wrapper container">
+          <div class="about__inner">
+            <h2 class="about_wrapper_h2">Обо мне</h2>
+            <span class="about_wrapper_h2-underline"></span>
+            <p class="about_wrapper_text">
+              Я — Анна Вирсен, писатель, создающий захватывающие истории, которые
+              находят отклик в сердцах читателей. Мои работы вдохновлены жизнью,
+              эмоциями и человеческими взаимоотношениями. Если вы ищете оригинальные
+              идеи или увлекательный сюжет, я готова поделиться своим творчеством!
+            </p>
+          </div>
+          <img
+            class="about_img-portrait"
+            src="assets/images/portrait.png"
+            alt="portrait"
+          />
+        </div>
+</section>
+      <section class="bestsellers container">
+        <div class="bestsellers__wrapper">
+          <h1 class="bestsellers__title">Бестселлеры</h1>
+          <div class="bestsellers__books">
+            <div class="bestsellers__book">
+              <img class="bestsellers__img" src="./assets/images/book/kniga_vremya_pridet.webp" alt="Время Придёт">
+              <div class="bestsellers__line"></div>
+              <button class="bestsellers__button 
+              button"><a href="#" target="_blank">Купить</a></button>
+            </div>
+            <div class="bestsellers__book">
+              <img class="bestsellers__placeholder" src="./assets/images/book/kniga_vremya_pridet.webp" alt="Книга">
+              <div class="bestsellers__line"></div>
+              <button class="bestsellers__button button"><a href="#" target="_blank">Купить</a></button>
+            </div>
+            <div class="bestsellers__book">
+              <img class="bestsellers__placeholder" src="./assets/images/book/kniga_vremya_pridet.webp" alt="Книга">
+              <div class="bestsellers__line"></div>
+              <button class="bestsellers__button button"><a href="#" target="_blank">Купить</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="quote">
         <span class="quote-form__decor-three"></span>
         <p class="quote__text">"Каждое слово — шаг в новый мир, каждая история — ключ к душе."</p>
       </section>
-      <section class="services"></section>
+      <section class="services container">
+        <h2 class="services__title">Услуги</h2>
+        <div class="services__list">
+          <div class="services__item">
+            <h4 class="services__item-title">Услуга</h4>
+            <p class="services__item-description">
+            Таким образом реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации. Товарищи!
+            </p>
+            <p class="services__item-price">от 7800 &#8381;
+            </p>
+          </div>
+          <div class="services__item">
+            <h4 class="services__item-title">Услуга</h4>
+            <p class="services__item-description">
+            Таким образом реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации. Товарищи!
+            </p>
+            <p class="services__item-price">от 7800 &#8381;
+            </p>
+          </div>
+          <div class="services__item">
+            <h4 class="services__item-title">Услуга</h4>
+            <p class="services__item-description">
+            Таким образом реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации. Товарищи!
+            </p>
+            <p class="services__item-price">от 7800 &#8381;
+            </p>
+          </div>
+        </div>
+      </section>
       <section class="contact-form">
         <span class="contact-form__decor-one"></span>
         <span class="contact-form__decor-two"></span>
@@ -116,13 +227,65 @@
                   Я даю согласие на обработку персональных данных
                 </label>
               </div>
-              <div class="contact-form__button">
+              <div class="contact-form__button button">
                 <button type="submit" disabled>Отправить</button>
               </div>
             </form>
           </div>
-        </section>
-      <section class="blog"></section>
+      </section>
+      <section class="blog container">
+        <div class="blog__title"> 
+          <H2> Блог </H2> 
+        </div>
+        <div class="blog__container"> 
+          <div class="blog__cards">
+            <div class="blog__image"> 
+              <img  alt="Анна Вирсен" src="assets/images/hero/blog__1.png" />
+            </div>
+            <div class="blog__name">
+              <h3> Название статьи </h3>
+            </div>
+            <div class="blog__text">
+              <p> Таким образом реализация <br> намеченных плановых заданий <br> представляет собой интерес... </p>
+            </div>
+            <div class="blog__button" >
+              <a href="blog.html"> 
+                <button type="submit" class="button">Перейти</button>
+              </a>
+            </div>
+          </div>
+          <div class="blog__cards">
+            <div class="blog__image"> 
+              <img  alt="Анна Вирсен" src="assets/images/hero/blog__2.png" />
+            </div>
+            <div class="blog__name">
+              <h3> Название статьи </h3>
+            </div>
+            <div class="blog__text">
+              <p> Таким образом реализация <br> намеченных плановых заданий <br> представляет собой интерес... </p>
+            </div>
+            <div class="blog__button">
+              <button type="submit" class="button">Перейти</button>
+            </div>
+          </div>
+          <div class="blog__cards">
+            <div class="blog__image"> 
+              <img  alt="Анна Вирсен" src="assets/images/hero/blog__3.png" />
+            </div>
+            <div class="blog__name">
+              <h3> Название статьи </h3>
+            </div>
+            <div class="blog__text">
+              <p> Таким образом реализация <br> намеченных плановых заданий <br> представляет собой интерес... </p>
+            </div>
+            <div class="blog__button">
+              <button type="submit" class="button">
+                Перейти
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__container container-wrapper">
@@ -149,6 +312,5 @@
       <p class="footer__warning">*META признана экстремистской организацией и запрещена на территории РФ</p> 
     </footer>
     <script src="./assets/js/main.js"></script>
-    </footer>
   </body>
 </html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/images/icons/favicon.svg"
+      sizes="any"
+    />
+    <link
+      rel="alternate icon"
+      type="image/x-icon"
+      href="./assets/images/icons/favicon.ico"
+    />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Анна Вирсен</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper container-wrapper">
+        <div class="header__inner">
+          <img
+            src="./assets/images/icons/logo.svg"
+            alt="Логотип Анна Вирсен"
+            class="header__logo"
+            loading="lazy"
+          />
+        </div>
+        <div class="header__nav">
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="/">Главная</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="/">Книги</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="/">Услуги</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="/">Блог</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Бургер меню -->
+          <label class="menu-container">
+            <input type="checkbox" name="menu-button" onclick="openDrawer();" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-drawer" id="menu-drawer" opened="false">
+            <ul>
+              <li>Главная</li>
+              <li>Книги</li>
+              <li>Услуги</li>
+              <li>Блог</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <main>
+      <section class="page__blog">
+        <div class="page__blog__img">
+          <img alt="man" src="assets/images/blog/man.png" />
+        </div>
+        <div class="page__blog__part__text container">
+          <div>
+            <h1 class="page__blog__tittle">
+              Магия слов: как писатель создаёт миры
+            </h1>
+            <p class="page__blog__text1">
+              Каждое слово — это кирпичик, из которого писатель строит свои
+              миры. Иногда эти миры кажутся настолько реальными, что, закрыв
+              книгу, мы ещё долго не можем вернуться в свою обыденную жизнь. Но
+              как же это происходит? Как слова, такие простые и привычные,
+              превращаются в магию?
+            </p>
+          </div>
+          <div>
+            <h3 class="page__blog__tittle__h3">Источник вдохновения</h3>
+            <p class="page__blog__text">
+              Каждая история начинается с идеи. Это может быть случайная мысль,
+              увиденная на улице сцена, услышанная фраза или даже сон. Великие
+              писатели всегда держат свои чувства открытыми, как радары,
+              улавливая мельчайшие импульсы окружающего мира. Секрет в том,
+              чтобы видеть необычное в обычном.
+            </p>
+          </div>
+          <div>
+            <h3 class="page__blog__tittle__h3">Герои, которые живут</h3>
+            <p class="page__blog__text">
+              Герои — это сердце любой истории. Они не просто персонажи, а
+              настоящие личности со своими страхами, желаниями и слабостями. Чем
+              глубже и правдоподобнее прорисован герой, тем легче читателю
+              сопереживать ему. Писатели часто говорят, что их герои начинают
+              жить собственной жизнью, диктуя автору, как разворачивается сюжет.
+            </p>
+          </div>
+          <div>
+            <h3 class="page__blog__tittle__h3">Мир, который дышит</h3>
+            <p class="page__blog__text">
+              Одной из самых захватывающих частей работы писателя является
+              создание мира, в котором разворачивается действие. Это может быть
+              реалистичный современный город, фантастическая галактика или
+              средневековое королевство. Каждый элемент мира — от мельчайших
+              деталей быта до глобальных законов физики — должен быть продуман,
+              чтобы читатель почувствовал себя его частью.
+            </p>
+          </div>
+          <div>
+            <h3 class="page__blog__tittle__h3">Слово как инструмент</h3>
+            <p class="page__blog__text">
+              Язык — это главный инструмент писателя. Умение выбирать точные
+              слова, создавать атмосферу с помощью описаний и диалогов — это
+              мастерство, которое оттачивается годами. Одно слово может изменить
+              тон всей сцены, а метафора или сравнение — вызвать у читателя бурю
+              эмоций.
+            </p>
+          </div>
+          <div>
+            <h3 class="page__blog__tittle__h3">Магия читателя</h3>
+            <p class="page__blog__text">
+              Но настоящая магия происходит, когда история находит своего
+              читателя. Каждый читатель привносит в текст что-то своё, наполняя
+              его новыми смыслами. Это уникальная алхимия, благодаря которой
+              каждая книга становится особенной для каждого, кто её читает.
+            </p>
+          </div>
+          <div>
+            <h3 class="page__blog__tittle__h3">
+              Вдохновение для начинающих писателей
+            </h3>
+            <p class="page__blog__text2">
+              Если вы только начинаете свой путь писателя, помните: не бойтесь
+              экспериментировать, пробовать разные стили и жанры. Главное —
+              писать искренне, с душой. Мир ждёт ваших историй!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container-wrapper">
+        <img
+          class="footer__logo"
+          src="./assets/images/icons/logo.svg"
+          alt="logo"
+        />
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a
+              href="https://web.telegram.org/k/#@asamarkina"
+              class="footer__social-link footer__social-link--telegram"
+              target="_blank"
+            >
+              <i class="fab fa-telegram-plane footer__social-icon"></i>
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a
+              href="https://www.instagram.com/anna_virsen/"
+              class="footer__social-link footer__social-link--instagram"
+              target="_blank"
+            >
+              <i class="fab fa-instagram footer__social-icon"></i>
+              <span class="footer__social-link__star">*</span>
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a
+              href="https://vk.com/lublu_lubima"
+              class="footer__social-link footer__social-link--vk"
+              target="_blank"
+            >
+              <i class="fab fa-vk footer__social-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__warning">
+        *META признана экстремистской организацией и запрещена на территории РФ
+      </p>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
