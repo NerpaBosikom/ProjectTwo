@@ -404,7 +404,7 @@ $bestsellers-breakpoint: 995px;
   margin-top: 120px;
 }
 .blog__image {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   display: block;
   position: relative;
 }
@@ -423,15 +423,21 @@ $bestsellers-breakpoint: 995px;
   width: clamp(250px, 30vw, 407px);
 }
 .blog__name {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-top: 15px;
+  // font-family: "Viaoda Libre";
+  // font-size: clamp(25px, 2vw, 33px);
+}
+
+.blog__name h3{
   font-family: "Viaoda Libre";
   font-size: clamp(25px, 2vw, 33px);
+  line-height: 1.4;
 }
 
 .blog__text {
   margin-bottom: 25px;
-  line-height: 27px;
+  line-height: 1.2;
 }
 .blog__button {
   margin-bottom: 120px;
@@ -630,7 +636,7 @@ $bestsellers-breakpoint: 995px;
   &__description {
     margin-top: 30px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 1.2;
   }
 
   &__button {
@@ -659,7 +665,7 @@ $bestsellers-breakpoint: 995px;
   font-family: "Viaoda Libre";
   font-weight: 400;
   font-size: clamp(20px, 2.75vw, 44px);
-  line-height: 38px;
+  line-height: 1.4;
 }
 
 .quote__decor-three {
@@ -733,7 +739,7 @@ $bestsellers-breakpoint: 995px;
 
 .contact-form__text {
   font-size: clamp(16px, 1.5vw, 24px);
-  line-height: 25px;
+  line-height: 1.2;
   color: $secondary-color;
   z-index: 1;
 }
@@ -741,7 +747,7 @@ $bestsellers-breakpoint: 995px;
 .contact-form__title {
   font-family: "Viaoda Libre", sans-serif;
   font-size: clamp(38px, 4.1vw, 64px);
-  line-height: 60px;
+  line-height: 1.4;
   color: $secondary-color;
 }
 
@@ -758,7 +764,7 @@ $bestsellers-breakpoint: 995px;
   color: $secondary-color;
   font-weight: 500;
   font-size: clamp(14px, 1.5vw, 24px);
-  line-height: 29px;
+  line-height: 1.2;
   padding-inline: 50px;
   z-index: 1;
 
@@ -983,7 +989,7 @@ textarea {
   text-align: center;
   padding-inline: 20px;
   padding-bottom: 20px;
-  line-height: 24px;
+  line-height: 1.2;
 }
 
 .services__item-price {
