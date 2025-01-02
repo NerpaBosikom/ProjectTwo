@@ -769,6 +769,7 @@ textarea {
   align-items: end;
   gap: 10px;
   width: 100%;
+  padding-top: 10px;
   font-size: clamp(12px, 1vw, 16px);
   line-height: 1.2;
   z-index: 1;
