@@ -15,6 +15,39 @@ function openDrawer() {
   });
 }
 
+// Находим элемент бургер-меню
+const burgerMenu = document.querySelector(".menu-container");
+
+// Обработчик скролла
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY; // Получаем текущую позицию прокрутки
+  const maxOffset = 200; // Максимальное смещение вниз (в пикселях)
+
+  // Ограничиваем движение кнопки
+  if (scrollY <= maxOffset) {
+    burgerMenu.style.top = `${1.5 + scrollY / 10}rem`; // Плавное смещение вниз
+  }
+
+  // Меняем цвет бургер-меню при движении
+  if (scrollY > 50) {
+    // Например, после прокрутки на 50px
+    burgerMenu.classList.add("scrolled");
+  } else {
+    burgerMenu.classList.remove("scrolled");
+  }
+});
+
+function setVh() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+
+// Вызываем функцию при загрузке страницы
+setVh();
+
+// Обновляем значение при изменении размера окна
+window.addEventListener("resize", setVh);
+
 document
   .querySelector(".contact-form")
   .addEventListener("submit", async function (event) {
@@ -49,36 +82,3 @@ const submitButton = document.querySelector(".contact-form button");
 checkbox.addEventListener("change", () => {
   submitButton.disabled = !checkbox.checked;
 });
-
-// Находим элемент бургер-меню
-const burgerMenu = document.querySelector(".menu-container");
-
-// Обработчик скролла
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY; // Получаем текущую позицию прокрутки
-  const maxOffset = 200; // Максимальное смещение вниз (в пикселях)
-
-  // Ограничиваем движение кнопки
-  if (scrollY <= maxOffset) {
-    burgerMenu.style.top = `${1.5 + scrollY / 10}rem`; // Плавное смещение вниз
-  }
-
-  // Меняем цвет бургер-меню при движении
-  if (scrollY > 50) {
-    // Например, после прокрутки на 50px
-    burgerMenu.classList.add("scrolled");
-  } else {
-    burgerMenu.classList.remove("scrolled");
-  }
-});
-
-function setVh() {
-  const vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-}
-
-// Вызываем функцию при загрузке страницы
-setVh();
-
-// Обновляем значение при изменении размера окна
-window.addEventListener("resize", setVh);
