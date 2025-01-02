@@ -824,6 +824,7 @@ textarea {
   gap: 10px;
   width: 100%;
   font-size: clamp(12px, 1vw, 16px);
+  line-height: 1.2;
   z-index: 1;
 
   @media (max-width: 885px) {
