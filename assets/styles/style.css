@@ -774,12 +774,6 @@ textarea {
   line-height: 1.2;
   z-index: 1;
 }
-@media (max-width: 885px) {
-  .contact-form__checkbox {
-    align-items: center;
-  }
-}
-
 .contact-form__checkbox input {
   width: 30px;
   height: 30px;

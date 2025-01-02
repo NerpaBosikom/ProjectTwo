@@ -829,9 +829,10 @@ textarea {
   z-index: 1;
 
   @media (max-width: 885px) {
-    align-items: center;
+    // align-items: center;
   }
 }
+
 
 .contact-form__checkbox input {
   width: 30px;
