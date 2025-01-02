@@ -836,6 +836,11 @@ textarea {
   height: 30px;
   cursor: pointer;
   z-index: 1;
+
+  @media (max-width: $breakpoint) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .contact-form__checkbox label {
